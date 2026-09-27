@@ -41,7 +41,6 @@ module.exports = function boutique({ site, boutique: b, temoignages }) {
       </div>
     </article>`;
 
-  const lectures = temoignages.liste.filter((t) => t.categorie === "livre");
   let n = 0;
   const rayons = b.categories
     .map((c, ci) => {
@@ -52,7 +51,10 @@ module.exports = function boutique({ site, boutique: b, temoignages }) {
   <div class="conteneur">
     <p class="rayon__titre"><span class="index">${String(ci + 1).padStart(2, "0")}</span> ${esc(c.nom)}</p>
     <div class="fiches">${produits.map((p) => fiche(p, n++))}</div>
-    ${c.id === "livres" && lectures.length ? html`<div class="lectures"><p class="fiche__label">Premiers retours de lecture</p><ul class="temoins" data-defile>${lectures.map((x) => temoin(x))}</ul></div>` : ""}
+    ${produits.map((pr) => {
+      const avis = temoignages.liste.filter((t) => t.produit === pr.slug);
+      return avis.length ? html`<div class="lectures"><p class="fiche__label">${pr.categorie === "livres" ? "Premiers retours de lecture" : "Avis vérifiés"}</p><ul class="temoins${avis.length > 2 ? " temoins--quatre" : ""}" data-defile>${avis.map((x) => temoin(x))}</ul></div>` : "";
+    })}
   </div>
 </section>`;
     })

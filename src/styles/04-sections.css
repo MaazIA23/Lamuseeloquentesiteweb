@@ -515,3 +515,4 @@
 /* Retours de lecture (boutique) */
 .lectures { display: grid; gap: var(--e-5); margin-top: clamp(3rem, 7vw, 5rem); }
 @media (min-width: 900px) { .lectures .temoins { grid-template-columns: repeat(2, 1fr); max-width: 1000px; } }
+@media (min-width: 900px) { .lectures .temoins--quatre { grid-template-columns: repeat(4, 1fr); max-width: none; gap: var(--e-6); } }
