@@ -518,3 +518,4 @@
 @media (min-width: 900px) { .lectures .temoins--quatre { grid-template-columns: repeat(4, 1fr); max-width: none; gap: var(--e-6); } }
 .temoin__trad { display: block; font-size: 0.75rem; font-style: italic; color: var(--encre-douce); opacity: 0.8; }
 @media (min-width: 900px) { .lectures .temoins:not(.temoins--quatre) { grid-template-columns: repeat(3, 1fr); max-width: none; } }
+@media (min-width: 900px) { .lectures .temoins { row-gap: var(--e-7); } }
