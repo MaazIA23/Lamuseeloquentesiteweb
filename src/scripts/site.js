@@ -70,6 +70,31 @@
     compteurs.forEach((el) => ioc.observe(el));
   }
 
+  /* ---------- Paiement FedaPay (Speak & Conquer) ---------- */
+  document.querySelectorAll("[data-fedapay]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const note = btn.parentElement.querySelector("[data-fedapay-note]");
+      const texte = note ? note.textContent : "";
+      btn.disabled = true;
+      if (note) note.textContent = "Redirection vers le paiement sécurisé…";
+      fetch("/.netlify/functions/create-transaction", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ formule: btn.dataset.fedapay })
+      })
+        .then((r) => r.json().then((data) => ({ ok: r.ok, data })))
+        .then(({ ok, data }) => {
+          if (ok && data.url) { location.href = data.url; return; }
+          throw new Error(data && data.error);
+        })
+        .catch((err) => {
+          btn.disabled = false;
+          if (note) note.textContent = (err && err.message) || "Impossible de contacter le service de paiement. Merci de réessayer.";
+          setTimeout(() => { if (note) note.textContent = texte; }, 8000);
+        });
+    });
+  });
+
   /* ---------- Barre d'action mobile ---------- */
   const barre = document.querySelector("[data-barre]");
   const premier = document.querySelector("main > section");

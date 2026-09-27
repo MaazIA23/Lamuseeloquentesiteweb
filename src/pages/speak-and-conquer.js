@@ -7,31 +7,18 @@ const cellule = (v) =>
   v === false ? `<span class="non">${icon.tiret}<span class="sr">Non inclus</span></span>` : esc(v);
 
 module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
-  // FedaPay (FCFA, Mobile Money et cartes) dès qu'une clé publique est renseignée dans content/site.json ;
-  // Chariow reste le moyen de paiement international, et le seul tant que la clé est vide.
-  const cle = site.paiement && site.paiement.fedapay.clePublique;
+  // FedaPay (FCFA, Mobile Money et cartes) via la fonction Netlify create-transaction ;
+  // Chariow reste l'option internationale, et la seule si FedaPay est désactivé dans content/site.json.
+  const cle = site.paiement && site.paiement.fedapay.actif;
   const bouton = (f) =>
     cle
       ? html`<div class="formule__payer">
-          <button class="btn btn--plein" type="button" data-fedapay data-montant="${f.prixNum}" data-description="Speak &amp; Conquer · Formule ${esc(f.nom)}">Payer ${esc(f.prixFcfa)} ${icon.fleche}</button>
-          <p class="formule__moyens">Mobile Money (MTN, Moov, Celtiis) ou carte bancaire</p>
+          <button class="btn btn--plein" type="button" data-fedapay="${f.id}">Payer ${esc(f.prixFcfa)} ${icon.fleche}</button>
+          <p class="formule__moyens" data-fedapay-note>Mobile Money (MTN, Moov, Celtiis) ou carte bancaire</p>
           <a class="lien" href="${f.paiement.url}"${ext(f.paiement.url)}>${esc(site.paiement.international.libelle)}</a>
         </div>`
       : `<a class="btn btn--plein" href="${f.paiement.url}"${ext(f.paiement.url)} data-offre="${f.id}">Choisir la formule ${esc(f.nom)} ${icon.fleche}</a>`;
-  const scriptFedapay = cle
-    ? html`<script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
-<script>
-document.querySelectorAll("[data-fedapay]").forEach(function (b) {
-  FedaPay.init(b, {
-    public_key: ${JSON.stringify(cle)},
-    environment: ${JSON.stringify(site.paiement.fedapay.environnement)},
-    transaction: { amount: +b.dataset.montant, description: b.dataset.description },
-    currency: { iso: "XOF" },
-    onComplete: function (r) { if (r.reason === FedaPay.CHECKOUT_COMPLETED) location.href = "/merci-paiement/"; }
-  });
-});
-</script>`
-    : "";
+  const scriptFedapay = "";
   const texteReglement = cle
     ? "En FCFA par Mobile Money ou carte via FedaPay, ou depuis l'international par carte."
     : "Le paiement se fait sur la boutique sécurisée de La Muse Éloquente.";
