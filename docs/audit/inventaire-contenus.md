@@ -42,6 +42,40 @@ Texte (verbatim) :
 > présentations orales, soutenances de mémoire, entretiens d'admission ou qui souhaitent
 > simplement améliorer leur communication orale dans un cadre académique ou professionnel futur.
 
+### Speak & Conquer (Pack Standard) — type « Service »
+
+- **Prix : 161,86 €** (devise de référence à confirmer)
+- Visuel produit : bannière « speak & conquer » (logo La Muse Éloquente, tablette avec
+  photo de Mazidath au pupitre, micro) — texte de la bannière : « Un accompagnement
+  privé et personnalisé de 5 semaines, conçu pour vous aider à perfectionner votre
+  communication, renforcer votre impact et affirmer pleinement votre leadership. »
+- Source : `captures/chariow-speak-conquer-standard-1.png`, `-2.png`
+
+Texte (verbatim) :
+
+> Un programme d'accompagnement privé et personnalisé de 5 semaines avec « La muse
+> éloquente », spécialement conçu pour transformer votre prise de parole en public et
+> développer votre éloquence.
+>
+> Ce programme complet vous permettra de maîtriser :
+>
+> 1. La gestion du stress et les techniques de respiration pour rester serein face à votre audience
+> 2. La structuration efficace de vos discours pour captiver et convaincre
+> 3. Le renforcement de votre confiance personnelle et de votre présence scénique
+> 4. L'amélioration de votre diction, articulation et projection vocale
+> 5. Les techniques avancées de persuasion et d'improvisation
+> 6. Le langage corporel et le développement de votre charisme naturel
+> 7. *(puce vide sur Chariow — coquille à corriger)*
+>
+> Contenu inclus dans le Pack Standard :
+>
+> 1. 5 séances individuelles de coaching de 60 minutes, entièrement personnalisées selon vos objectifs
+> 2. Un ebook exclusif « Le secret d'une belle diction » pour approfondir vos apprentissages
+> 3. Une fiche diagnostic personnalisée pour cibler précisément vos axes d'amélioration
+> 4. L'accès privilégié à la communauté privée de La Muse Éloquente pour échanger avec d'autres apprenants
+>
+> Ce programme s'adresse à toute personne souhaitant… *(suite coupée sur la capture — MANQUANT)*
+
 ### Programme Speak & Conquer (Pack Prestige) — type « Service »
 
 - **Prix : 266,75 €** (≈ 175 000 FCFA — à confirmer : prix de référence en FCFA ?)
@@ -96,8 +130,9 @@ Texte (verbatim) :
 
 ## 2. Speak & Conquer — ce qui manque encore
 
-- Pack **Standard** : prix, contenu complet (le Prestige « inclut tout le Pack Standard ») — MANQUANT
-- Déroulé semaine par semaine des 8 semaines — MANQUANT
+- Pack **Standard** : fin de la phrase « Ce programme s'adresse à toute personne souhaitant… » — MANQUANT
+- Devise de référence des prix (FCFA ou EUR ?) et montants officiels — À CONFIRMER
+- Déroulé semaine par semaine (3 / 5 / 8 semaines) — MANQUANT
 - Format : visio / présentiel / mixte ; durée d'accès aux ressources — MANQUANT
 - Témoignages d'anciens participants — MANQUANT
 - FAQ existante éventuelle — MANQUANT
