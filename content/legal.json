@@ -1,0 +1,23 @@
+{
+  "_aide": "Pages légales. Les champs vides doivent être complétés avant la mise en ligne publique (identifiants légaux). Tant que `valide` est false, les pages portent la balise noindex.",
+  "valide": false,
+  "editeur": {
+    "nom": "La Muse Éloquente",
+    "responsable": "Mazidath Bello",
+    "formeJuridique": "",
+    "rccm": "",
+    "ifu": "",
+    "adresse": "",
+    "email": "lamuseeloquente@gmail.com"
+  },
+  "hebergeur": {
+    "nom": "Netlify, Inc.",
+    "adresse": "44 Montgomery Street, Suite 300, San Francisco, CA 94104, États-Unis",
+    "site": "https://www.netlify.com"
+  },
+  "TODO": [
+    "Forme juridique, RCCM, IFU et adresse de La Muse Éloquente.",
+    "Faire valider les CGV (délais, annulation, remboursement) par Mazidath, idéalement par un juriste.",
+    "Vérifier l'adresse actuelle de l'hébergeur Netlify sur netlify.com."
+  ]
+}

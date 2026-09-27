@@ -1,0 +1,88 @@
+{
+  "_aide": "Prestations professionnelles. Chaque offre : problème, valeur, format, public, exemples (uniquement des exemples réels), ancre (#id).",
+  "seo": {
+    "titre": "Travailler avec moi · Conférences, formations, maîtresse de cérémonie",
+    "description": "Conférences, masterclass, formations en prise de parole pour les entreprises, maîtrise de cérémonie et accompagnement des dirigeants : faites appel à Mazidath Bello, La Muse Éloquente."
+  },
+  "hero": {
+    "surtitre": "Entreprises, écoles, institutions",
+    "titre": ["Travailler", "avec moi"],
+    "texte": "Conférences, masterclass, formations d'équipes, maîtrise de cérémonie : je mets l'art de l'éloquence au service de la performance professionnelle et de l'impact de vos projets.",
+    "photo": "scene-tailleur-peche",
+    "photoAlt": "Mazidath Bello au pupitre, micro en main, lors d'un discours"
+  },
+  "offres": [
+    {
+      "id": "conferences",
+      "nom": "Conférences",
+      "probleme": "Vos publics ont besoin d'être inspirés, pas seulement informés.",
+      "valeur": "Une intervention incarnée sur la prise de parole, la confiance et l'impact, portée par une oratrice lauréate d'un concours national d'éloquence.",
+      "format": "Keynote, discours d'ouverture ou participation à une table ronde.",
+      "public": "Écoles, universités, entreprises, institutions, associations.",
+      "exemples": ["Discours d'ouverture de Deux Minutes Pour Convaincre, Azalaï Hôtel, Cotonou (2026)"],
+      "photo": "scene-micro"
+    },
+    {
+      "id": "masterclass",
+      "nom": "Masterclass",
+      "probleme": "Vos étudiants ou vos équipes doivent convaincre vite, et bien.",
+      "valeur": "Une méthode claire et des exercices pratiques en petit groupe, avec une attestation de participation.",
+      "format": "Session en groupe, théorie et mises en situation.",
+      "public": "Étudiants, jeunes professionnels, équipes commerciales, managers.",
+      "exemples": ["« Les cinq clés pour convaincre en deux minutes », Cotonou, 20 septembre 2025"],
+      "photo": "masterclass-mazidath"
+    },
+    {
+      "id": "formations",
+      "nom": "Formations en entreprise",
+      "probleme": "Une équipe qui communique mal perd des clients, du temps et de l'énergie.",
+      "valeur": "Des programmes sur mesure pour améliorer la communication, le leadership et la relation client.",
+      "format": "Programme sur mesure, construit à partir de vos enjeux.",
+      "public": "Entreprises, administrations, ONG.",
+      "themes": ["Communication interne et externe", "Leadership et management collaboratif", "Formation du personnel : accueil, service client", "Compétences interpersonnelles (soft skills)", "Masterclass sur des thématiques ciblées"],
+      "photo": "masterclass-mazidath-ecoute"
+    },
+    {
+      "id": "animation",
+      "nom": "Animation & maîtrise de cérémonie",
+      "probleme": "Un événement réussi tient souvent à la personne qui le porte au micro.",
+      "valeur": "L'aisance d'une présentatrice TV : du rythme, de l'élégance et une salle qui reste attentive du premier au dernier mot.",
+      "format": "Cérémonies, galas, conférences, lancements, remises de prix.",
+      "public": "Entreprises, institutions, organisateurs d'événements.",
+      "exemples": [],
+      "TODO": "Ajouter des événements animés en tant que maîtresse de cérémonie.",
+      "photo": "intervention-micro-bleu"
+    },
+    {
+      "id": "dirigeants",
+      "nom": "Prise de parole des dirigeants",
+      "probleme": "Pitch, prise de fonction, assemblée générale, média : l'enjeu est trop important pour improviser.",
+      "valeur": "Un accompagnement individuel et confidentiel, construit autour de votre échéance.",
+      "format": "Coaching individuel, notamment via la formule Prestige de Speak & Conquer (8 semaines).",
+      "public": "Cadres, dirigeants, entrepreneurs.",
+      "lien": { "label": "Voir la formule Prestige", "url": "/programmes/speak-and-conquer/#formule-prestige" },
+      "photo": "portrait-bleu-accoudee"
+    },
+    {
+      "id": "agence",
+      "nom": "Prestations de l'agence",
+      "probleme": "Vous voulez donner de la voix à votre marque ou à votre événement.",
+      "valeur": "Le savoir-faire de l'équipe qui a créé et organisé deux éditions de Deux Minutes Pour Convaincre.",
+      "format": "Accompagnement sur mesure.",
+      "public": "Marques, entreprises, institutions.",
+      "themes": ["Élaboration de stratégies d'influence", "Conseil en stratégie de communication", "Organisation d'événements d'entreprise", "Représentation et égérie de marque"],
+      "photo": "2mpc-public"
+    }
+  ],
+  "processus": [
+    { "titre": "Votre demande", "texte": "Vous décrivez votre projet dans le formulaire ci-dessous." },
+    { "titre": "Un échange", "texte": "Nous en parlons pour préciser vos objectifs, votre public et vos contraintes." },
+    { "titre": "Une proposition", "texte": "Vous recevez une proposition sur mesure et un devis." },
+    { "titre": "Le jour J", "texte": "J'interviens, et nous faisons le point ensuite." }
+  ],
+  "formulaire": {
+    "titre": "Parlons de votre projet",
+    "texte": "Décrivez votre besoin en quelques lignes : je reviens vers vous rapidement.",
+    "types": ["Conférence", "Masterclass", "Formation en entreprise", "Animation / maîtrise de cérémonie", "Accompagnement d'un dirigeant", "Prestation de l'agence", "Autre"]
+  }
+}

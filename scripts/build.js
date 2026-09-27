@@ -16,7 +16,10 @@ const data = {
   sac: read("programmes/speak-and-conquer.json"),
   boutique: read("boutique.json"),
   temoignages: read("temoignages.json"),
-  evenements: read("evenements.json")
+  evenements: read("evenements.json"),
+  apropos: read("a-propos.json"),
+  pro: read("travailler-avec-moi.json"),
+  legal: read("legal.json")
 };
 const { site } = data;
 const version = Date.now().toString(36);
@@ -72,6 +75,20 @@ const faqLd = {
   mainEntity: data.sac.faq.map((q) => ({ "@type": "Question", name: q.q, acceptedAnswer: { "@type": "Answer", text: q.r } }))
 };
 
+const evenementsLd = data.evenements.liste.find((e) => e.slug === "deux-minutes-pour-convaincre").editions
+  .filter((e) => /^\d{4}-\d{2}-\d{2}$/.test(e.date))
+  .map((e) => ({
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: `Deux Minutes Pour Convaincre · ${e.label}`,
+    startDate: e.date,
+    eventStatus: "https://schema.org/EventScheduled",
+    location: { "@type": "Place", name: e.lieu, address: "Cotonou, Bénin" },
+    organizer: { "@type": "Organization", name: site.nom, url: site.url }
+  }));
+const legal = require("../src/pages/legal");
+const noindexLegal = !data.legal.valide;
+
 /* ---------- Pages ---------- */
 const pages = [
   {
@@ -94,7 +111,58 @@ const pages = [
     enteteSombre: true,
     jsonld: [cours, faqLd],
     barreMobile: { texte: `<b>3 formules</b> dès ${data.sac.formules[0].prixEur}`, label: "Voir les formules", url: "#formules" }
-  }
+  },
+  {
+    chemin: "/a-propos/",
+    gabarit: require("../src/pages/a-propos"),
+    titre: data.apropos.seo.titre,
+    description: data.apropos.seo.description,
+    image: data.apropos.hero.photo,
+    enteteSombre: true,
+    jsonld: [personne],
+    barreMobile: { texte: "<b>Speak &amp; Conquer</b>", label: "Découvrir", url: "/programmes/speak-and-conquer/" }
+  },
+  {
+    chemin: "/travailler-avec-moi/",
+    gabarit: require("../src/pages/travailler-avec-moi"),
+    titre: data.pro.seo.titre,
+    description: data.pro.seo.description,
+    image: data.pro.hero.photo,
+    enteteSombre: true,
+    jsonld: [organisation],
+    barreMobile: { texte: "<b>Un projet ?</b> Parlons-en", label: "Demander un devis", url: "#devis" }
+  },
+  {
+    chemin: "/evenements/",
+    gabarit: require("../src/pages/evenements"),
+    titre: "Événements · Deux Minutes Pour Convaincre et masterclass",
+    description: "Deux Minutes Pour Convaincre, le concours d'improvisation oratoire créé par La Muse Éloquente à Cotonou, et les masterclass de Mazidath Bello.",
+    image: "2mpc-laureats",
+    enteteSombre: true,
+    jsonld: evenementsLd
+  },
+  {
+    chemin: "/boutique/",
+    gabarit: require("../src/pages/boutique"),
+    titre: "Boutique · Livre et ebooks de La Muse Éloquente",
+    description: "Chroniques d'une voix qui s'est révélée, Le secret d'une belle diction, Décrochez votre alternance dès le premier entretien : le livre et les ebooks de Mazidath Bello.",
+    image: "livre-chroniques",
+    enteteSombre: true,
+    jsonld: data.boutique.produits.filter((p) => p.prix).map((p) => ({
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: p.titre,
+      description: p.resume,
+      image: `${site.url}/assets/img/${p.photo}-960.webp`,
+      brand: { "@type": "Brand", name: site.nom },
+      offers: { "@type": "Offer", price: prixNum(p.prix), priceCurrency: "EUR", url: p.achat.url, availability: "https://schema.org/InStock" }
+    }))
+  },
+  { chemin: "/mentions-legales/", gabarit: legal.mentions, titre: "Mentions légales · La Muse Éloquente", noindex: noindexLegal },
+  { chemin: "/confidentialite/", gabarit: legal.confidentialite, titre: "Confidentialité · La Muse Éloquente", noindex: noindexLegal },
+  { chemin: "/cgv/", gabarit: legal.cgv, titre: "Conditions générales de vente · La Muse Éloquente", noindex: noindexLegal },
+  { chemin: "/merci/", gabarit: legal.merci, titre: "Merci · La Muse Éloquente", noindex: true, enteteSombre: true },
+  { chemin: "/404.html", gabarit: legal.introuvable, titre: "Page introuvable · La Muse Éloquente", noindex: true, enteteSombre: true }
 ];
 
 /* ---------- Écriture ---------- */
@@ -104,9 +172,9 @@ fs.mkdirSync(DIST, { recursive: true });
 for (const page of pages) {
   const body = page.gabarit(data);
   const out = layout(site, { ...page, version }, body);
-  const dir = path.join(DIST, page.chemin);
-  fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, "index.html"), out);
+  const fichier = page.chemin.endsWith(".html") ? path.join(DIST, page.chemin) : path.join(DIST, page.chemin, "index.html");
+  fs.mkdirSync(path.dirname(fichier), { recursive: true });
+  fs.writeFileSync(fichier, out);
   console.log(`✓ ${page.chemin}`);
 }
 
@@ -120,6 +188,7 @@ fs.copyFileSync(path.join(ROOT, "src/scripts/site.js"), path.join(DIST, "assets/
 fs.writeFileSync(
   path.join(DIST, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pages
+    .filter((p) => !p.noindex)
     .map((p) => `  <url><loc>${site.url}${p.chemin}</loc></url>`)
     .join("\n")}\n</urlset>\n`
 );

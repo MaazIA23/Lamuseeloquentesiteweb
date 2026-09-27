@@ -13,6 +13,7 @@ function head(site, page) {
 <title>${titre}</title>
 <meta name="description" content="${esc(page.description || site.description)}">
 <link rel="canonical" href="${url}">
+${page.noindex ? '<meta name="robots" content="noindex">' : ""}
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="${esc(site.nom)}">
