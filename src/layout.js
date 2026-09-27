@@ -54,8 +54,8 @@ function header(site, page) {
 </header>
 <div class="menu-mobile" id="menu-mobile" hidden data-menu>
   <nav aria-label="Menu mobile">
-    <a href="/"><small>00</small>Accueil</a>
-    ${site.navigation.map((n, i) => `<a href="${n.url}"><small>${String(i + 1).padStart(2, "0")}</small>${esc(n.label)}</a>`)}
+    <a href="/">Accueil</a>
+    ${site.navigation.map((n) => `<a href="${n.url}">${esc(n.label)}</a>`)}
   </nav>
   <div class="menu-mobile__bas">
     <a class="btn btn--clair" href="${site.ctaNavigation.url}">${esc(site.ctaNavigation.label)}</a>
@@ -110,11 +110,11 @@ const barreMobile = (b) =>
 
 /** Bandeau de consentement : les contenus tiers (YouTube) ne se chargent qu'après accord. */
 const bandeauCookies = `<div class="cookies" data-cookies role="dialog" aria-live="polite" aria-labelledby="cookies-titre" hidden>
-  <p class="cookies__titre" id="cookies-titre">Vos préférences</p>
-  <p class="cookies__texte">Ce site n'utilise aucun cookie publicitaire. Avec votre accord, les vidéos YouTube peuvent déposer des cookies lorsque vous les lisez. <a href="/confidentialite/#cookies">En savoir plus</a></p>
+  <p class="cookies__titre" id="cookies-titre">Nous respectons votre vie privée</p>
+  <p class="cookies__texte">Nous utilisons des cookies pour mémoriser vos préférences et, avec votre accord, afficher des contenus de plateformes tierces comme YouTube. Vous pouvez modifier votre choix à tout moment en bas de page. <a href="/confidentialite/#cookies">Politique de confidentialité</a></p>
   <div class="cookies__actions">
-    <button class="btn btn--petit btn--plein" type="button" data-cookies-choix="oui">Accepter</button>
-    <button class="btn btn--petit btn--ligne" type="button" data-cookies-choix="non">Refuser</button>
+    <button class="btn btn--petit btn--plein" type="button" data-cookies-choix="oui">Tout accepter</button>
+    <button class="btn btn--petit btn--ligne" type="button" data-cookies-choix="non">Tout refuser</button>
   </div>
 </div>`;
 
