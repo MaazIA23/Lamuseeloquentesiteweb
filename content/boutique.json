@@ -15,11 +15,14 @@
       "prix": "",
       "prixBarre": "",
       "achat": {
-        "label": "Commander le livre",
-        "url": "",
-        "whatsapp": "Bonjour, je souhaite commander le livre « Chroniques d'une voix qui s'est révélée »."
+        "label": "Acheter l'e-book",
+        "url": "https://sxmcjdek.mychariow.shop/prd_cvirprbb",
+        "papier": {
+          "label": "Commander la version papier",
+          "whatsapp": "Bonjour, je souhaite commander la version papier du livre « Chroniques d'une voix qui s'est révélée »."
+        }
       },
-      "TODO": "Prix et liens d'achat (papier France, papier Cotonou, e-book).",
+      "TODO": "Prix du livre papier (France, Cotonou) et prix officiel de l'e-book en FCFA (Chariow affiche 11,76 €).",
       "categorie": "livres",
       "accroche": "Une histoire personnelle devenue une invitation à révéler sa propre voix.",
       "pourQui": "Pour toutes celles et ceux qui ont déjà senti leur voix trembler, et qui veulent comprendre comment une voix se construit.",
@@ -64,7 +67,7 @@
       "prixBarre": "",
       "achat": {
         "label": "Acheter",
-        "url": "https://sxmcjdek.mychariow.shop"
+        "url": "https://sxmcjdek.mychariow.shop/alternanceenfrance"
       },
       "categorie": "carriere",
       "pourQui": "Pour les étudiants qui préparent leurs entretiens d'alternance.",

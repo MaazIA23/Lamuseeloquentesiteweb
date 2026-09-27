@@ -36,6 +36,7 @@ module.exports = function boutique({ site, boutique: b, temoignages }) {
         <div class="fiche__achat">
           ${p.prix ? `<p class="fiche__prix">${esc(p.prix)}${p.prixBarre ? ` <s>${esc(p.prixBarre)}</s>` : ""}</p>` : ""}
           ${bouton(p)}
+          ${p.achat.papier ? `<a class="lien" href="${wa(site, p.achat.papier.whatsapp)}"${ext("https:")}>${esc(p.achat.papier.label)} ${icon.fleche}</a>` : ""}
         </div>
         ${p.achat.url ? `<p class="fiche__note">Paiement sécurisé sur la boutique La Muse Éloquente.</p>` : ""}
       </div>
