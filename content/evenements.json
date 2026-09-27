@@ -176,7 +176,12 @@
           "sibelle-accessoires"
         ]
       ],
-      "_sources": "Chiffres, lauréats, partenaires, 2027 et 300 Voix : dépôt 2minutespourconvaincre (content/pages/impact.json, gagnants.json, partenaires.json, edition-3.json)."
+      "_sources": "Chiffres, lauréats, partenaires, 2027 et 300 Voix : dépôt 2minutespourconvaincre (content/pages/impact.json, gagnants.json, partenaires.json, edition-3.json).",
+      "video": {
+        "youtubeId": "nGOykpI6afc",
+        "titre": "Découvrez Deux Minutes Pour Convaincre en vidéo",
+        "couverture": "2mpc-public"
+      }
     },
     {
       "slug": "300-voix",
@@ -222,7 +227,12 @@
         "masterclass-participante-3",
         "masterclass-attestation-rebecca"
       ],
-      "TODO": "Lieu exact, nombre de participants, programme de la masterclass."
+      "TODO": "Lieu exact, nombre de participants, programme de la masterclass.",
+      "video": {
+        "youtubeId": "",
+        "titre": "Masterclass « Les cinq clés pour convaincre en deux minutes »",
+        "couverture": "masterclass-participante-3"
+      }
     }
   ]
 }

@@ -1,6 +1,6 @@
 /* Page Événements : l'écosystème La Muse Éloquente → Deux Minutes Pour Convaincre, 300 Voix, masterclass. */
 const { esc, html, img, ext, icon } = require("../lib");
-const { pageHero, enteteSection, appelFinal, temoin } = require("../components");
+const { pageHero, enteteSection, appelFinal, temoin, video } = require("../components");
 
 module.exports = function evenements({ site, evenements: ev, temoignages }) {
   const deuxMin = ev.liste.find((e) => e.slug === "deux-minutes-pour-convaincre");
@@ -39,7 +39,7 @@ module.exports = function evenements({ site, evenements: ev, temoignages }) {
       <p class="chrono"><span>02:00</span> pour convaincre</p>
       <a class="lien" href="${deuxMin.siteOfficiel}"${ext(deuxMin.siteOfficiel)}>Site officiel du concours ${icon.externe}</a>
     </div>
-    <figure class="chapitre__photo photo" data-reveal>${img("2mpc-scene", { alt: "Un orateur sur la scène de Deux Minutes Pour Convaincre", sizes: "(min-width: 900px) 40vw, 92vw" })}</figure>
+    ${deuxMin.video ? video(deuxMin.video) : `<figure class="chapitre__photo photo" data-reveal>${img("2mpc-scene", { alt: "Un orateur sur la scène de Deux Minutes Pour Convaincre", sizes: "(min-width: 900px) 40vw, 92vw" })}</figure>`}
   </div>
 </section>`;
 
@@ -154,6 +154,7 @@ module.exports = function evenements({ site, evenements: ev, temoignages }) {
         <p>${esc(e.resume)}</p>
         <a class="lien" href="/travailler-avec-moi/#masterclass">Organiser une masterclass ${icon.fleche}</a>
       </div>
+      ${e.video && e.video.youtubeId ? video(e.video, "rdv__video") : ""}
     </article>`
     )}
   </div>

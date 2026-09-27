@@ -1,8 +1,9 @@
 /* Page d'accueil — version éditoriale : l'univers d'abord, puis les portes d'entrée. */
 const { esc, html, img, wa, ext, icon, fil } = require("../lib");
-const { riche, enteteSection, temoin } = require("../components");
+const { riche, enteteSection, temoin, video } = require("../components");
 
-module.exports = function accueil({ site, accueil: a, sac, temoignages }) {
+module.exports = function accueil({ site, accueil: a, sac, temoignages, evenements }) {
+  const video2mpc = evenements.liste.find((e) => e.slug === "deux-minutes-pour-convaincre").video;
   const h = a.hero;
 
   /* ---------- Hero : composition éditoriale ---------- */
@@ -146,7 +147,7 @@ module.exports = function accueil({ site, accueil: a, sac, temoignages }) {
     ${enteteSection({ surtitre: "Programmes signatures", titre: "Des scènes pour <em>révéler</em> de nouvelles voix." })}
     <div class="signatures__grille">
       <article class="signature" data-reveal>
-        <figure class="signature__photo photo">${img("2mpc-public", { alt: "Le public de Deux Minutes Pour Convaincre à l'Azalaï Hôtel de Cotonou", sizes: "(min-width: 900px) 46vw, 92vw" })}</figure>
+        ${video2mpc ? video(video2mpc, "signature__video") : `<figure class="signature__photo photo">${img("2mpc-public", { alt: "Le public de Deux Minutes Pour Convaincre à l'Azalaï Hôtel de Cotonou", sizes: "(min-width: 900px) 46vw, 92vw" })}</figure>`}
         <p class="index">Concours · Cotonou</p>
         <h3 class="signature__titre">Deux Minutes Pour Convaincre</h3>
         <p>Deux orateurs, une même thématique, deux thèses opposées. Aucun texte préparé, et 120 secondes chacun pour convaincre.</p>

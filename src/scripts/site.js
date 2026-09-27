@@ -70,6 +70,18 @@
     compteurs.forEach((el) => ioc.observe(el));
   }
 
+  /* ---------- Vidéos YouTube : le lecteur ne se charge qu'au clic ---------- */
+  document.querySelectorAll("[data-youtube]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const f = document.createElement("iframe");
+      f.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.youtube}?autoplay=1&rel=0`;
+      f.title = btn.getAttribute("aria-label") || "Vidéo";
+      f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+      f.allowFullscreen = true;
+      btn.replaceWith(f);
+    });
+  });
+
   /* ---------- Paiement FedaPay (Speak & Conquer) ---------- */
   document.querySelectorAll("[data-fedapay]").forEach((btn) => {
     btn.addEventListener("click", () => {

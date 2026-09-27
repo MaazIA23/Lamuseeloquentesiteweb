@@ -526,3 +526,17 @@
 .fiche__prix small { display: block; font: 600 var(--t-label)/1.4 var(--f-texte); letter-spacing: 0.16em; text-transform: uppercase; color: var(--or-profond); }
 .presse + .presse { padding-top: var(--e-3); }
 .mazidath__texte .texte-doux { max-width: 52ch; }
+
+/* Vidéo YouTube (façade) */
+.video { display: grid; gap: var(--e-3); width: 100%; }
+.video__lancer, .video iframe { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; padding: 0; border-radius: var(--r-m); overflow: hidden; background: var(--bleu-profond); cursor: pointer; }
+.video__lancer img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease), opacity 0.4s; opacity: 0.9; }
+.video__lancer:hover img { transform: scale(1.03); opacity: 1; }
+.video__bouton { position: absolute; left: 50%; top: 50%; width: 76px; height: 76px; margin: -38px 0 0 -38px; display: grid; place-items: center; border-radius: 50%; background: var(--ivoire); color: var(--bleu); box-shadow: var(--ombre); transition: transform 0.4s var(--ease); }
+.video__bouton svg { width: 30px; height: 30px; margin-left: 4px; }
+.video__lancer:hover .video__bouton { transform: scale(1.08); }
+.video figcaption { font-size: var(--t-petit); color: var(--encre-douce); }
+.signature__video { margin-bottom: var(--e-3); }
+.rdv__video { grid-column: 1 / -1; }
+.video__lancer::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(29,31,71,0) 40%, rgba(29,31,71,0.45)); pointer-events: none; }
+.video__bouton { z-index: 1; }
