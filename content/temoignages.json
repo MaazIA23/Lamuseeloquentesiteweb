@@ -46,7 +46,7 @@
       "texte": "Deux minutes pour convaincre m'a véritablement marqué et j'en ressors grandi. Une initiative à encourager et à soutenir."
     },
     {
-      "nom": "Gisèle",
+      "nom": "Gisèle Ahonto",
       "fonction": "Accompagnement Speak & Conquer",
       "categorie": "accompagnement",
       "vedetteProgramme": true,
@@ -54,14 +54,14 @@
       "source": "Message WhatsApp de Gisèle (capture fournie par Mazidath)."
     },
     {
-      "nom": "Gisèle",
+      "nom": "Gisèle Ahonto",
       "fonction": "Accompagnement Speak & Conquer",
       "categorie": "accompagnement",
       "texte": "Vous nous accompagnez vraiment avec une empathie naturelle. Un an s'est écoulé depuis notre dernière séance et, même si je ne vous donne pas de nouvelles, le résultat est positif.",
       "source": "Message WhatsApp de Gisèle (capture fournie par Mazidath)."
     },
     {
-      "nom": "Gisèle",
+      "nom": "Gisèle Ahonto",
       "fonction": "Lectrice de « Chroniques d'une voix qui s'est révélée »",
       "categorie": "livre",
       "texte": "Je viens de terminer votre livre et c'est très agréable à lire. Cela m'a rappelé les romans autobiographiques que je lisais au collège et au lycée, de ces célèbres écrivains et écrivaines. J'ai retrouvé cette sensation en lisant votre livre. Ce livre nous montre encore une fois que notre voix peut se faire entendre et qu'il faut juste commencer.",
@@ -69,7 +69,7 @@
       "produit": "chroniques-d-une-voix-qui-s-est-revelee"
     },
     {
-      "nom": "Bernice",
+      "nom": "Bernice Houssou",
       "fonction": "Lectrice de « Chroniques d'une voix qui s'est révélée »",
       "categorie": "livre",
       "vedetteLivre": true,
@@ -119,6 +119,6 @@
     "livre": "Autour du livre",
     "diction": "Avis vérifiés · Le secret d'une belle diction"
   },
-  "_consentement": "Témoignages de Gisèle et Bernice : prénoms uniquement, extraits verbatim. Accord de publication à confirmer par Mazidath.",
+  "_consentement": "Noms complets de Gisèle Ahonto et Bernice Houssou communiqués par Mazidath (27/09/2026) pour publication.",
   "_note_diction": "Avis Chariow tronqués sur la capture : texte complet à récupérer via « Lire tous les avis »."
 }
