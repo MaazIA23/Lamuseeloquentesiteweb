@@ -41,12 +41,15 @@
       "surtitre": "Les plateaux",
       "titre": "La parole comme métier",
       "paragraphes": [
-        "Présentatrice de télévision, maîtresse de cérémonie, voix off : la parole devient un métier. Tenir un plateau, donner du rythme à une soirée, faire exister un texte.",
-        "Sur scène comme à l'écran, elle apprend ce qu'aucun manuel n'enseigne vraiment : le silence qui fait porter une phrase, le regard qui retient une salle."
+        "Sur la télévision nationale béninoise, elle présente « On utilise le mot » : deux minutes chaque semaine pour célébrer ces expressions françaises nées au Bénin, « doucement », « bonne assise », « je rends grâce à Dieu », et raconter ce qu'elles disent de nous.",
+        "Sur une web TV, elle anime « Mon style vous parle », une émission consacrée aux mots et à ce qu'ils révèlent. Présentatrice, maîtresse de cérémonie, voix off : la parole devient un métier, et la langue, un terrain de jeu."
       ],
       "photo": "intervention-micro-bleu",
       "photoAlt": "Mazidath Bello au micro lors d'une intervention",
-      "TODO": "Préciser la chaîne et les émissions présentées."
+      "lien": {
+        "label": "Voir un extrait de l'émission",
+        "url": "https://www.facebook.com/share/v/1GiqLTvWX2/?mibextid=wwXIfr"
+      }
     },
     {
       "id": "eloquence",

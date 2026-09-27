@@ -96,11 +96,13 @@
           "id": "animation",
           "nom": "MC, présentation & modération",
           "probleme": "Un événement réussi tient souvent à la personne qui le porte au micro.",
-          "valeur": "L'expérience d'une ancienne présentatrice de télévision : du rythme, de l'élégance, et une salle qui reste attentive du premier au dernier mot.",
+          "valeur": "L'expérience d'une présentatrice de la télévision nationale béninoise : du rythme, de l'élégance, et une salle qui reste attentive du premier au dernier mot.",
           "format": "Cérémonies, galas, conférences, lancements, remises de prix, tables rondes.",
           "public": "Entreprises, institutions, organisateurs d'événements.",
-          "exemples": [],
-          "TODO": "Ajouter des événements animés en tant que maîtresse de cérémonie ou modératrice.",
+          "exemples": [
+            "Présentatrice de « On utilise le mot », télévision nationale béninoise",
+            "Animatrice de « Mon style vous parle », web TV"
+          ],
           "photo": "intervention-micro-bleu"
         }
       ]
