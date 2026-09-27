@@ -462,3 +462,15 @@
 /* Pages de message (merci, 404) */
 .page-message { min-height: 70vh; display: grid; align-items: center; }
 .page-message h1 { font-size: var(--t-h1); color: var(--blanc); }
+
+/* Bibliographie (À propos) */
+.biblio { display: grid; gap: var(--e-5); }
+.biblio a { display: grid; gap: var(--e-2); text-decoration: none; }
+.biblio__img { display: block; aspect-ratio: 1; overflow: hidden; border-radius: var(--r-m); background: var(--bleu-voile); margin-bottom: var(--e-3); }
+.biblio__img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.9s var(--ease); }
+.biblio a:hover .biblio__img img { transform: scale(1.05); }
+.biblio__type { font-size: var(--t-label); letter-spacing: 0.16em; text-transform: uppercase; color: var(--or-profond); font-weight: 600; }
+.biblio__titre { font: 400 1.6rem/1.05 var(--f-titre); text-transform: uppercase; color: var(--bleu); }
+.biblio__sous-titre { font-size: var(--t-petit); font-style: italic; color: var(--encre-douce); }
+.biblio li:nth-child(2) { --delai: 0.1s; } .biblio li:nth-child(3) { --delai: 0.2s; }
+@media (min-width: 900px) { .biblio { grid-template-columns: repeat(3, 1fr); gap: var(--e-6); } }

@@ -2,7 +2,7 @@
 const { esc, html, img, icon } = require("../lib");
 const { pageHero, appelFinal } = require("../components");
 
-module.exports = function aPropos({ site, apropos: p }) {
+module.exports = function aPropos({ site, apropos: p, boutique }) {
   const hero = pageHero({ ariane: "À propos", ...p.hero, pos: "50% 18%" });
 
   const sommaire = html`
@@ -10,6 +10,7 @@ module.exports = function aPropos({ site, apropos: p }) {
   <ol>
     ${p.chapitres.map((c) => `<li><a href="#${c.id}">${esc(c.surtitre)}</a></li>`)}
     <li><a href="#convictions">Les convictions</a></li>
+    <li><a href="#bibliographie">Bibliographie</a></li>
     <li><a href="#aujourdhui">Aujourd'hui</a></li>
   </ol>
 </nav>`;
@@ -45,6 +46,26 @@ module.exports = function aPropos({ site, apropos: p }) {
   </div>
 </section>`;
 
+  const bibliographie = html`
+<section class="section section--creme" id="bibliographie">
+  <div class="conteneur">
+    <div class="entete-section entete-section--ligne">
+      <div><p class="surtitre">Bibliographie</p><h2 data-reveal>Mes livres</h2></div>
+      <a class="lien" href="/boutique/">Voir la boutique ${icon.fleche}</a>
+    </div>
+    <ul class="biblio">
+      ${boutique.produits.map(
+        (b) => html`<li data-reveal><a href="/boutique/#${b.slug}">
+          <span class="biblio__img">${img(b.photo, { alt: `Couverture de « ${b.titre} »`, sizes: "(min-width: 900px) 28vw, 80vw" })}</span>
+          <span class="biblio__type">${esc(b.type)} · ${esc(b.formats.join(", "))}</span>
+          <span class="biblio__titre">${esc(b.titre)}</span>
+          <span class="biblio__sous-titre">${esc(b.sousTitre)}</span>
+        </a></li>`
+      )}
+    </ul>
+  </div>
+</section>`;
+
   const a = p.aujourdhui;
   const aujourdhui = html`
 <section class="section" id="aujourdhui">
@@ -76,5 +97,5 @@ module.exports = function aPropos({ site, apropos: p }) {
     whatsapp: "Bonjour Mazidath, j'ai lu votre parcours et j'aimerais échanger avec vous."
   });
 
-  return [hero, sommaire, chapitres, convictions, aujourdhui, final].join("\n");
+  return [hero, sommaire, chapitres, convictions, bibliographie, aujourdhui, final].join("\n");
 };
