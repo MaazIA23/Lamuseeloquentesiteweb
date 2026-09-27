@@ -110,7 +110,7 @@ module.exports = function evenements({ site, evenements: ev, temoignages }) {
 <section class="section">
   <div class="conteneur">
     ${enteteSection({ surtitre: "Ils y étaient", titre: "Ce qu'ils en disent." })}
-    <ul class="temoins" data-defile>${temoignages.liste.slice(0, 6).map((x) => temoin(x, temoignages.categories))}</ul>
+    <ul class="temoins" data-defile>${temoignages.liste.filter((t) => ["participants", "partenaires", "evenements"].includes(t.categorie)).slice(0, 6).map((x) => temoin(x, temoignages.categories))}</ul>
   </div>
 </section>`;
 

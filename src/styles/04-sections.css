@@ -151,7 +151,7 @@
 .temoin-vedette blockquote p::after { content: " »"; color: var(--or); }
 .temoin-vedette figcaption { display: flex; align-items: center; gap: var(--e-4); font-size: var(--t-petit); color: var(--encre-douce); }
 .temoin-vedette figcaption img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; object-position: 50% 20%; }
-.temoin-vedette figcaption span { display: grid; }
+.temoin-vedette figcaption > span:not(.temoin__initiale) { display: grid; }
 .temoin-vedette figcaption b { color: var(--bleu); font-weight: 600; font-size: 1rem; }
 .temoins { display: grid; gap: var(--e-5); }
 .temoin { display: flex; flex-direction: column; gap: var(--e-5); padding-top: var(--e-6); border-top: 1px solid var(--bleu); }
@@ -505,3 +505,13 @@
 .page-message { min-height: 70vh; display: grid; align-items: center; }
 .page-message h1 { font-size: var(--t-h1); color: var(--ivoire); }
 .page-message p:not(.surtitre) { color: var(--texte-clair); }
+
+/* Citation courte (section livre de l'accueil) */
+.citation-courte { padding-left: var(--e-5); border-left: 1px solid var(--or); max-width: 52ch; }
+.citation-courte p { font: italic 500 1.25rem/1.45 var(--f-serif); color: var(--bleu); }
+.citation-courte p::before { content: "« "; } .citation-courte p::after { content: " »"; }
+.citation-courte footer { margin-top: var(--e-3); font-size: var(--t-petit); color: var(--encre-douce); }
+.temoin-vedette figcaption .temoin__initiale { width: 64px; height: 64px; font-size: 1.8rem; }
+/* Retours de lecture (boutique) */
+.lectures { display: grid; gap: var(--e-5); margin-top: clamp(3rem, 7vw, 5rem); }
+@media (min-width: 900px) { .lectures .temoins { grid-template-columns: repeat(2, 1fr); max-width: 1000px; } }

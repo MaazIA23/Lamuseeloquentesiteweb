@@ -127,8 +127,14 @@ module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
     ? html`
 <section class="section">
   <div class="conteneur">
-    ${enteteSection({ surtitre: "Ils ont suivi Speak & Conquer", titre: "Leur parole, <em>aujourd'hui</em>." })}
-    <ul class="temoins" data-defile>${avis.map((x) => temoin(x))}</ul>
+    ${enteteSection({ surtitre: "Témoignage", titre: "Ce que l'accompagnement <em>change</em>." })}
+    ${avis
+      .filter((x) => x.vedetteProgramme)
+      .map((x) => html`<figure class="temoin-vedette" data-reveal>
+        <blockquote><p>${esc(x.texte)}</p></blockquote>
+        <figcaption><span class="temoin__initiale" aria-hidden="true">${esc(x.nom.charAt(0))}</span><span><b>${esc(x.nom)}</b>${esc(x.fonction)}</span></figcaption>
+      </figure>`)}
+    ${avis.filter((x) => !x.vedetteProgramme).length ? `<ul class="temoins" data-defile>${avis.filter((x) => !x.vedetteProgramme).map((x) => temoin(x)).join("")}</ul>` : ""}
   </div>
 </section>`
     : "";

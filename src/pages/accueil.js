@@ -126,6 +126,7 @@ module.exports = function accueil({ site, accueil: a, sac, temoignages }) {
 
   /* ---------- Le livre ---------- */
   const l = a.livre;
+  const citationLivre = temoignages.liste.find((t) => t.vedetteLivre);
   const livre = html`
 <section class="section livre">
   <div class="conteneur livre__grille">
@@ -133,6 +134,7 @@ module.exports = function accueil({ site, accueil: a, sac, temoignages }) {
       <p class="surtitre">${esc(l.surtitre)}</p>
       <h2 data-reveal>${riche(l.titre)}</h2>
       <p class="chapo" data-reveal>${esc(l.texte)}</p>
+      ${citationLivre ? html`<blockquote class="citation-courte" data-reveal><p>${esc(citationLivre.texte)}</p><footer>${esc(citationLivre.nom)}, ${esc(citationLivre.fonction.replace(/ de « .* »$/, " du livre"))}</footer></blockquote>` : ""}
       <a class="btn" href="${l.cta.url}">${esc(l.cta.label)} ${icon.fleche}</a>
     </div>
     <figure class="livre__couverture photo" data-reveal>${img(l.photo, { alt: "Le livre Chroniques d'une voix qui s'est révélée, Tome 1", sizes: "(min-width: 900px) 40vw, 92vw" })}</figure>
@@ -166,7 +168,12 @@ module.exports = function accueil({ site, accueil: a, sac, temoignages }) {
 
   /* ---------- Témoignages ---------- */
   const vedette = temoignages.liste.find((t) => t.vedette);
-  const autres = temoignages.liste.filter((t) => t !== vedette).slice(0, 3);
+  const choisir = (f) => temoignages.liste.find((t) => t !== vedette && f(t));
+  const autres = [
+    choisir((t) => t.vedetteProgramme),
+    choisir((t) => t.categorie === "livre" && !t.vedetteLivre),
+    choisir((t) => t.categorie === "partenaires")
+  ].filter(Boolean);
   const temoins = html`
 <section class="section temoignages">
   <div class="conteneur">

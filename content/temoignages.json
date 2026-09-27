@@ -44,6 +44,36 @@
       "categorie": "participants",
       "photo": "temoin-david-kelly-akin",
       "texte": "Deux minutes pour convaincre m'a véritablement marqué et j'en ressors grandi. Une initiative à encourager et à soutenir."
+    },
+    {
+      "nom": "Gisèle",
+      "fonction": "Accompagnement Speak & Conquer",
+      "categorie": "accompagnement",
+      "vedetteProgramme": true,
+      "texte": "Ce jour-là, quand je venais vers vous, je venais complètement déboussolée. Mes doutes envers moi-même, cette façon d'être si dure envers moi-même, ainsi que mes accomplissements que je trouvais normaux et minimes, je ne les avais vraiment réalisés qu'à travers nos séances. Après la séance, j'ai pris du recul et j'ai commencé à faire entendre ma voix, quitte à faire des erreurs et à me reprendre.",
+      "source": "Message WhatsApp de Gisèle (capture fournie par Mazidath)."
+    },
+    {
+      "nom": "Gisèle",
+      "fonction": "Accompagnement Speak & Conquer",
+      "categorie": "accompagnement",
+      "texte": "Vous nous accompagnez vraiment avec une empathie naturelle. Un an s'est écoulé depuis notre dernière séance et, même si je ne vous donne pas de nouvelles, le résultat est positif.",
+      "source": "Message WhatsApp de Gisèle (capture fournie par Mazidath)."
+    },
+    {
+      "nom": "Gisèle",
+      "fonction": "Lectrice de « Chroniques d'une voix qui s'est révélée »",
+      "categorie": "livre",
+      "texte": "Je viens de terminer votre livre et c'est très agréable à lire. Cela m'a rappelé les romans autobiographiques que je lisais au collège et au lycée, de ces célèbres écrivains et écrivaines. J'ai retrouvé cette sensation en lisant votre livre. Ce livre nous montre encore une fois que notre voix peut se faire entendre et qu'il faut juste commencer.",
+      "source": "Message WhatsApp de Gisèle (capture fournie par Mazidath)."
+    },
+    {
+      "nom": "Bernice",
+      "fonction": "Lectrice de « Chroniques d'une voix qui s'est révélée »",
+      "categorie": "livre",
+      "vedetteLivre": true,
+      "texte": "Ça faisait un moment que j'avais perdu le goût de la lecture, et pourtant, avec ton livre, j'ai retrouvé cette envie. C'est vraiment attractif, très instructif et tellement riche. Grâce à toi, j'ai compris une chose importante : devenir éloquent ou éloquente, ça se travaille, comme toute autre chose.",
+      "source": "Message WhatsApp de Bernice (capture fournie par Mazidath)."
     }
   ],
   "categories": {
@@ -51,6 +81,8 @@
     "partenaires": "Marraine & partenaires",
     "evenements": "Jury",
     "entreprises": "Entreprises & institutions",
-    "accompagnement": "Accompagnement Speak & Conquer"
-  }
+    "accompagnement": "Accompagnement Speak & Conquer",
+    "livre": "Autour du livre"
+  },
+  "_consentement": "Témoignages de Gisèle et Bernice : prénoms uniquement, extraits verbatim. Accord de publication à confirmer par Mazidath."
 }

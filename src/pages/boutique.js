@@ -1,8 +1,8 @@
 /* Page Boutique : boutique éditoriale, classée par catégorie. Contenu : content/boutique.json */
 const { esc, html, img, wa, ext, icon } = require("../lib");
-const { pageHero, appelFinal } = require("../components");
+const { pageHero, appelFinal, temoin } = require("../components");
 
-module.exports = function boutique({ site, boutique: b }) {
+module.exports = function boutique({ site, boutique: b, temoignages }) {
   const hero = pageHero({
     ariane: "Boutique",
     surtitre: "Lire, s'entraîner, progresser",
@@ -41,6 +41,7 @@ module.exports = function boutique({ site, boutique: b }) {
       </div>
     </article>`;
 
+  const lectures = temoignages.liste.filter((t) => t.categorie === "livre");
   let n = 0;
   const rayons = b.categories
     .map((c, ci) => {
@@ -51,6 +52,7 @@ module.exports = function boutique({ site, boutique: b }) {
   <div class="conteneur">
     <p class="rayon__titre"><span class="index">${String(ci + 1).padStart(2, "0")}</span> ${esc(c.nom)}</p>
     <div class="fiches">${produits.map((p) => fiche(p, n++))}</div>
+    ${c.id === "livres" && lectures.length ? html`<div class="lectures"><p class="fiche__label">Premiers retours de lecture</p><ul class="temoins" data-defile>${lectures.map((x) => temoin(x))}</ul></div>` : ""}
   </div>
 </section>`;
     })
