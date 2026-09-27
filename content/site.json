@@ -99,5 +99,16 @@
     "Le Leader",
     "Groupe Gema"
   ],
-  "_sourceChiffres": "15+ ans : information fournie par Mazidath (27/09/2026). +70K, +10M : rapport 2MPC. Aucun chiffre « clients » n'existe dans les contenus : ne pas en afficher."
+  "_sourceChiffres": "15+ ans : information fournie par Mazidath (27/09/2026). +70K, +10M : rapport 2MPC. Aucun chiffre « clients » n'existe dans les contenus : ne pas en afficher.",
+  "paiement": {
+    "_aide": "FedaPay (Mobile Money MTN / Moov / Celtiis, cartes) pour les accompagnements en FCFA. Coller ici la clé PUBLIQUE live (pk_live_…) depuis le tableau de bord FedaPay > Paramètres > Clés API. Ne JAMAIS mettre la clé secrète (sk_…) dans ce fichier. Tant que la clé est vide, les boutons mènent à Chariow.",
+    "fedapay": {
+      "clePublique": "",
+      "environnement": "live"
+    },
+    "international": {
+      "libelle": "Payer depuis l'international (carte, euros)",
+      "fournisseur": "chariow"
+    }
+  }
 }

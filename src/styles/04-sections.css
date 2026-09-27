@@ -519,3 +519,5 @@
 .temoin__trad { display: block; font-size: 0.75rem; font-style: italic; color: var(--encre-douce); opacity: 0.8; }
 @media (min-width: 900px) { .lectures .temoins:not(.temoins--quatre) { grid-template-columns: repeat(3, 1fr); max-width: none; } }
 @media (min-width: 900px) { .lectures .temoins { row-gap: var(--e-7); } }
+.formule__payer { display: grid; gap: var(--e-3); justify-items: center; text-align: center; }
+.formule__moyens { font-size: var(--t-petit); color: var(--encre-douce); }

@@ -157,6 +157,7 @@ const pages = [
   { chemin: "/confidentialite/", gabarit: legal.confidentialite, titre: "Confidentialité · La Muse Éloquente", noindex: noindexLegal },
   { chemin: "/cgv/", gabarit: legal.cgv, titre: "Conditions générales de vente · La Muse Éloquente", noindex: noindexLegal },
   { chemin: "/merci/", gabarit: legal.merci, titre: "Merci · La Muse Éloquente", noindex: true, enteteSombre: true },
+  { chemin: "/merci-paiement/", gabarit: legal.merciPaiement, titre: "Paiement confirmé · La Muse Éloquente", noindex: true },
   { chemin: "/404.html", gabarit: legal.introuvable, titre: "Page introuvable · La Muse Éloquente", noindex: true, enteteSombre: true }
 ];
 

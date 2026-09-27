@@ -7,6 +7,34 @@ const cellule = (v) =>
   v === false ? `<span class="non">${icon.tiret}<span class="sr">Non inclus</span></span>` : esc(v);
 
 module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
+  // FedaPay (FCFA, Mobile Money et cartes) dès qu'une clé publique est renseignée dans content/site.json ;
+  // Chariow reste le moyen de paiement international, et le seul tant que la clé est vide.
+  const cle = site.paiement && site.paiement.fedapay.clePublique;
+  const bouton = (f) =>
+    cle
+      ? html`<div class="formule__payer">
+          <button class="btn btn--plein" type="button" data-fedapay data-montant="${f.prixNum}" data-description="Speak &amp; Conquer · Formule ${esc(f.nom)}">Payer ${esc(f.prixFcfa)} ${icon.fleche}</button>
+          <p class="formule__moyens">Mobile Money (MTN, Moov, Celtiis) ou carte bancaire</p>
+          <a class="lien" href="${f.paiement.url}"${ext(f.paiement.url)}>${esc(site.paiement.international.libelle)}</a>
+        </div>`
+      : `<a class="btn btn--plein" href="${f.paiement.url}"${ext(f.paiement.url)} data-offre="${f.id}">Choisir la formule ${esc(f.nom)} ${icon.fleche}</a>`;
+  const scriptFedapay = cle
+    ? html`<script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
+<script>
+document.querySelectorAll("[data-fedapay]").forEach(function (b) {
+  FedaPay.init(b, {
+    public_key: ${JSON.stringify(cle)},
+    environment: ${JSON.stringify(site.paiement.fedapay.environnement)},
+    transaction: { amount: +b.dataset.montant, description: b.dataset.description },
+    currency: { iso: "XOF" },
+    onComplete: function (r) { if (r.reason === FedaPay.CHECKOUT_COMPLETED) location.href = "/merci-paiement/"; }
+  });
+});
+</script>`
+    : "";
+  const texteReglement = cle
+    ? "En FCFA par Mobile Money ou carte via FedaPay, ou depuis l'international par carte."
+    : "Le paiement se fait sur la boutique sécurisée de La Muse Éloquente.";
   const hero = pageHero({
     ariane: "Accompagnements",
     surtitre: "Accompagnement individuel",
@@ -104,7 +132,7 @@ module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
               <ul class="formule__maitrise">${f.maitrise.map((i) => `<li>${esc(i)}</li>`)}</ul>
             </details>
           </div>
-          <a class="btn btn--plein" href="${f.paiement.url}"${ext(f.paiement.url)} data-offre="${f.id}">Choisir la formule ${esc(f.nom)} ${icon.fleche}</a>
+          ${bouton(f)}
         </li>`
       )}
     </ul>
@@ -145,7 +173,7 @@ module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
     ${enteteSection({ surtitre: "Réservation", titre: "Trois étapes pour commencer." })}
     <ol class="etapes">
       <li data-reveal><span class="index">01</span><h3>Choisissez votre formule</h3><p>Étudiant, Standard ou Prestige, selon votre objectif et votre échéance.</p></li>
-      <li data-reveal><span class="index">02</span><h3>Réglez en ligne</h3><p>Le paiement se fait sur la boutique sécurisée de La Muse Éloquente.</p></li>
+      <li data-reveal><span class="index">02</span><h3>Réglez en ligne</h3><p>${texteReglement}</p></li>
       <li data-reveal><span class="index">03</span><h3>Planifions vos séances</h3><p>Je vous contacte après votre achat pour fixer vos rendez-vous.</p></li>
     </ol>
   </div>
@@ -171,5 +199,5 @@ module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
     whatsapp: "Bonjour Mazidath, j'hésite entre les formules Speak & Conquer."
   });
 
-  return [hero, faits, transformation, pourQui, methode, competences, formules, temoins, reservation, faq, final].join("\n");
+  return [hero, faits, transformation, pourQui, methode, competences, formules, temoins, reservation, faq, final, scriptFedapay].join("\n");
 };

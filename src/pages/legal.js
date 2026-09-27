@@ -78,6 +78,16 @@ const merci = ({ site }) => html`
   </div>
 </section>`;
 
+const merciPaiement = () => html`
+<section class="section section--bleu page-message">
+  <div class="conteneur final__in">
+    <p class="surtitre surtitre--or">Paiement confirmé</p>
+    <h1>Bienvenue dans Speak &amp; Conquer</h1>
+    <p>Merci pour votre confiance. Je vous contacte très vite sur WhatsApp ou par email pour planifier votre première séance.</p>
+    <div class="actions actions--centre"><a class="btn btn--clair" href="/">Retour à l'accueil ${icon.fleche}</a></div>
+  </div>
+</section>`;
+
 const introuvable = () => html`
 <section class="section section--bleu page-message">
   <div class="conteneur final__in">
@@ -88,4 +98,4 @@ const introuvable = () => html`
   </div>
 </section>`;
 
-module.exports = { mentions, confidentialite, cgv, merci, introuvable };
+module.exports = { mentions, confidentialite, cgv, merci, merciPaiement, introuvable };
