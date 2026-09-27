@@ -53,15 +53,14 @@
       "surtitre": "L'éloquence",
       "titre": "Paris, 2024",
       "paragraphes": [
-        "En 2024, elle remporte le premier prix d'un concours national d'éloquence, à Paris. Une consécration, et surtout une confirmation : l'éloquence se travaille, avec méthode et exigence."
+        "En 2024, elle remporte la finale nationale du concours d'éloquence du Groupe Gema, à Paris. Une consécration, et surtout une confirmation : l'éloquence se travaille, avec méthode et exigence."
       ],
       "lien": {
-        "label": "Lire l'article",
-        "url": ""
+        "label": "Lire l'article du Groupe Gema",
+        "url": "https://www.groupe-gema.com/la-grande-finale-du-concours-deloquence-du-groupe-gema-un-tourbillon-demotions-et-de-talents/"
       },
       "photo": "portrait-bleu-buste",
-      "photoAlt": "Portrait de Mazidath Bello en col roulé bleu",
-      "TODO": "Ajouter le lien de l'article (blog) sur le concours de Paris."
+      "photoAlt": "Portrait de Mazidath Bello en col roulé bleu"
     },
     {
       "id": "la-muse-eloquente",
@@ -69,7 +68,7 @@
       "titre": "Transmettre ce qui a été appris",
       "paragraphes": [
         "La Muse Éloquente naît de cette conviction : la parole n'est pas un don réservé à quelques-uns, c'est une compétence, et chacun porte en lui une signature oratoire.",
-        "Depuis, plus d'une centaine de personnes ont été accompagnées vers une prise de parole réussie. Des entreprises et des établissements lui confient la formation de leurs équipes et de leurs enseignants, et ses masterclass réunissent celles et ceux qui veulent convaincre vite, et bien."
+        "Depuis, plus d'une centaine de personnes ont été accompagnées vers une prise de parole réussie. Des entreprises et des établissements lui confient la formation de leurs équipes : des enseignants, ou le personnel de salle d'un restaurant réputé de Cotonou, formé à l'art d'accueillir. Ses masterclass réunissent celles et ceux qui veulent convaincre vite, et bien."
       ],
       "photo": "masterclass-mazidath-ecoute",
       "photoAlt": "Mazidath Bello pendant une masterclass à Cotonou"
