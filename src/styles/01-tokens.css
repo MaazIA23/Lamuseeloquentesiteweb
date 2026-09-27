@@ -1,48 +1,52 @@
 /* =========================================================================
-   DESIGN SYSTEM — La Muse Éloquente
-   Source : Charte graphique LME (oct. 2025). Couleurs strictement issues
-   de la charte ; les nuances « profond » / « voile » sont des déclinaisons
-   de ces couleurs pour les fonds et les états, jamais de nouvelles teintes.
+   DESIGN SYSTEM — La Muse Éloquente (v2 « éditorial »)
+   Couleurs : charte graphique LME. Le bleu porte la marque ; l'or n'est
+   qu'une lumière (filets, détails, fil doré) ; le papier respire.
+   Typographie : serif éditoriale (Cormorant Garamond) pour les grands
+   titres, Montserrat (substitut de Gotham) pour le texte et l'interface,
+   Anton (charte) réservée à quelques signatures graphiques.
    ========================================================================= */
 :root {
-  /* Couleurs principales */
+  /* Couleurs principales (charte) */
   --bleu: #272a5d;
-  --bleu-profond: #1d1f47;     /* déclinaison sombre du bleu (fonds immersifs) */
-  --bleu-voile: #e9e9f1;       /* déclinaison claire du bleu (fonds doux) */
+  --bleu-profond: #1d1f47;
+  --bleu-voile: #e8e8f0;
   --or: #b48028;
   --or-clair: #e7c26d;
   --or-moyen: #b8822b;
   --or-profond: #7f5a24;
   --degrade-or: linear-gradient(100deg, var(--or-clair) 0%, var(--or-moyen) 52%, var(--or-profond) 100%);
 
-  /* Couleurs secondaires (usage ponctuel) */
-  --jaune: #f5c036;
+  /* Secondaires (usage ponctuel) */
   --lavande: #5363ab;
   --turquoise: #1a9399;
 
-  /* Neutres : le papier texturé de la charte */
+  /* Neutres */
   --papier: #f7f6f3;
   --creme: #efece5;
+  --ivoire: #fbfaf7;
   --blanc: #ffffff;
   --encre: #1b1c2e;
-  --encre-douce: #4d4f66;
+  --encre-douce: #50526a;
   --filet: #dcd8cf;
-  --filet-clair: rgba(255, 255, 255, 0.16);
+  --filet-clair: rgba(255, 255, 255, 0.18);
+  --texte-clair: rgba(255, 255, 255, 0.8);
 
-  /* Typographie : Anton (titres) + Montserrat (substitut libre de Gotham) */
-  --f-titre: "Anton", "Haettenschweiler", Impact, "Arial Narrow", sans-serif;
+  /* Typographie */
+  --f-serif: "Cormorant Garamond", "Cormorant", Garamond, "Times New Roman", serif;
   --f-texte: "Montserrat", "Gotham", "Helvetica Neue", Arial, sans-serif;
+  --f-signature: "Anton", Impact, "Arial Narrow", sans-serif;
 
-  --t-hero: clamp(3.4rem, 10.5vw, 8.4rem);
-  --t-h1: clamp(3rem, 8vw, 6.4rem);
-  --t-h2: clamp(2.3rem, 5.4vw, 4.2rem);
-  --t-h3: 1.2rem;
-  --t-chapo: clamp(1.12rem, 1.6vw, 1.32rem);
+  --t-h1: clamp(2.7rem, 6vw, 5.4rem);
+  --t-h2: clamp(2.1rem, 4vw, 3.5rem);
+  --t-h3: 1.08rem;
+  --t-chiffre: clamp(2.8rem, 5vw, 4.4rem);
+  --t-chapo: clamp(1.08rem, 1.4vw, 1.25rem);
   --t-texte: 1rem;
   --t-petit: 0.875rem;
-  --t-label: 0.75rem;
+  --t-label: 0.72rem;
 
-  /* Espacements (échelle de 4) */
+  /* Espacements */
   --e-1: 0.25rem;
   --e-2: 0.5rem;
   --e-3: 0.75rem;
@@ -50,23 +54,22 @@
   --e-5: 1.5rem;
   --e-6: 2rem;
   --e-7: 3rem;
-  --e-8: 4rem;
-  --section: clamp(4.5rem, 10vw, 8.5rem);
-  --gouttiere: clamp(1rem, 4.5vw, 3rem);
-  --largeur: 1240px;
+  --e-8: 4.5rem;
+  --section: clamp(4.5rem, 10vw, 9rem);
+  --gouttiere: clamp(1.25rem, 5vw, 3.5rem);
+  --largeur: 1280px;
 
-  /* Formes : carré arrondi du pictogramme, pilule pour les boutons */
-  --r-s: 10px;
-  --r-m: 18px;
-  --r-l: 28px;
+  /* Formes */
+  --r-s: 6px;
+  --r-m: 14px;
+  --r-l: 22px;
   --r-pilule: 999px;
-
-  --ombre: 0 24px 60px -32px rgba(29, 31, 71, 0.45);
-  --ombre-douce: 0 12px 30px -20px rgba(29, 31, 71, 0.35);
+  --ombre: 0 30px 70px -40px rgba(29, 31, 71, 0.45);
+  --ombre-douce: 0 14px 34px -24px rgba(29, 31, 71, 0.4);
 
   /* Mouvement */
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --duree: 0.7s;
+  --duree: 0.9s;
 
   color-scheme: light;
 }

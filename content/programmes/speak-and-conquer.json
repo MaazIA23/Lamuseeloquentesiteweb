@@ -4,10 +4,10 @@
   "nom": "Speak & Conquer",
   "accroche": "Affirmer son éloquence en 30 jours !",
   "promesse": "Transformer votre prise de parole en public et développer votre éloquence.",
-  "description": "Un programme d'accompagnement privé et personnalisé pour perfectionner votre communication, renforcer votre impact et affirmer pleinement votre leadership.",
+  "description": "Un accompagnement privé et personnalisé pour structurer vos idées, maîtriser votre voix et prendre la parole avec assurance, que ce soit pour une soutenance, un pitch, une réunion ou une scène.",
   "seo": {
-    "titre": "Speak & Conquer · Programme de prise de parole en public",
-    "description": "Speak & Conquer, le programme d'accompagnement en prise de parole de La Muse Éloquente : 3 formules (Étudiant, Standard, Prestige), coaching individuel de 60 minutes, diction, gestion du stress, persuasion."
+    "titre": "Speak & Conquer · Accompagnement en prise de parole et éloquence",
+    "description": "Speak & Conquer, l'accompagnement individuel en prise de parole en public de La Muse Éloquente : trois formules de 3 à 8 semaines (Étudiant, Standard, Prestige), dès 50 000 FCFA."
   },
   "photo": "portrait-bleu-buste",
   "pourQui": [
@@ -38,7 +38,7 @@
       "texte": "Une fiche diagnostic personnalisée cible vos axes d'amélioration (formules Standard et Prestige)."
     },
     {
-      "titre": "Coaching individuel",
+      "titre": "Accompagnement individuel",
       "texte": "Des séances de 60 minutes adaptées à vos objectifs : 3, 5 ou 8 selon la formule."
     },
     {
@@ -56,8 +56,8 @@
       "nom": "Étudiant",
       "duree": "3 semaines",
       "seances": 3,
-      "prixEur": "82,29 €",
-      "prixFcfa": "",
+      "prixEur": "≈ 76 €",
+      "prixFcfa": "50 000 FCFA",
       "resume": "Un programme d'accompagnement personnalisé de 3 semaines, spécialement conçu pour les étudiants souhaitant développer leurs compétences oratoires et gagner en assurance lors de leurs présentations académiques.",
       "maitrise": [
         "L'initiation à l'improvisation pour réagir avec aisance face aux questions inattendues",
@@ -66,7 +66,7 @@
         "Les méthodes de respiration et de gestion du stress adaptées aux situations d'examen et de soutenance"
       ],
       "inclus": [
-        "3 séances individuelles de coaching de 60 minutes, adaptées à vos besoins académiques",
+        "3 séances individuelles de accompagnement de 60 minutes, adaptées à vos besoins académiques",
         "L'ebook exclusif « Le secret d'une belle diction »",
         "L'accès privilégié à la communauté privée de La Muse Éloquente"
       ],
@@ -74,15 +74,16 @@
       "paiement": {
         "fournisseur": "chariow",
         "url": "https://sxmcjdek.mychariow.shop"
-      }
+      },
+      "prixNum": 50000
     },
     {
       "id": "standard",
       "nom": "Standard",
       "duree": "5 semaines",
       "seances": 5,
-      "prixEur": "161,86 €",
-      "prixFcfa": "",
+      "prixEur": "≈ 152 €",
+      "prixFcfa": "100 000 FCFA",
       "miseEnAvant": true,
       "resume": "Un programme d'accompagnement privé et personnalisé de 5 semaines, spécialement conçu pour transformer votre prise de parole en public et développer votre éloquence.",
       "maitrise": [
@@ -94,25 +95,25 @@
         "Le langage corporel et le charisme naturel"
       ],
       "inclus": [
-        "5 séances individuelles de coaching de 60 minutes, entièrement personnalisées selon vos objectifs",
+        "5 séances individuelles de accompagnement de 60 minutes, entièrement personnalisées selon vos objectifs",
         "L'ebook exclusif « Le secret d'une belle diction »",
         "Une fiche diagnostic personnalisée",
         "L'accès privilégié à la communauté privée de La Muse Éloquente"
       ],
       "public": "Toute personne souhaitant transformer sa prise de parole.",
-      "TODO": "Compléter la phrase « Ce programme s'adresse à toute personne souhaitant… » (coupée sur la capture).",
       "paiement": {
         "fournisseur": "chariow",
         "url": "https://sxmcjdek.mychariow.shop"
-      }
+      },
+      "prixNum": 100000
     },
     {
       "id": "prestige",
       "nom": "Prestige",
       "duree": "8 semaines",
       "seances": 8,
-      "prixEur": "266,75 €",
-      "prixFcfa": "",
+      "prixEur": "≈ 259 €",
+      "prixFcfa": "170 000 FCFA",
       "resume": "Un programme d'accompagnement personnalisé premium de 8 semaines, conçu pour les professionnels et dirigeants souhaitant atteindre l'excellence oratoire et développer un impact de leader.",
       "maitrise": [
         "Tout le contenu du Pack Standard",
@@ -123,7 +124,7 @@
         "La maîtrise avancée de la persuasion et de la rhétorique classique des grands orateurs"
       ],
       "inclus": [
-        "8 séances individuelles de coaching de 60 minutes, entièrement sur-mesure selon vos enjeux professionnels",
+        "8 séances individuelles de accompagnement de 60 minutes, entièrement sur-mesure selon vos enjeux professionnels",
         "L'ebook exclusif « Le secret d'une belle diction »",
         "Une fiche diagnostic approfondie et personnalisée",
         "L'accès privilégié à la communauté privée de La Muse Éloquente",
@@ -134,7 +135,8 @@
       "paiement": {
         "fournisseur": "chariow",
         "url": "https://sxmcjdek.mychariow.shop"
-      }
+      },
+      "prixNum": 170000
     }
   ],
   "comparatif": [
@@ -195,6 +197,10 @@
       "r": "Un ebook de techniques et d'exercices pour transformer votre élocution. Il est inclus dans les trois formules et disponible séparément dans la boutique."
     },
     {
+      "q": "Quels sont les tarifs ?",
+      "r": "Formule Étudiant : 50 000 FCFA. Formule Standard : 100 000 FCFA. Formule Prestige : 170 000 FCFA."
+    },
+    {
       "q": "Comment se passe le paiement ?",
       "r": "Le paiement se fait en ligne sur la boutique sécurisée de La Muse Éloquente. Après votre achat, je vous contacte pour planifier vos séances."
     },
@@ -204,11 +210,52 @@
     }
   ],
   "TODO": [
-    "Prix officiels en FCFA et en euros (les prix actuels viennent de Chariow).",
     "URL Chariow exacte de chaque formule.",
     "Format des séances : visio, présentiel ou les deux.",
-    "Témoignages d'anciens participants (prénom, fonction, photo, texte, accord)."
+    "Témoignages d'anciens participants (prénom, fonction, photo, texte, accord).",
+    "Harmoniser les prix affichés sur Chariow avec les prix officiels en FCFA."
   ],
   "sousAccroche": "Devenez un orateur confiant et impactant.",
-  "_sourceAccroche": "Roll-up Speak & Conquer de 2025 (« Affirmer son éloquence en 30 jours ! »). Non affiché : les formules actuelles durent 3, 5 ou 8 semaines. À confirmer."
+  "_sourceAccroche": "Roll-up Speak & Conquer de 2025 (« Affirmer son éloquence en 30 jours ! »). Non affiché : les formules actuelles durent 3, 5 ou 8 semaines. À confirmer.",
+  "_prix": "Prix officiels en FCFA communiqués par Mazidath (27/09/2026). Équivalence euro au taux fixe 1 € = 655,957 FCFA, arrondie. Attention : Chariow affiche aujourd'hui 82,29 € / 161,86 € / 266,75 € (≈ 54 000 / 106 000 / 175 000 FCFA), à harmoniser.",
+  "avantApres": [
+    {
+      "avant": "Je connais mon sujet, mais je perds mes moyens.",
+      "apres": "Je structure mes idées et je les défends avec assurance."
+    },
+    {
+      "avant": "Je parle trop vite.",
+      "apres": "Je maîtrise mon rythme, ma voix et mes silences."
+    },
+    {
+      "avant": "Je manque d'impact.",
+      "apres": "Je sais capter l'attention et convaincre."
+    }
+  ],
+  "methode": {
+    "titre": "La méthode La Muse Éloquente",
+    "texte": "Cinq temps, adaptés à votre formule et à votre échéance.",
+    "etapes": [
+      {
+        "nom": "Diagnostiquer",
+        "texte": "Faire le point sur votre manière de parler, vos forces et vos blocages."
+      },
+      {
+        "nom": "Structurer",
+        "texte": "Organiser vos idées pour que votre message soit clair et mémorable."
+      },
+      {
+        "nom": "Incarner",
+        "texte": "Travailler la voix, la diction, la respiration, le corps et la présence."
+      },
+      {
+        "nom": "Convaincre",
+        "texte": "Maîtriser la persuasion, l'improvisation et la gestion des objections."
+      },
+      {
+        "nom": "Ancrer",
+        "texte": "Pratiquer entre les séances et avancer avec la communauté La Muse Éloquente."
+      }
+    ]
+  }
 }

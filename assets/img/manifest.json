@@ -97,6 +97,40 @@
       853
     ]
   },
+  "laureat-audrey-bonnialy": {
+    "width": 1200,
+    "height": 1500,
+    "widths": [
+      480,
+      960,
+      1200
+    ]
+  },
+  "laureat-ezechielle-bouet": {
+    "width": 2576,
+    "height": 1717,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "laureat-ezekias-gbesse": {
+    "width": 440,
+    "height": 550,
+    "widths": [
+      440
+    ]
+  },
+  "laureat-tristan-kounde": {
+    "width": 2048,
+    "height": 1366,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
   "livre-chroniques": {
     "width": 2576,
     "height": 1717,
@@ -219,6 +253,20 @@
       480,
       960,
       1600
+    ]
+  },
+  "temoin-david-kelly-akin": {
+    "width": 260,
+    "height": 260,
+    "widths": [
+      260
+    ]
+  },
+  "temoin-euphoria-ameodjrana": {
+    "width": 260,
+    "height": 260,
+    "widths": [
+      260
     ]
   },
   "temoin-huguette-bokpe-gnacadja": {

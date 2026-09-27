@@ -5,14 +5,29 @@
       "slug": "chroniques-d-une-voix-qui-s-est-revelee",
       "type": "Livre",
       "titre": "Chroniques d'une voix qui s'est révélée",
-      "sousTitre": "Tome 1 · De l'Ombre à la Scène",
+      "sousTitre": "Tome 1 · De l'ombre à la scène",
       "photo": "livre-chroniques",
       "resume": "Un récit autobiographique et une méthode pour révéler sa voix, porté par une conviction : la prise de parole n'est pas un don réservé à quelques-uns, c'est une compétence.",
-      "formats": ["Papier (France et Cotonou)", "E-book"],
+      "formats": [
+        "Papier (France et Cotonou)",
+        "E-book"
+      ],
       "prix": "",
       "prixBarre": "",
-      "achat": { "label": "Commander", "url": "", "whatsapp": "Bonjour, je souhaite commander le livre « Chroniques d'une voix qui s'est révélée »." },
-      "TODO": "Prix et liens d'achat (papier France, papier Cotonou, e-book)."
+      "achat": {
+        "label": "Commander le livre",
+        "url": "",
+        "whatsapp": "Bonjour, je souhaite commander le livre « Chroniques d'une voix qui s'est révélée »."
+      },
+      "TODO": "Prix et liens d'achat (papier France, papier Cotonou, e-book).",
+      "categorie": "livres",
+      "accroche": "Une histoire personnelle devenue une invitation à révéler sa propre voix.",
+      "pourQui": "Pour toutes celles et ceux qui ont déjà senti leur voix trembler, et qui veulent comprendre comment une voix se construit.",
+      "decouvrir": [
+        "Le récit d'un parcours, de l'ombre à la scène",
+        "Une méthode pour révéler sa voix",
+        "La conviction que la prise de parole est une compétence, et non un don"
+      ]
     },
     {
       "slug": "le-secret-d-une-belle-diction",
@@ -21,11 +36,19 @@
       "sousTitre": "Techniques & exercices pour transformer votre élocution",
       "photo": "ebook-diction",
       "resume": "Des techniques et des exercices concrets pour une expression claire, audible et maîtrisée.",
-      "formats": ["E-book"],
-      "prix": "5,43 €",
-      "prixBarre": "10,86 €",
+      "formats": [
+        "E-book"
+      ],
+      "prix": "",
+      "prixBarre": "",
       "avis": "100 % d'avis positifs (5 avis)",
-      "achat": { "label": "Acheter", "url": "https://sxmcjdek.mychariow.shop" }
+      "achat": {
+        "label": "Acheter",
+        "url": "https://sxmcjdek.mychariow.shop"
+      },
+      "categorie": "outils",
+      "pourQui": "Pour travailler son articulation et sa clarté à l'oral, à son rythme.",
+      "TODO": "Prix officiel en FCFA à confirmer (Chariow affiche une conversion en euros : 5,43 € au lieu de 10,86 €)."
     },
     {
       "slug": "decrochez-votre-alternance",
@@ -34,10 +57,32 @@
       "sousTitre": "Le guide complet de La Muse Éloquente",
       "photo": "ebook-alternance",
       "resume": "Le guide pour préparer et réussir votre entretien d'alternance.",
-      "formats": ["E-book"],
-      "prix": "11,76 €",
-      "prixBarre": "22,61 €",
-      "achat": { "label": "Acheter", "url": "https://sxmcjdek.mychariow.shop" }
+      "formats": [
+        "E-book"
+      ],
+      "prix": "",
+      "prixBarre": "",
+      "achat": {
+        "label": "Acheter",
+        "url": "https://sxmcjdek.mychariow.shop"
+      },
+      "categorie": "carriere",
+      "pourQui": "Pour les étudiants qui préparent leurs entretiens d'alternance.",
+      "TODO": "Prix officiel en FCFA à confirmer (Chariow affiche une conversion en euros : 11,76 € au lieu de 22,61 €)."
+    }
+  ],
+  "categories": [
+    {
+      "id": "livres",
+      "nom": "Livres"
+    },
+    {
+      "id": "outils",
+      "nom": "Outils pour progresser"
+    },
+    {
+      "id": "carriere",
+      "nom": "Carrière & prise de parole"
     }
   ]
 }

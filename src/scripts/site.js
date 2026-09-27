@@ -49,6 +49,27 @@
     window.addEventListener("beforeprint", () => cibles.forEach((el) => el.classList.add("est-visible")));
   }
 
+  /* ---------- Chiffres : apparition progressive ---------- */
+  // « +70K », « 15+ », « +10M » comptent depuis zéro ; les années (2024) restent fixes.
+  const compteurs = document.querySelectorAll("[data-compteur]");
+  if (!reduit && "IntersectionObserver" in window) {
+    const ioc = new IntersectionObserver((entrees) => entrees.forEach((e) => {
+      if (!e.isIntersecting) return;
+      ioc.unobserve(e.target);
+      const el = e.target, final = el.textContent;
+      const m = final.match(/^(\D*)(\d+)(\D*)$/);
+      if (!m || +m[2] >= 1000) return;
+      const cible = +m[2], debut = performance.now(), duree = 1400;
+      const pas = (t) => {
+        const k = Math.min(1, (t - debut) / duree), v = Math.round(cible * (1 - Math.pow(1 - k, 3)));
+        el.textContent = m[1] + v + m[3];
+        if (k < 1) requestAnimationFrame(pas); else el.textContent = final;
+      };
+      requestAnimationFrame(pas);
+    }), { threshold: 0.6 });
+    compteurs.forEach((el) => ioc.observe(el));
+  }
+
   /* ---------- Barre d'action mobile ---------- */
   const barre = document.querySelector("[data-barre]");
   const premier = document.querySelector("main > section");

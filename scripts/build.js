@@ -58,8 +58,8 @@ const cours = {
   offers: data.sac.formules.map((f) => ({
     "@type": "Offer",
     name: `Speak & Conquer · ${f.nom}`,
-    price: prixNum(f.prixEur),
-    priceCurrency: "EUR",
+    price: f.prixNum,
+    priceCurrency: "XOF",
     url: `${site.url}/programmes/speak-and-conquer/#formule-${f.id}`,
     category: f.duree
   })),
@@ -99,7 +99,7 @@ const pages = [
     preload: data.accueil.hero.photo,
     classe: "page-accueil",
     jsonld: [personne, organisation],
-    barreMobile: { texte: `<b>Speak &amp; Conquer</b> dès ${data.sac.formules[0].prixEur}`, label: "Réserver", url: "/programmes/speak-and-conquer/#formules" }
+    barreMobile: { texte: "<b>Un projet ?</b> Parlons-en", label: "Me contacter", url: "/travailler-avec-moi/#devis" }
   },
   {
     chemin: "/programmes/speak-and-conquer/",
@@ -108,9 +108,8 @@ const pages = [
     description: data.sac.seo.description,
     image: data.sac.photo,
     classe: "page-programme",
-    enteteSombre: true,
     jsonld: [cours, faqLd],
-    barreMobile: { texte: `<b>3 formules</b> dès ${data.sac.formules[0].prixEur}`, label: "Voir les formules", url: "#formules" }
+    barreMobile: { texte: `<b>3 formules</b> dès ${data.sac.formules[0].prixFcfa}`, label: "Choisir", url: "#formules" }
   },
   {
     chemin: "/a-propos/",
@@ -118,9 +117,8 @@ const pages = [
     titre: data.apropos.seo.titre,
     description: data.apropos.seo.description,
     image: data.apropos.hero.photo,
-    enteteSombre: true,
     jsonld: [personne],
-    barreMobile: { texte: "<b>Speak &amp; Conquer</b>", label: "Découvrir", url: "/programmes/speak-and-conquer/" }
+    barreMobile: { texte: "<b>Travailler avec Mazidath</b>", label: "Me contacter", url: "/travailler-avec-moi/#devis" }
   },
   {
     chemin: "/travailler-avec-moi/",
@@ -128,26 +126,23 @@ const pages = [
     titre: data.pro.seo.titre,
     description: data.pro.seo.description,
     image: data.pro.hero.photo,
-    enteteSombre: true,
     jsonld: [organisation],
     barreMobile: { texte: "<b>Un projet ?</b> Parlons-en", label: "Demander un devis", url: "#devis" }
   },
   {
     chemin: "/evenements/",
     gabarit: require("../src/pages/evenements"),
-    titre: "Événements · Deux Minutes Pour Convaincre et masterclass",
-    description: "Deux Minutes Pour Convaincre, le concours d'improvisation oratoire créé par La Muse Éloquente à Cotonou, et les masterclass de Mazidath Bello.",
+    titre: "Événements · Deux Minutes Pour Convaincre, 300 Voix et masterclass",
+    description: "Deux Minutes Pour Convaincre, le concours d'improvisation oratoire créé par La Muse Éloquente à Cotonou, le programme d'impact 300 Voix et les masterclass de prise de parole de Mazidath Bello.",
     image: "2mpc-laureats",
-    enteteSombre: true,
     jsonld: evenementsLd
   },
   {
     chemin: "/boutique/",
     gabarit: require("../src/pages/boutique"),
-    titre: "Boutique · Livre et ebooks de La Muse Éloquente",
+    titre: "Boutique · Le livre et les ebooks de La Muse Éloquente",
     description: "Chroniques d'une voix qui s'est révélée, Le secret d'une belle diction, Décrochez votre alternance dès le premier entretien : le livre et les ebooks de Mazidath Bello.",
     image: "livre-chroniques",
-    enteteSombre: true,
     jsonld: data.boutique.produits.filter((p) => p.prix).map((p) => ({
       "@context": "https://schema.org",
       "@type": "Product",

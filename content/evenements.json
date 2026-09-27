@@ -34,7 +34,180 @@
         "2mpc-public",
         "2mpc-laureats",
         "attestation-ezechielle-bouet"
-      ]
+      ],
+      "resultats": [
+        {
+          "valeur": "+300",
+          "libelle": "participants réunis sur les deux éditions"
+        },
+        {
+          "valeur": "41",
+          "libelle": "candidatures"
+        },
+        {
+          "valeur": "24",
+          "libelle": "finalistes"
+        },
+        {
+          "valeur": "+1000",
+          "libelle": "spectateurs sur les lives TikTok"
+        }
+      ],
+      "laureats": [
+        {
+          "nom": "Ezéchielle Bouet",
+          "titre": "Championne de l'Éloquence 2025",
+          "edition": "1ère édition",
+          "photo": "laureat-ezechielle-bouet"
+        },
+        {
+          "nom": "Tristan Kounde",
+          "titre": "Deuxième place",
+          "edition": "1ère édition",
+          "photo": "laureat-tristan-kounde"
+        },
+        {
+          "nom": "José Pascaël Agbo",
+          "titre": "Grand Champion",
+          "edition": "2ème édition",
+          "photo": "temoin-jose-pascael-agbo"
+        },
+        {
+          "nom": "Ezékias Gbessé",
+          "titre": "2ème prix",
+          "edition": "2ème édition",
+          "photo": "laureat-ezekias-gbesse"
+        },
+        {
+          "nom": "Audrey Bonnialy",
+          "titre": "Prix du leadership féminin",
+          "edition": "2ème édition",
+          "photo": "laureat-audrey-bonnialy"
+        }
+      ],
+      "leadershipFeminin": "La 2ème édition a créé le tout premier Prix du leadership féminin de l'histoire du concours, remis à Audrey Bonnialy. Des partenaires comme l'Institut National de la Femme, Inspir'Elles ou le Forum International sur le Leadership au Féminin accompagnent l'aventure.",
+      "edition2027": {
+        "titre": "3ème édition · Mars 2027",
+        "points": [
+          "Grand Prix de la Francophonie",
+          "Candidature par vidéo",
+          "Lancement du programme 300 Voix"
+        ]
+      },
+      "partenaires": [
+        [
+          "Institut National de la Femme (INF)",
+          "institut-national-femme"
+        ],
+        [
+          "M média Afrique",
+          "m-media-afrique"
+        ],
+        [
+          "FIGS Education",
+          "figs-education"
+        ],
+        [
+          "Azalaï Hôtel Cotonou",
+          "azalai-hotel-cotonou"
+        ],
+        [
+          "La Dictée Solidaire",
+          "la-dictee-solidaire"
+        ],
+        [
+          "Inspir'Elles",
+          "inspir-elles"
+        ],
+        [
+          "Eloquentia Toastmasters Club de Cotonou",
+          "eloquentia-toastmasters"
+        ],
+        [
+          "FILEF (Forum International sur le Leadership au Féminin)",
+          "filef"
+        ],
+        [
+          "KSP (Kids Speaker Program)",
+          "ksp"
+        ],
+        [
+          "Shalom Empire",
+          "shalom-empire"
+        ],
+        [
+          "Opus Corp",
+          "opus-corp"
+        ],
+        [
+          "Canal Print International",
+          "canal-print-international"
+        ],
+        [
+          "WhatsPAY",
+          "whatspay"
+        ],
+        [
+          "Lapaire",
+          "lapaire"
+        ],
+        [
+          "Smart Way",
+          "smart-way"
+        ],
+        [
+          "Mata-Yara",
+          "mata-yara"
+        ],
+        [
+          "Kirikou Bar",
+          "kirikou-bar"
+        ],
+        [
+          "La Ludothèque Family Zone",
+          "ludotheque-family-zone"
+        ],
+        [
+          "Gloria Events & Kids",
+          "gloria-events-kids"
+        ],
+        [
+          "Sibelle Accessoires",
+          "sibelle-accessoires"
+        ]
+      ],
+      "_sources": "Chiffres, lauréats, partenaires, 2027 et 300 Voix : dépôt 2minutespourconvaincre (content/pages/impact.json, gagnants.json, partenaires.json, edition-3.json)."
+    },
+    {
+      "slug": "300-voix",
+      "type": "impact",
+      "titre": "300 Voix",
+      "accroche": "Parce que la parole ne doit pas être réservée à ceux qui montent sur scène.",
+      "resume": "En 2027, 300 élèves et étudiants bénéficieront d'une formation en art oratoire, à travers des sessions dédiées à la prise de parole, à l'argumentation et à la confiance en soi, directement dans leurs établissements.",
+      "transmission": [
+        {
+          "titre": "Prendre la parole",
+          "texte": "S'exprimer avec clarté, présence et assurance."
+        },
+        {
+          "titre": "Argumenter",
+          "texte": "Structurer une idée et défendre son point de vue avec conviction."
+        },
+        {
+          "titre": "Oser",
+          "texte": "Dépasser le trac et prendre sa place face aux autres."
+        },
+        {
+          "titre": "Improviser",
+          "texte": "Apprendre à réagir, penser vite et construire une réponse."
+        }
+      ],
+      "lignes": [
+        "300 voix.",
+        "300 occasions d'oser.",
+        "300 possibilités de faire entendre ses idées."
+      ],
+      "photo": "masterclass-participante-2"
     },
     {
       "slug": "masterclass-cinq-cles-pour-convaincre",

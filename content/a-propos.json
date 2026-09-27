@@ -1,68 +1,108 @@
 {
   "_aide": "Page À propos : récit en chapitres. Chaque chapitre a un titre, un texte et une photo. Les faits proviennent des sources listées dans docs/audit ; à enrichir avec Mazidath.",
   "seo": {
-    "titre": "À propos · Mazidath Bello, La Muse Éloquente",
-    "description": "L'histoire de Mazidath Bello, La Muse Éloquente : présentatrice, maîtresse de cérémonie, voix off, lauréate du concours d'éloquence du Groupe Gema, autrice et fondatrice de Deux Minutes Pour Convaincre."
+    "titre": "À propos · Mazidath Bello, oratrice, maîtresse de cérémonie et autrice",
+    "description": "L'histoire de Mazidath Bello, La Muse Éloquente : plus de quinze ans de prise de parole, la scène, les médias, l'éloquence, Deux Minutes Pour Convaincre et la transmission, entre le Bénin et la France."
   },
   "hero": {
     "surtitre": "À propos",
-    "titre": [
-      "De l'ombre",
-      "à la scène"
-    ],
-    "texte": "Je m'appelle Mazidath Bello. On me connaît comme La Muse Éloquente. Voici le chemin d'une voix qui a appris à se faire entendre, et qui aide aujourd'hui les autres à trouver la leur.",
+    "titre": "De l'ombre <em>à la scène</em>",
+    "texte": "Je m'appelle Mazidath Bello. On me connaît comme La Muse Éloquente. Voici l'histoire d'une voix qui a appris à se faire entendre, et qui aide aujourd'hui les autres à trouver la leur.",
     "photo": "portrait-vert-fond-peche",
     "photoAlt": "Portrait de Mazidath Bello en robe verte sur fond pêche"
   },
   "chapitres": [
     {
-      "id": "la-voix",
-      "surtitre": "La voix",
-      "titre": "Une voix qui s'est révélée",
+      "id": "mazidath-bello",
+      "surtitre": "Mazidath Bello",
+      "titre": "Une Béninoise entre deux rives",
       "paragraphes": [
-        "Tout commence par une voix. Une voix qui, avant de monter sur scène, a connu l'ombre, le doute et le trac.",
-        "C'est ce chemin que je raconte dans mon premier livre, « Chroniques d'une voix qui s'est révélée, Tome 1 : De l'Ombre à la Scène » : un récit autobiographique, et une méthode pour révéler sa voix."
-      ],
-      "photo": "dedicace-livre",
-      "photoAlt": "Mazidath Bello dédicace son livre lors de la 2ème édition de Deux Minutes Pour Convaincre"
-    },
-    {
-      "id": "le-parcours",
-      "surtitre": "Le parcours",
-      "titre": "Entre Cotonou et la France",
-      "paragraphes": [
-        "Béninoise, je vis entre Cotonou et la France. J'ai suivi un Master en Intelligence Artificielle et Management à l'IA School de Lyon.",
-        "De ce parcours, je garde une conviction : la prise de parole se travaille avec méthode, entraînement et exigence, comme n'importe quelle compétence."
+        "Béninoise vivant en France, je construis mon activité entre l'Afrique, la France et l'international.",
+        "Entrepreneure, oratrice, présentatrice, maîtresse de cérémonie, autrice : ces rôles ont un point commun, la parole."
       ],
       "photo": "portrait-bleu-buste",
       "photoAlt": "Portrait de Mazidath Bello en col roulé bleu"
     },
     {
-      "id": "les-experiences",
-      "surtitre": "Les expériences",
+      "id": "premiere-prise-de-parole",
+      "surtitre": "La première prise de parole",
+      "titre": "Un micro, très tôt",
+      "paragraphes": [
+        "J'ai pris le micro très jeune. Depuis, je n'ai jamais cessé de parler en public : plus de quinze ans de prise de parole.",
+        "Mais la voix que l'on entend aujourd'hui s'est construite. Elle a connu l'ombre, le doute et le trac avant de trouver sa place."
+      ],
+      "photo": "scene-micro",
+      "photoAlt": "Mazidath Bello au micro"
+    },
+    {
+      "id": "la-scene",
+      "surtitre": "La scène",
+      "titre": "Tenir une salle",
+      "paragraphes": [
+        "La scène m'a appris ce qu'aucun manuel n'enseigne vraiment : le rythme, le regard, le silence qui fait porter une phrase.",
+        "Maîtresse de cérémonie, je porte les événements des autres, et je fais en sorte qu'une salle reste attentive du premier au dernier mot."
+      ],
+      "photo": "scene-promotrice",
+      "photoAlt": "Mazidath Bello au pupitre, micro en main"
+    },
+    {
+      "id": "les-medias",
+      "surtitre": "Les médias",
       "titre": "La parole comme métier",
       "paragraphes": [
-        "Présentatrice TV, maîtresse de cérémonie et voix off, j'ai fait de la parole mon métier : tenir un plateau, porter un événement, donner du relief à un texte.",
-        "En 2024, je remporte la finale nationale du concours d'éloquence du Groupe Gema, à Paris."
+        "Présentatrice et voix off, j'ai fait de la parole mon métier : tenir un plateau, donner du relief à un texte, parler à ceux que l'on ne voit pas."
       ],
       "photo": "intervention-micro-bleu",
       "photoAlt": "Mazidath Bello au micro lors d'une intervention",
-      "TODO": "Ajouter les chaînes, émissions, événements animés et clients voix off."
+      "TODO": "Préciser les chaînes, émissions et clients voix off."
     },
     {
-      "id": "les-rencontres",
-      "surtitre": "Les rencontres",
-      "titre": "Des voix qui se révèlent",
+      "id": "eloquence",
+      "surtitre": "L'éloquence",
+      "titre": "Lauréate en 2024",
+      "paragraphes": [
+        "En 2024, je remporte la finale du concours national d'éloquence du Groupe Gema, à Paris.",
+        "Une reconnaissance, et une confirmation : l'éloquence se travaille, avec méthode et exigence, comme n'importe quelle compétence."
+      ],
+      "photo": "portrait-bleu-accoudee",
+      "photoAlt": "Portrait de Mazidath Bello en tailleur bleu"
+    },
+    {
+      "id": "la-muse-eloquente",
+      "surtitre": "La création de La Muse Éloquente",
+      "titre": "Donner un nom à une conviction",
+      "paragraphes": [
+        "La Muse Éloquente naît de cette conviction : la parole n'est pas seulement une compétence, c'est un levier de présence, d'influence et de leadership.",
+        "Accompagnements, formations, interventions, événements : un univers pour aider chacun à mieux porter ses idées."
+      ],
+      "photo": "portrait-vert-buste",
+      "photoAlt": "Portrait de Mazidath Bello en robe verte"
+    },
+    {
+      "id": "deux-minutes-pour-convaincre",
+      "surtitre": "Deux Minutes Pour Convaincre",
+      "titre": "Une scène pour les voix des autres",
       "paragraphes": [
         "En 2025, je crée Deux Minutes Pour Convaincre à Cotonou. La première édition est organisée en deux mois à peine, portée par la conviction que l'éloquence et l'improvisation méritaient leur scène au Bénin.",
-        "Candidats, jurés, partenaires, participants de mes masterclass : chaque rencontre confirme que la parole bien maîtrisée rassemble, inspire et élève."
+        "Deux éditions plus tard, le concours a réuni plus de 300 participants et révélé des voix qui, pour beaucoup, montaient sur scène pour la première fois."
       ],
       "citation": {
         "texte": "Madame la promotrice, c'est exactement le type d'événement auquel je voudrais que mon nom soit associé.",
         "auteur": "Maître Huguette Bokpè Gnacadja, marraine de la 2ème édition"
       },
       "photo": "attestation-ezechielle-bouet",
-      "photoAlt": "Mazidath Bello et Ezéchielle Bouet, gagnante de la 1ère édition, avec son attestation"
+      "photoAlt": "Mazidath Bello et Ezéchielle Bouet, gagnante de la 1ère édition"
+    },
+    {
+      "id": "la-transmission",
+      "surtitre": "La transmission",
+      "titre": "Ce que j'ai appris, je le transmets",
+      "paragraphes": [
+        "Speak & Conquer, les masterclass, le livre, et bientôt 300 Voix : transmettre est devenu le cœur de mon travail.",
+        "Mon premier livre, « Chroniques d'une voix qui s'est révélée, Tome 1 : De l'ombre à la scène », raconte ce chemin et propose une méthode pour révéler sa voix."
+      ],
+      "photo": "dedicace-livre",
+      "photoAlt": "Mazidath Bello dédicace son livre"
     }
   ],
   "convictions": {
@@ -97,16 +137,21 @@
     "_source": "Charte graphique LME, Identité d'entreprise (p. 5)."
   },
   "aujourdhui": {
-    "surtitre": "La Muse Éloquente aujourd'hui",
-    "titre": "Une agence au service de la parole",
-    "texte": "La Muse Éloquente est une agence de communication et de conseil spécialisée dans l'accompagnement et la formation en prise de parole. Professionnels, particuliers, entreprises : chacun y trouve un cadre adapté pour développer sa communication orale.",
+    "surtitre": "Aujourd'hui",
+    "titre": "La Muse Éloquente, un univers au service de la parole",
+    "texte": "Aujourd'hui, La Muse Éloquente accompagne des particuliers, des professionnels, des entreprises, des institutions et des événements, entre l'Afrique, la France et l'international.",
     "mission": "Révéler et développer le potentiel oratoire des individus et des organisations à travers des programmes de formation sur mesure, des accompagnements personnalisés et des événements fédérateurs.",
     "vision": "Devenir la référence incontournable en Afrique et au-delà dans l'accompagnement à l'éloquence et à l'impact professionnel.",
-    "photo": "portrait-vert-buste",
-    "photoAlt": "Portrait de Mazidath Bello en robe verte"
+    "photo": "masterclass-mazidath-ecoute",
+    "photoAlt": "Mazidath Bello pendant une masterclass à Cotonou"
   },
   "TODO": [
     "Valider le récit avec Mazidath (formulations personnelles).",
+    "Préciser les expériences médias (chaînes, émissions) et scène (événements animés).",
     "Décider si l'on mentionne le poste chez Framatome et le passage à The Voice Afrique (2020)."
-  ]
+  ],
+  "formation": {
+    "titre": "Formation & parcours professionnel",
+    "texte": "Master en Intelligence Artificielle et Management, IA School, campus de Lyon."
+  }
 }

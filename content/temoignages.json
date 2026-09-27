@@ -1,26 +1,55 @@
 {
-  "_aide": "Témoignages. `contexte` permet de filtrer par page (programme, evenement, entreprise). Ne publiez un témoignage qu'avec l'accord de la personne.",
+  "_aide": "Témoignages. `categorie` : participants, partenaires, evenements, entreprises. `vedette: true` = mis en avant. Ne publier qu'avec accord.",
   "liste": [
     {
       "nom": "José Pascaël Agbo",
       "fonction": "Grand Champion, 2ème édition",
-      "contexte": "evenement",
       "photo": "temoin-jose-pascael-agbo",
-      "texte": "Merci de nous offrir une tribune aussi exigeante que prestigieuse. En tant que lauréat de cette édition, je repars non seulement avec un trophée, mais avec une exigence renouvelée envers moi-même et envers la parole que je porte."
+      "texte": "Merci de nous offrir une tribune aussi exigeante que prestigieuse. En tant que lauréat de cette édition, je repars non seulement avec un trophée, mais avec une exigence renouvelée envers moi-même et envers la parole que je porte. Avoir un profil féminin qui repousse ainsi les limites de l'art oratoire au Bénin, c'est rare, presque unique.",
+      "categorie": "participants",
+      "vedette": true
     },
     {
       "nom": "Maître Huguette Bokpè Gnacadja",
       "fonction": "Marraine, 2ème édition",
-      "contexte": "evenement",
       "photo": "temoin-huguette-bokpe-gnacadja",
-      "texte": "Madame la promotrice, c'est exactement le type d'événement auquel je voudrais que mon nom soit associé. S'il fallait refaire l'expérience, je le ferais avec plaisir. Bravo pour cette brillante édition."
+      "texte": "Madame la promotrice, c'est exactement le type d'événement auquel je voudrais que mon nom soit associé. S'il fallait refaire l'expérience, je le ferais avec plaisir. Bravo pour cette brillante édition.",
+      "categorie": "partenaires",
+      "vedette": true
     },
     {
       "nom": "Dr Mylène Grimaud",
       "fonction": "Membre du jury, 1ère édition",
-      "contexte": "evenement",
       "photo": "temoin-mylene-grimaud",
-      "texte": "Chère Mazidath, félicitations à toi pour cette belle initiative et son succès. Ce fut un plaisir de contribuer à cette belle aventure et de rencontrer de si belles personnes."
+      "texte": "Chère Mazidath, félicitations à toi pour cette belle initiative et son succès. Ce fut un plaisir de contribuer à cette belle aventure et de rencontrer de si belles personnes.",
+      "categorie": "evenements"
+    },
+    {
+      "nom": "Ezékias Gbessé",
+      "fonction": "2ème prix, 2ème édition",
+      "categorie": "participants",
+      "photo": "laureat-ezekias-gbesse",
+      "texte": "Un immense merci pour cette belle initiative qu'est Deux Minutes pour Convaincre. Cette expérience m'a énormément apporté, tant sur le plan oratoire qu'humain."
+    },
+    {
+      "nom": "Tristan Kounde",
+      "fonction": "Deuxième place, 1ère édition",
+      "categorie": "participants",
+      "photo": "laureat-tristan-kounde",
+      "texte": "Je tiens à remercier chaleureusement la Muse Éloquente pour l'initiative exceptionnelle et l'originalité du concours d'éloquence « 2 minutes pour convaincre »."
+    },
+    {
+      "nom": "David Kelly Akin",
+      "fonction": "Finaliste, 1ère édition",
+      "categorie": "participants",
+      "photo": "temoin-david-kelly-akin",
+      "texte": "Deux minutes pour convaincre m'a véritablement marqué et j'en ressors grandi. Une initiative à encourager et à soutenir."
     }
-  ]
+  ],
+  "categories": {
+    "participants": "Participants",
+    "partenaires": "Marraine & partenaires",
+    "evenements": "Jury",
+    "entreprises": "Entreprises & institutions"
+  }
 }

@@ -25,9 +25,8 @@ ${page.noindex ? '<meta name="robots" content="noindex">' : ""}
 <meta name="theme-color" content="#272A5D">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/pictogramme-32.png">
 <link rel="apple-touch-icon" href="/assets/brand/pictogramme-180.png">
-<link rel="preload" href="/assets/fonts/anton-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/cormorant-normal-500-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/montserrat-normal-300_700-latin.woff2" as="font" type="font/woff2" crossorigin>
-${page.preload ? `<link rel="preload" as="image" href="${imgUrl(page.preload, 960)}" imagesrcset="${page.preloadSrcset || ""}" fetchpriority="high">` : ""}
 <link rel="stylesheet" href="/assets/site.css?v=${page.version}">
 <script>document.documentElement.classList.add("js");</script>
 ${(page.jsonld || []).map((j) => `<script type="application/ld+json">${JSON.stringify(j)}</script>`)}
@@ -55,11 +54,11 @@ function header(site, page) {
 </header>
 <div class="menu-mobile" id="menu-mobile" hidden data-menu>
   <nav aria-label="Menu mobile">
-    <a href="/">Accueil</a>
-    ${site.navigation.map((n) => `<a href="${n.url}">${esc(n.label)}</a>`)}
+    <a href="/"><small>00</small>Accueil</a>
+    ${site.navigation.map((n, i) => `<a href="${n.url}"><small>${String(i + 1).padStart(2, "0")}</small>${esc(n.label)}</a>`)}
   </nav>
   <div class="menu-mobile__bas">
-    <a class="btn btn--or" href="${site.ctaNavigation.url}">Réserver Speak &amp; Conquer</a>
+    <a class="btn btn--clair" href="${site.ctaNavigation.url}">${esc(site.ctaNavigation.label)}</a>
     <a class="btn btn--ligne-claire" href="${wa(site, "Bonjour Mazidath, je vous contacte depuis votre site.")}"${ext("https:")}>${icon.whatsapp} WhatsApp</a>
     <p class="menu-mobile__devise">${esc(site.devise)}</p>
   </div>
@@ -69,30 +68,36 @@ function header(site, page) {
 function footer(site) {
   return html`
 <footer class="pied">
-  <div class="conteneur pied__grille">
-    <div class="pied__marque">
-      <img src="/assets/brand/logo-vertical.webp" width="300" height="393" alt="Logo La Muse Éloquente" loading="lazy">
-      <p>${esc(site.devise)}</p>
+  <div class="conteneur">
+    <div class="pied__haut">
+      <p class="pied__signature">La parole change tout <em>lorsqu'elle est maîtrisée.</em></p>
+      <a class="btn btn--clair" href="${site.ctaNavigation.url}">${esc(site.ctaNavigation.label)} ${icon.fleche}</a>
     </div>
-    <nav class="pied__col" aria-label="Plan du site">
-      <h2>Le site</h2>
-      <a href="/">Accueil</a>
-      ${site.navigation.map((n) => `<a href="${n.url}">${esc(n.label)}</a>`)}
-    </nav>
-    <div class="pied__col">
-      <h2>Contact</h2>
-      ${site.contact.email ? `<a href="mailto:${site.contact.email}">${esc(site.contact.email)}</a>` : ""}
-      <a href="${wa(site)}"${ext("https:")}>WhatsApp <span class="nowrap">${esc(site.contact.whatsappAffiche)}</span></a>
-      <a href="/travailler-avec-moi/#devis">Demande de devis</a>
+    <div class="pied__grille">
+      <div class="pied__marque">
+        <img src="/assets/brand/pictogramme-180.png" width="64" height="64" alt="" loading="lazy">
+        <p><b>La Muse Éloquente</b>${esc(site.fondatrice)} · ${esc(site.devise)}</p>
+      </div>
+      <nav class="pied__col" aria-label="Plan du site">
+        <h2>Navigation</h2>
+        <a href="/">Accueil</a>
+        ${site.navigation.map((n) => `<a href="${n.url}">${esc(n.label)}</a>`)}
+      </nav>
+      <div class="pied__col">
+        <h2>Contact</h2>
+        ${site.contact.email ? `<a href="mailto:${site.contact.email}">${esc(site.contact.email)}</a>` : ""}
+        <a href="${wa(site)}"${ext("https:")}>WhatsApp <span class="nowrap">${esc(site.contact.whatsappAffiche)}</span></a>
+        <a href="/travailler-avec-moi/#devis">Demande de devis</a>
+      </div>
+      <div class="pied__col">
+        <h2>Réseaux</h2>
+        ${site.reseaux.map((r) => `<a href="${r.url}"${ext(r.url)}>${esc(r.nom)}</a>`)}
+      </div>
     </div>
-    <div class="pied__col">
-      <h2>Réseaux</h2>
-      ${site.reseaux.map((r) => `<a href="${r.url}"${ext(r.url)}>${esc(r.nom)}</a>`)}
+    <div class="pied__bas">
+      <p>© ${new Date().getFullYear()} ${esc(site.nom)} · ${esc(site.fondatrice)}</p>
+      <p><a href="/mentions-legales/">Mentions légales</a> · <a href="/confidentialite/">Confidentialité</a> · <a href="/cgv/">CGV</a></p>
     </div>
-  </div>
-  <div class="conteneur pied__bas">
-    <p>© ${new Date().getFullYear()} ${esc(site.nom)} · ${esc(site.fondatrice)}</p>
-    <p><a href="/mentions-legales/">Mentions légales</a> · <a href="/cgv/">CGV</a></p>
   </div>
 </footer>`;
 }

@@ -5,7 +5,7 @@
   "devise": "Éloquence & Impact",
   "url": "https://lamuseeloquente.com",
   "langue": "fr",
-  "description": "La Muse Éloquente, par Mazidath Bello : coaching et formation en prise de parole, conférences, maîtrise de cérémonie et événements autour de l'éloquence, entre Cotonou et la France.",
+  "description": "La Muse Éloquente, l'univers de Mazidath Bello : prise de parole en public, éloquence, conférences, maîtrise de cérémonie et événements, entre l'Afrique, la France et l'international.",
   "imagePartage": "portrait-bleu-accoudee",
   "contact": {
     "whatsapp": "2290143393333",
@@ -24,11 +24,11 @@
       "url": "/a-propos/"
     },
     {
-      "label": "Programmes",
+      "label": "Accompagnements",
       "url": "/programmes/speak-and-conquer/"
     },
     {
-      "label": "Travailler avec moi",
+      "label": "Interventions",
       "url": "/travailler-avec-moi/"
     },
     {
@@ -41,8 +41,8 @@
     }
   ],
   "ctaNavigation": {
-    "label": "Réserver",
-    "url": "/programmes/speak-and-conquer/#formules"
+    "label": "Parlons de votre projet",
+    "url": "/travailler-avec-moi/#devis"
   },
   "reseaux": [
     {
@@ -72,20 +72,24 @@
   ],
   "chiffres": [
     {
+      "valeur": "15+",
+      "libelle": "ans de prise de parole, sur scène, dans les médias et en événementiel"
+    },
+    {
       "valeur": "+70K",
-      "libelle": "abonnés sur les réseaux sociaux"
+      "libelle": "abonnés sur Instagram, TikTok, Facebook et LinkedIn"
     },
     {
       "valeur": "+10M",
-      "libelle": "vues cumulées"
+      "libelle": "vues cumulées sur les réseaux"
     },
     {
       "valeur": "2024",
-      "libelle": "lauréate du concours d'éloquence du Groupe Gema"
+      "libelle": "lauréate du concours national d'éloquence du Groupe Gema"
     },
     {
       "valeur": "2",
-      "libelle": "éditions de Deux Minutes Pour Convaincre"
+      "libelle": "éditions de Deux Minutes Pour Convaincre à Cotonou"
     }
   ],
   "presse": [
@@ -94,5 +98,6 @@
     "Bip Radio",
     "Le Leader",
     "Groupe Gema"
-  ]
+  ],
+  "_sourceChiffres": "15+ ans : information fournie par Mazidath (27/09/2026). +70K, +10M : rapport 2MPC. Aucun chiffre « clients » n'existe dans les contenus : ne pas en afficher."
 }
