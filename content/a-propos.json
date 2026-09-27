@@ -90,7 +90,11 @@
         "auteur": "Maître Huguette Bokpè Gnacadja, marraine de la 2ème édition"
       },
       "photo": "scene-promotrice",
-      "photoAlt": "Mazidath Bello prononce le mot de bienvenue de Deux Minutes Pour Convaincre"
+      "photoAlt": "Mazidath Bello prononce le mot de bienvenue de Deux Minutes Pour Convaincre",
+      "lien": {
+        "label": "Voir la vidéo de La Dictée Solidaire",
+        "url": "https://www.facebook.com/share/v/1Cw1BCMmXr/?mibextid=wwXIfr"
+      }
     },
     {
       "id": "le-livre",
