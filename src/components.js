@@ -48,7 +48,7 @@ const temoin = (x, categories) => html`
 <li class="temoin" data-reveal>
   ${categories && categories[x.categorie] ? `<p class="temoin__categorie">${esc(categories[x.categorie])}</p>` : ""}
   <blockquote><p>${esc(x.texte)}</p></blockquote>
-  <p class="temoin__auteur">${x.photo ? img(x.photo, { alt: "", sizes: "56px" }) : `<span class="temoin__initiale" aria-hidden="true">${esc(x.nom.charAt(0))}</span>`}<span><b>${esc(x.nom)}</b>${esc(x.fonction)}</span></p>
+  <p class="temoin__auteur">${x.photo ? img(x.photo, { alt: "", sizes: "56px" }) : `<span class="temoin__initiale" aria-hidden="true">${esc(x.nom.charAt(0))}</span>`}<span><b>${esc(x.nom)}</b>${esc(x.fonction)}${x.traduction ? `<small class="temoin__trad">${esc(x.traduction)}</small>` : ""}</span></p>
 </li>`;
 
 module.exports = { riche, enteteSection, pageHero, appelFinal, temoin };

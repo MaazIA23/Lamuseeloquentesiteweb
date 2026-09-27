@@ -516,3 +516,5 @@
 .lectures { display: grid; gap: var(--e-5); margin-top: clamp(3rem, 7vw, 5rem); }
 @media (min-width: 900px) { .lectures .temoins { grid-template-columns: repeat(2, 1fr); max-width: 1000px; } }
 @media (min-width: 900px) { .lectures .temoins--quatre { grid-template-columns: repeat(4, 1fr); max-width: none; gap: var(--e-6); } }
+.temoin__trad { display: block; font-size: 0.75rem; font-style: italic; color: var(--encre-douce); opacity: 0.8; }
+@media (min-width: 900px) { .lectures .temoins:not(.temoins--quatre) { grid-template-columns: repeat(3, 1fr); max-width: none; } }

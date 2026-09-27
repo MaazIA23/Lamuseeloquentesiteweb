@@ -53,7 +53,7 @@ module.exports = function boutique({ site, boutique: b, temoignages }) {
     <div class="fiches">${produits.map((p) => fiche(p, n++))}</div>
     ${produits.map((pr) => {
       const avis = temoignages.liste.filter((t) => t.produit === pr.slug);
-      return avis.length ? html`<div class="lectures"><p class="fiche__label">${pr.categorie === "livres" ? "Premiers retours de lecture" : "Avis vérifiés"}</p><ul class="temoins${avis.length > 2 ? " temoins--quatre" : ""}" data-defile>${avis.map((x) => temoin(x))}</ul></div>` : "";
+      return avis.length ? html`<div class="lectures"><p class="fiche__label">${pr.categorie === "livres" ? "Premiers retours de lecture" : "Avis vérifiés"}</p><ul class="temoins${avis.length > 3 ? " temoins--quatre" : ""}" data-defile>${avis.map((x) => temoin(x))}</ul></div>` : "";
     })}
   </div>
 </section>`;
