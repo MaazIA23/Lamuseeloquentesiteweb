@@ -9,20 +9,19 @@
       "photo": "couverture-chroniques",
       "resume": "Un récit autobiographique et une méthode pour révéler sa voix, porté par une conviction : la prise de parole n'est pas un don réservé à quelques-uns, c'est une compétence.",
       "formats": [
-        "Papier (France et Cotonou)",
-        "E-book"
+        "E-book · 7 000 FCFA",
+        "Papier · 10 000 FCFA (France et Cotonou)"
       ],
-      "prix": "",
+      "prix": "7 000 FCFA",
       "prixBarre": "",
       "achat": {
         "label": "Acheter l'e-book",
         "url": "https://sxmcjdek.mychariow.shop/prd_cvirprbb",
         "papier": {
-          "label": "Commander la version papier",
+          "label": "Commander la version papier · 10 000 FCFA",
           "whatsapp": "Bonjour, je souhaite commander la version papier du livre « Chroniques d'une voix qui s'est révélée »."
         }
       },
-      "TODO": "Prix du livre papier (France, Cotonou) et prix officiel de l'e-book en FCFA (Chariow affiche 11,76 €).",
       "categorie": "livres",
       "accroche": "Une histoire personnelle devenue une invitation à révéler sa propre voix.",
       "pourQui": "Pour toutes celles et ceux qui ont déjà senti leur voix trembler, et qui veulent comprendre comment une voix se construit.",
@@ -30,7 +29,8 @@
         "Le récit d'un parcours, de l'ombre à la scène",
         "Une méthode pour révéler sa voix",
         "La conviction que la prise de parole est une compétence, et non un don"
-      ]
+      ],
+      "prixLibelle": "E-book"
     },
     {
       "slug": "le-secret-d-une-belle-diction",

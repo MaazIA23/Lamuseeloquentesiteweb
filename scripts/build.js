@@ -150,7 +150,7 @@ const pages = [
       description: p.resume,
       image: `${site.url}/assets/img/${p.photo}-960.webp`,
       brand: { "@type": "Brand", name: site.nom },
-      offers: { "@type": "Offer", price: prixNum(p.prix), priceCurrency: "EUR", url: p.achat.url, availability: "https://schema.org/InStock" }
+      offers: { "@type": "Offer", price: /FCFA/.test(p.prix) ? Number(p.prix.replace(/\D/g, "")) : prixNum(p.prix), priceCurrency: /FCFA/.test(p.prix) ? "XOF" : "EUR", url: p.achat.url, availability: "https://schema.org/InStock" }
     }))
   },
   { chemin: "/mentions-legales/", gabarit: legal.mentions, titre: "Mentions légales · La Muse Éloquente", noindex: noindexLegal },
