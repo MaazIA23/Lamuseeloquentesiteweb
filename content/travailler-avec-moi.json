@@ -65,12 +65,12 @@
             "Accueil et service client",
             "Compétences interpersonnelles"
           ],
-          "photo": "masterclass-participante-1",
+          "photo": "formation-kirikou",
           "exemples": [
-            "Formation du personnel de salle à l'art d'accueillir, restaurant réputé de Cotonou",
+            "Formation du personnel de salle à l'art d'accueillir, Club Kirikou, Cotonou",
             "Formation d'enseignants à la prise de parole"
           ],
-          "TODO": "Nom du restaurant et de l'établissement scolaire, si Mazidath souhaite les citer."
+          "TODO": "Nom de l'établissement scolaire, si Mazidath souhaite le citer."
         },
         {
           "id": "masterclass",
@@ -83,7 +83,7 @@
             "« Les cinq clés pour convaincre en deux minutes », Cotonou, 20 septembre 2025",
             "Deux masterclass réalisées, une troisième en préparation"
           ],
-          "photo": "masterclass-mazidath-ecoute"
+          "photo": "masterclass-participante-3"
         }
       ]
     },

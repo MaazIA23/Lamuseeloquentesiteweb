@@ -98,6 +98,24 @@
       1600
     ]
   },
+  "formation-kirikou-equipe": {
+    "width": 1440,
+    "height": 1080,
+    "widths": [
+      480,
+      960,
+      1440
+    ]
+  },
+  "formation-kirikou": {
+    "width": 2576,
+    "height": 1932,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
   "intervention-micro-bleu": {
     "width": 853,
     "height": 1280,
@@ -188,6 +206,15 @@
   "masterclass-participante-2": {
     "width": 2576,
     "height": 1650,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "masterclass-participante-3": {
+    "width": 2576,
+    "height": 1717,
     "widths": [
       480,
       960,
