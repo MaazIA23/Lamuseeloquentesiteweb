@@ -74,8 +74,10 @@ const confidentialite = ({ legal: l }) =>
 <p>Les données sont destinées à La Muse Éloquente et à ses prestataires techniques, uniquement pour les besoins des services : hébergement (Netlify), paiement (FedaPay, Chariow), réservation (Cal.com). Elles ne sont ni vendues ni cédées à des tiers.</p>
 <h2>Durée de conservation</h2>
 <p>Les données sont conservées pendant la durée nécessaire aux finalités poursuivies : durée de la relation commerciale pour les accompagnements, durée légale de conservation comptable pour les commandes, et au plus trois ans après le dernier contact pour les demandes de devis sans suite.</p>
-<h2>Cookies</h2>
-<p>Le Site n'utilise pas de cookies publicitaires. Les polices de caractères sont hébergées sur le Site lui-même. Les vidéos YouTube ne sont chargées, dans leur version sans cookies, que lorsque vous choisissez de les lire.</p>
+<h2 id="cookies">Cookies</h2>
+<p>Le Site n'utilise ni cookie publicitaire ni outil de mesure d'audience. Les polices de caractères sont hébergées sur le Site lui-même.</p>
+<p>Lors de votre première visite, un bandeau vous demande votre accord pour les contenus tiers : les vidéos YouTube, qui peuvent déposer des cookies lorsque vous les lisez. Si vous refusez, aucune vidéo n'est chargée sur le Site ; vous pouvez toujours la regarder directement sur YouTube. Votre choix est conservé dans votre navigateur pendant six mois.</p>
+<p>Vous pouvez modifier votre choix à tout moment grâce au lien « Gérer les cookies » en bas de chaque page.</p>
 <h2>Vos droits</h2>
 <p>Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et, dans certains cas, de portabilité de vos données. Pour les exercer, écrivez à <a href="mailto:${l.editeur.email}">${esc(l.editeur.email)}</a> ou à l'adresse : ${esc(l.editeur.siege)}. Une preuve d'identité peut être demandée.</p>
 <h2>Sécurité</h2>

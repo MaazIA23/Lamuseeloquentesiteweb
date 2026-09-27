@@ -205,3 +205,33 @@ details[open] > summary .ico { transform: rotate(45deg); }
   .js [data-reveal], .js [data-reveal] img { opacity: 1; transform: none; }
   .js .fil path { stroke-dashoffset: 0; }
 }
+
+/* ---------- Bandeau cookies ---------- */
+.cookies {
+  position: fixed; z-index: 60; left: 16px; right: 16px; bottom: 16px;
+  max-width: 440px; margin-left: auto;
+  padding: 1.25rem 1.35rem;
+  background: var(--ivoire); color: var(--bleu);
+  border: 1px solid rgba(180, 128, 40, 0.35); border-top: 3px solid var(--or);
+  box-shadow: var(--ombre);
+}
+.cookies[hidden] { display: none; }
+.cookies__titre { font-family: var(--f-serif); font-size: 1.35rem; margin: 0 0 .35rem; }
+.cookies__texte { font-size: .88rem; line-height: 1.55; margin: 0 0 1rem; }
+.cookies__texte a { color: var(--or-profond); text-decoration: underline; text-underline-offset: 3px; }
+.cookies__actions { display: flex; gap: .6rem; flex-wrap: wrap; }
+.cookies__actions .btn { flex: 1 1 0; justify-content: center; }
+body.cookies-ouvert .barre-mobile { display: none !important; }
+.pied__cookies { background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; text-decoration: none; }
+.pied__cookies:hover { text-decoration: underline; }
+
+/* Accord demandé avant de lancer une vidéo */
+.video > .video__lancer, .video > .video__accord { grid-row: 1; grid-column: 1; }
+.video__accord {
+  z-index: 2;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .8rem;
+  padding: 1.25rem; text-align: center;
+  background: rgba(29, 31, 71, 0.9); color: var(--ivoire);
+}
+.video__accord p { margin: 0; font-size: .9rem; max-width: 28ch; }
+.video__accord .lien { color: var(--or-clair); }

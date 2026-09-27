@@ -70,15 +70,56 @@
     compteurs.forEach((el) => ioc.observe(el));
   }
 
-  /* ---------- Vidéos YouTube : le lecteur ne se charge qu'au clic ---------- */
+  /* ---------- Consentement cookies (conservé 6 mois dans le navigateur) ---------- */
+  const CLE = "lme-cookies", DUREE = 182 * 24 * 3600 * 1000;
+  const lireChoix = () => {
+    try {
+      const c = JSON.parse(localStorage.getItem(CLE) || "null");
+      return c && Date.now() - c.date < DUREE ? c.choix : null;
+    } catch (e) { return null; }
+  };
+  let choix = lireChoix();
+  const bandeau = document.querySelector("[data-cookies]");
+  const afficherBandeau = (oui) => {
+    if (!bandeau) return;
+    bandeau.hidden = !oui;
+    document.body.classList.toggle("cookies-ouvert", oui);
+  };
+  const enregistrer = (valeur) => {
+    choix = valeur;
+    try { localStorage.setItem(CLE, JSON.stringify({ choix: valeur, date: Date.now() })); } catch (e) {}
+    afficherBandeau(false);
+    if (valeur === "oui") document.querySelectorAll(".video__accord").forEach((a) => a.remove());
+  };
+  if (!choix) afficherBandeau(true);
+  document.querySelectorAll("[data-cookies-choix]").forEach((b) => b.addEventListener("click", () => enregistrer(b.dataset.cookiesChoix)));
+  document.querySelectorAll("[data-cookies-ouvrir]").forEach((b) => b.addEventListener("click", () => {
+    afficherBandeau(true);
+    bandeau && bandeau.querySelector("button").focus();
+  }));
+
+  /* ---------- Vidéos YouTube : le lecteur ne se charge qu'au clic, et avec accord ---------- */
+  const lire = (btn) => {
+    const f = document.createElement("iframe");
+    f.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.youtube}?autoplay=1&rel=0`;
+    f.title = btn.getAttribute("aria-label") || "Vidéo";
+    f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    f.allowFullscreen = true;
+    btn.replaceWith(f);
+  };
   document.querySelectorAll("[data-youtube]").forEach((btn) => {
     btn.addEventListener("click", () => {
-      const f = document.createElement("iframe");
-      f.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.youtube}?autoplay=1&rel=0`;
-      f.title = btn.getAttribute("aria-label") || "Vidéo";
-      f.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-      f.allowFullscreen = true;
-      btn.replaceWith(f);
+      if (choix === "oui") return lire(btn);
+      const cadre = btn.parentElement;
+      if (cadre.querySelector(".video__accord")) return;
+      const accord = document.createElement("div");
+      accord.className = "video__accord";
+      accord.innerHTML = `<p>Cette vidéo est hébergée par YouTube, qui peut déposer des cookies.</p>
+        <button class="btn btn--petit btn--clair" type="button">Accepter et lire</button>
+        <a class="lien" href="https://www.youtube.com/watch?v=${btn.dataset.youtube}" target="_blank" rel="noopener">Voir sur YouTube</a>`;
+      accord.querySelector("button").addEventListener("click", () => { enregistrer("oui"); lire(btn); });
+      cadre.appendChild(accord);
+      accord.querySelector("button").focus();
     });
   });
 

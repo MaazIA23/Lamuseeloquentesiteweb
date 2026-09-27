@@ -96,7 +96,7 @@ function footer(site) {
     </div>
     <div class="pied__bas">
       <p>© ${new Date().getFullYear()} ${esc(site.nom)} · ${esc(site.fondatrice)}</p>
-      <p><a href="/mentions-legales/">Mentions légales</a> · <a href="/confidentialite/">Confidentialité</a> · <a href="/cgv/">CGV</a></p>
+      <p><a href="/mentions-legales/">Mentions légales</a> · <a href="/confidentialite/">Confidentialité</a> · <a href="/cgv/">CGV</a> · <button class="pied__cookies" type="button" data-cookies-ouvrir>Gérer les cookies</button></p>
     </div>
   </div>
 </footer>`;
@@ -108,6 +108,16 @@ const barreMobile = (b) =>
     ? `<div class="barre-mobile" data-barre hidden><p>${b.texte}</p><a class="btn btn--or btn--petit" href="${b.url}">${esc(b.label)}</a></div>`
     : "";
 
+/** Bandeau de consentement : les contenus tiers (YouTube) ne se chargent qu'après accord. */
+const bandeauCookies = `<div class="cookies" data-cookies role="dialog" aria-live="polite" aria-labelledby="cookies-titre" hidden>
+  <p class="cookies__titre" id="cookies-titre">Vos préférences</p>
+  <p class="cookies__texte">Ce site n'utilise aucun cookie publicitaire. Avec votre accord, les vidéos YouTube peuvent déposer des cookies lorsque vous les lisez. <a href="/confidentialite/#cookies">En savoir plus</a></p>
+  <div class="cookies__actions">
+    <button class="btn btn--petit btn--plein" type="button" data-cookies-choix="oui">Accepter</button>
+    <button class="btn btn--petit btn--ligne" type="button" data-cookies-choix="non">Refuser</button>
+  </div>
+</div>`;
+
 function layout(site, page, body) {
   return html`${head(site, page)}
 <body class="${page.classe || ""}">
@@ -117,6 +127,7 @@ ${body}
 </main>
 ${footer(site)}
 ${barreMobile(page.barreMobile)}
+${bandeauCookies}
 <script src="/assets/site.js?v=${page.version}" defer></script>
 </body>
 </html>
