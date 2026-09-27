@@ -8,12 +8,33 @@
       "resume": "Le concours d'improvisation oratoire créé par La Muse Éloquente : deux orateurs, deux thèses opposées, 120 secondes chacun pour convaincre.",
       "lieu": "Cotonou",
       "editions": [
-        { "label": "1ère édition", "date": "2025-05-10", "dateAffichee": "10 mai 2025", "lieu": "Hôtel Azalaï, Cotonou" },
-        { "label": "2ème édition", "date": "2026-08-08", "dateAffichee": "8 août 2026", "lieu": "Azalaï Hôtel, Cotonou" },
-        { "label": "3ème édition", "date": "2027-03", "dateAffichee": "Mars 2027", "lieu": "Cotonou", "aVenir": true }
+        {
+          "label": "1ère édition",
+          "date": "2025-05-10",
+          "dateAffichee": "10 mai 2025",
+          "lieu": "Hôtel Azalaï, Cotonou"
+        },
+        {
+          "label": "2ème édition",
+          "date": "2026-08-08",
+          "dateAffichee": "8 août 2026",
+          "lieu": "Azalaï Hôtel, Cotonou"
+        },
+        {
+          "label": "3ème édition",
+          "date": "2027-03",
+          "dateAffichee": "Mars 2027",
+          "lieu": "Cotonou",
+          "aVenir": true
+        }
       ],
       "siteOfficiel": "https://2minpourconvaincre.com",
-      "photos": ["2mpc-scene", "2mpc-public", "2mpc-laureats", "attestation-ezechielle-bouet"]
+      "photos": [
+        "2mpc-scene",
+        "2mpc-public",
+        "2mpc-laureats",
+        "attestation-ezechielle-bouet"
+      ]
     },
     {
       "slug": "masterclass-cinq-cles-pour-convaincre",
@@ -23,7 +44,11 @@
       "date": "2025-09-20",
       "dateAffichee": "20 septembre 2025",
       "lieu": "Cotonou",
-      "photos": ["masterclass-mazidath", "masterclass-attestation-rebecca", "masterclass-attestation-pamella"],
+      "photos": [
+        "masterclass-mazidath-ecoute",
+        "masterclass-attestation-rebecca",
+        "masterclass-attestation-pamella"
+      ],
       "TODO": "Lieu exact, nombre de participants, programme de la masterclass."
     }
   ]

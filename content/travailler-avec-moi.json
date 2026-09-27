@@ -6,7 +6,10 @@
   },
   "hero": {
     "surtitre": "Entreprises, écoles, institutions",
-    "titre": ["Travailler", "avec moi"],
+    "titre": [
+      "Travailler",
+      "avec moi"
+    ],
     "texte": "Conférences, masterclass, formations d'équipes, maîtrise de cérémonie : je mets l'art de l'éloquence au service de la performance professionnelle et de l'impact de vos projets.",
     "photo": "scene-tailleur-peche",
     "photoAlt": "Mazidath Bello au pupitre, micro en main, lors d'un discours"
@@ -19,7 +22,9 @@
       "valeur": "Une intervention incarnée sur la prise de parole, la confiance et l'impact, portée par une oratrice lauréate d'un concours national d'éloquence.",
       "format": "Keynote, discours d'ouverture ou participation à une table ronde.",
       "public": "Écoles, universités, entreprises, institutions, associations.",
-      "exemples": ["Discours d'ouverture de Deux Minutes Pour Convaincre, Azalaï Hôtel, Cotonou (2026)"],
+      "exemples": [
+        "Discours d'ouverture de Deux Minutes Pour Convaincre, Azalaï Hôtel, Cotonou (2026)"
+      ],
       "photo": "scene-micro"
     },
     {
@@ -29,8 +34,10 @@
       "valeur": "Une méthode claire et des exercices pratiques en petit groupe, avec une attestation de participation.",
       "format": "Session en groupe, théorie et mises en situation.",
       "public": "Étudiants, jeunes professionnels, équipes commerciales, managers.",
-      "exemples": ["« Les cinq clés pour convaincre en deux minutes », Cotonou, 20 septembre 2025"],
-      "photo": "masterclass-mazidath"
+      "exemples": [
+        "« Les cinq clés pour convaincre en deux minutes », Cotonou, 20 septembre 2025"
+      ],
+      "photo": "masterclass-mazidath-ecoute"
     },
     {
       "id": "formations",
@@ -39,8 +46,14 @@
       "valeur": "Des programmes sur mesure pour améliorer la communication, le leadership et la relation client.",
       "format": "Programme sur mesure, construit à partir de vos enjeux.",
       "public": "Entreprises, administrations, ONG.",
-      "themes": ["Communication interne et externe", "Leadership et management collaboratif", "Formation du personnel : accueil, service client", "Compétences interpersonnelles (soft skills)", "Masterclass sur des thématiques ciblées"],
-      "photo": "masterclass-mazidath-ecoute"
+      "themes": [
+        "Communication interne et externe",
+        "Leadership et management collaboratif",
+        "Formation du personnel : accueil, service client",
+        "Compétences interpersonnelles (soft skills)",
+        "Masterclass sur des thématiques ciblées"
+      ],
+      "photo": "masterclass-participante-1"
     },
     {
       "id": "animation",
@@ -60,7 +73,10 @@
       "valeur": "Un accompagnement individuel et confidentiel, construit autour de votre échéance.",
       "format": "Coaching individuel, notamment via la formule Prestige de Speak & Conquer (8 semaines).",
       "public": "Cadres, dirigeants, entrepreneurs.",
-      "lien": { "label": "Voir la formule Prestige", "url": "/programmes/speak-and-conquer/#formule-prestige" },
+      "lien": {
+        "label": "Voir la formule Prestige",
+        "url": "/programmes/speak-and-conquer/#formule-prestige"
+      },
       "photo": "portrait-bleu-accoudee"
     },
     {
@@ -70,19 +86,44 @@
       "valeur": "Le savoir-faire de l'équipe qui a créé et organisé deux éditions de Deux Minutes Pour Convaincre.",
       "format": "Accompagnement sur mesure.",
       "public": "Marques, entreprises, institutions.",
-      "themes": ["Élaboration de stratégies d'influence", "Conseil en stratégie de communication", "Organisation d'événements d'entreprise", "Représentation et égérie de marque"],
+      "themes": [
+        "Élaboration de stratégies d'influence",
+        "Conseil en stratégie de communication",
+        "Organisation d'événements d'entreprise",
+        "Représentation et égérie de marque"
+      ],
       "photo": "2mpc-public"
     }
   ],
   "processus": [
-    { "titre": "Votre demande", "texte": "Vous décrivez votre projet dans le formulaire ci-dessous." },
-    { "titre": "Un échange", "texte": "Nous en parlons pour préciser vos objectifs, votre public et vos contraintes." },
-    { "titre": "Une proposition", "texte": "Vous recevez une proposition sur mesure et un devis." },
-    { "titre": "Le jour J", "texte": "J'interviens, et nous faisons le point ensuite." }
+    {
+      "titre": "Votre demande",
+      "texte": "Vous décrivez votre projet dans le formulaire ci-dessous."
+    },
+    {
+      "titre": "Un échange",
+      "texte": "Nous en parlons pour préciser vos objectifs, votre public et vos contraintes."
+    },
+    {
+      "titre": "Une proposition",
+      "texte": "Vous recevez une proposition sur mesure et un devis."
+    },
+    {
+      "titre": "Le jour J",
+      "texte": "J'interviens, et nous faisons le point ensuite."
+    }
   ],
   "formulaire": {
     "titre": "Parlons de votre projet",
     "texte": "Décrivez votre besoin en quelques lignes : je reviens vers vous rapidement.",
-    "types": ["Conférence", "Masterclass", "Formation en entreprise", "Animation / maîtrise de cérémonie", "Accompagnement d'un dirigeant", "Prestation de l'agence", "Autre"]
+    "types": [
+      "Conférence",
+      "Masterclass",
+      "Formation en entreprise",
+      "Animation / maîtrise de cérémonie",
+      "Accompagnement d'un dirigeant",
+      "Prestation de l'agence",
+      "Autre"
+    ]
   }
 }

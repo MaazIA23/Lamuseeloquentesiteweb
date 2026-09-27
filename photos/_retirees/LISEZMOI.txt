@@ -1,0 +1,2 @@
+Photos retirées du site à la demande de Mazidath. Elles ne sont pas publiées
+(npm run images ne lit pas ce dossier). Pour en remettre une, la redéplacer dans photos/.

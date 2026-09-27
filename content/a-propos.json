@@ -6,7 +6,10 @@
   },
   "hero": {
     "surtitre": "À propos",
-    "titre": ["De l'ombre", "à la scène"],
+    "titre": [
+      "De l'ombre",
+      "à la scène"
+    ],
     "texte": "Je m'appelle Mazidath Bello. On me connaît comme La Muse Éloquente. Voici le chemin d'une voix qui a appris à se faire entendre, et qui aide aujourd'hui les autres à trouver la leur.",
     "photo": "portrait-vert-fond-peche",
     "photoAlt": "Portrait de Mazidath Bello en robe verte sur fond pêche"
@@ -66,9 +69,30 @@
     "surtitre": "Les convictions",
     "titre": "Ce qui guide mon travail",
     "valeurs": [
-      { "nom": "Intégrité", "points": ["Authenticité dans nos approches pédagogiques", "Transparence dans nos relations clients", "Cohérence entre nos valeurs et nos actions"] },
-      { "nom": "Responsabilité", "points": ["Engagement envers l'excellence de nos formations", "Accompagnement personnalisé et suivi de qualité", "Contribution positive au développement professionnel de chacun"] },
-      { "nom": "Impact", "points": ["Transformation mesurable des compétences oratoires", "Influence positive sur la performance des entreprises", "Rayonnement continental de l'excellence francophone"] }
+      {
+        "nom": "Intégrité",
+        "points": [
+          "Authenticité dans nos approches pédagogiques",
+          "Transparence dans nos relations clients",
+          "Cohérence entre nos valeurs et nos actions"
+        ]
+      },
+      {
+        "nom": "Responsabilité",
+        "points": [
+          "Engagement envers l'excellence de nos formations",
+          "Accompagnement personnalisé et suivi de qualité",
+          "Contribution positive au développement professionnel de chacun"
+        ]
+      },
+      {
+        "nom": "Impact",
+        "points": [
+          "Transformation mesurable des compétences oratoires",
+          "Influence positive sur la performance des entreprises",
+          "Rayonnement continental de l'excellence francophone"
+        ]
+      }
     ],
     "_source": "Charte graphique LME, Identité d'entreprise (p. 5)."
   },
@@ -78,8 +102,8 @@
     "texte": "La Muse Éloquente est une agence de communication et de conseil spécialisée dans l'accompagnement et la formation en prise de parole. Professionnels, particuliers, entreprises : chacun y trouve un cadre adapté pour développer sa communication orale.",
     "mission": "Révéler et développer le potentiel oratoire des individus et des organisations à travers des programmes de formation sur mesure, des accompagnements personnalisés et des événements fédérateurs.",
     "vision": "Devenir la référence incontournable en Afrique et au-delà dans l'accompagnement à l'éloquence et à l'impact professionnel.",
-    "photo": "masterclass-mazidath",
-    "photoAlt": "Mazidath Bello pendant la masterclass « Les cinq clés pour convaincre en deux minutes » à Cotonou"
+    "photo": "portrait-vert-buste",
+    "photoAlt": "Portrait de Mazidath Bello en robe verte"
   },
   "TODO": [
     "Valider le récit avec Mazidath (formulations personnelles).",
