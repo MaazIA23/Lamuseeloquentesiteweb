@@ -1,0 +1,26 @@
+{
+  "_aide": "Témoignages. `contexte` permet de filtrer par page (programme, evenement, entreprise). Ne publiez un témoignage qu'avec l'accord de la personne.",
+  "liste": [
+    {
+      "nom": "José Pascaël Agbo",
+      "fonction": "Grand Champion, 2ème édition",
+      "contexte": "evenement",
+      "photo": "temoin-jose-pascael-agbo",
+      "texte": "Merci de nous offrir une tribune aussi exigeante que prestigieuse. En tant que lauréat de cette édition, je repars non seulement avec un trophée, mais avec une exigence renouvelée envers moi-même et envers la parole que je porte."
+    },
+    {
+      "nom": "Maître Huguette Bokpè Gnacadja",
+      "fonction": "Marraine, 2ème édition",
+      "contexte": "evenement",
+      "photo": "temoin-huguette-bokpe-gnacadja",
+      "texte": "Madame la promotrice, c'est exactement le type d'événement auquel je voudrais que mon nom soit associé. S'il fallait refaire l'expérience, je le ferais avec plaisir. Bravo pour cette brillante édition."
+    },
+    {
+      "nom": "Dr Mylène Grimaud",
+      "fonction": "Membre du jury, 1ère édition",
+      "contexte": "evenement",
+      "photo": "temoin-mylene-grimaud",
+      "texte": "Chère Mazidath, félicitations à toi pour cette belle initiative et son succès. Ce fut un plaisir de contribuer à cette belle aventure et de rencontrer de si belles personnes."
+    }
+  ]
+}

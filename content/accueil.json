@@ -1,0 +1,172 @@
+{
+  "_aide": "Textes de la page d'accueil. Les photos se réfèrent aux noms des images optimisées (dossier photos/).",
+  "seo": {
+    "titre": "La Muse Éloquente · Mazidath Bello, prise de parole et éloquence",
+    "description": "Coaching et formation en prise de parole, programme Speak & Conquer, conférences, maîtrise de cérémonie et événements autour de l'éloquence avec Mazidath Bello, La Muse Éloquente."
+  },
+  "hero": {
+    "surtitre": "Mazidath Bello · La Muse Éloquente",
+    "titre": [
+      "Votre voix",
+      "est un",
+      "pouvoir."
+    ],
+    "texte": "Présentatrice, maîtresse de cérémonie et coach en prise de parole, j'aide les étudiants, les professionnels et les dirigeants à parler avec clarté, présence et impact.",
+    "ctaPrincipal": {
+      "label": "Découvrir Speak & Conquer",
+      "url": "/programmes/speak-and-conquer/"
+    },
+    "ctaSecondaire": {
+      "label": "Travailler avec moi",
+      "url": "/travailler-avec-moi/"
+    },
+    "photo": "portrait-bleu-accoudee",
+    "photoAlt": "Portrait de Mazidath Bello, en tailleur bleu, le menton posé sur la main"
+  },
+  "aiguillage": {
+    "titre": "Vous êtes ici pour…",
+    "choix": [
+      {
+        "label": "Progresser à l'oral",
+        "detail": "Programme Speak & Conquer",
+        "url": "/programmes/speak-and-conquer/"
+      },
+      {
+        "label": "Faire intervenir Mazidath",
+        "detail": "Conférence, formation, maîtrise de cérémonie",
+        "url": "/travailler-avec-moi/"
+      },
+      {
+        "label": "Lire et s'entraîner",
+        "detail": "Livre et ebooks",
+        "url": "/boutique/"
+      }
+    ]
+  },
+  "muse": {
+    "surtitre": "La Muse Éloquente",
+    "titre": "De l'ombre à la scène",
+    "paragraphes": [
+      "Présentatrice TV, maîtresse de cérémonie et voix off, j'ai fait de la parole mon métier.",
+      "Lauréate du concours d'éloquence du Groupe Gema en 2024, autrice de « Chroniques d'une voix qui s'est révélée » et fondatrice de Deux Minutes Pour Convaincre à Cotonou, je transmets une conviction : l'éloquence n'est pas un don, c'est une compétence qui se travaille."
+    ],
+    "reperes": [
+      {
+        "annee": "2024",
+        "texte": "Lauréate du concours d'éloquence du Groupe Gema, Paris"
+      },
+      {
+        "annee": "2025",
+        "texte": "1ère édition de Deux Minutes Pour Convaincre et masterclass « Les cinq clés pour convaincre en deux minutes », Cotonou"
+      },
+      {
+        "annee": "2026",
+        "texte": "2ème édition de Deux Minutes Pour Convaincre et sortie du livre « Chroniques d'une voix qui s'est révélée »"
+      }
+    ],
+    "cta": {
+      "label": "Découvrir mon parcours",
+      "url": "/a-propos/"
+    },
+    "photo": "scene-promotrice",
+    "photoAlt": "Mazidath Bello au pupitre, micro en main, lors du mot de bienvenue de Deux Minutes Pour Convaincre"
+  },
+  "univers": {
+    "surtitre": "Mes univers",
+    "titre": "Cinq manières de faire vivre la parole",
+    "liste": [
+      {
+        "verbe": "Former",
+        "texte": "Speak & Conquer et des accompagnements sur mesure pour oser, structurer et convaincre.",
+        "url": "/programmes/speak-and-conquer/",
+        "photo": "attestation-tristan-kounde"
+      },
+      {
+        "verbe": "Inspirer",
+        "texte": "Conférences et masterclass, comme « Les cinq clés pour convaincre en deux minutes » à Cotonou.",
+        "url": "/travailler-avec-moi/#conferences",
+        "photo": "masterclass-mazidath"
+      },
+      {
+        "verbe": "Animer",
+        "texte": "Maîtrise de cérémonie et présentation d'événements, avec l'aisance d'une présentatrice TV.",
+        "url": "/travailler-avec-moi/#animation",
+        "photo": "intervention-micro-bleu"
+      },
+      {
+        "verbe": "Transmettre",
+        "texte": "Un livre, des ebooks et des contenus pour progresser à votre rythme.",
+        "url": "/boutique/",
+        "photo": "livre-chroniques"
+      },
+      {
+        "verbe": "Faire vivre",
+        "texte": "Deux Minutes Pour Convaincre, le concours d'improvisation oratoire né à Cotonou.",
+        "url": "/evenements/",
+        "photo": "2mpc-scene"
+      }
+    ]
+  },
+  "citation": {
+    "texte": "La prise de parole n'est pas un don réservé à quelques-uns. C'est une compétence.",
+    "source": "Chroniques d'une voix qui s'est révélée"
+  },
+  "boutique": {
+    "surtitre": "Transmettre",
+    "titre": "Le livre et les ebooks",
+    "cta": {
+      "label": "Voir la boutique",
+      "url": "/boutique/"
+    }
+  },
+  "evenement": {
+    "surtitre": "Faire vivre",
+    "titre": "Deux Minutes Pour Convaincre",
+    "texte": "Deux orateurs, une même thématique, deux thèses opposées. Aucun texte préparé, et exactement 120 secondes pour convaincre le jury et le public.",
+    "editions": [
+      {
+        "label": "1ère édition",
+        "date": "10 mai 2025",
+        "lieu": "Hôtel Azalaï, Cotonou"
+      },
+      {
+        "label": "2ème édition",
+        "date": "8 août 2026",
+        "lieu": "Azalaï Hôtel, Cotonou"
+      },
+      {
+        "label": "3ème édition",
+        "date": "Mars 2027",
+        "lieu": "Cotonou"
+      }
+    ],
+    "cta": {
+      "label": "Découvrir l'événement",
+      "url": "/evenements/"
+    },
+    "photos": [
+      "2mpc-public",
+      "2mpc-laureats"
+    ]
+  },
+  "temoignages": {
+    "surtitre": "Ils en parlent",
+    "titre": "Ce que la parole a changé"
+  },
+  "reseaux": {
+    "surtitre": "Au quotidien",
+    "titre": "Retrouvez La Muse sur les réseaux"
+  },
+  "final": {
+    "titre": "Parlons de votre projet",
+    "texte": "Formation d'équipe, conférence, maîtrise de cérémonie ou accompagnement individuel : dites-moi ce que vous préparez.",
+    "ctaPrincipal": {
+      "label": "Parler de votre projet",
+      "url": "/travailler-avec-moi/#devis"
+    },
+    "ctaSecondaire": {
+      "label": "Écrire sur WhatsApp",
+      "whatsapp": "Bonjour Mazidath, je vous contacte depuis votre site."
+    }
+  }
+}

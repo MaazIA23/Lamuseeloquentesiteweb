@@ -1,0 +1,260 @@
+{
+  "2mpc-laureats": {
+    "width": 1280,
+    "height": 853,
+    "widths": [
+      480,
+      960,
+      1280
+    ]
+  },
+  "2mpc-public": {
+    "width": 2576,
+    "height": 1717,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "2mpc-scene": {
+    "width": 2576,
+    "height": 1717,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "attestation-elodie-hounmakou": {
+    "width": 2576,
+    "height": 2061,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "attestation-ezechielle-bouet": {
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "attestation-mireine-yahoungo": {
+    "width": 2576,
+    "height": 2061,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "attestation-tristan-kounde": {
+    "width": 1920,
+    "height": 2560,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "dedicace-livre": {
+    "width": 2576,
+    "height": 1717,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "ebook-alternance": {
+    "width": 996,
+    "height": 1040,
+    "widths": [
+      480,
+      960,
+      996
+    ]
+  },
+  "ebook-diction": {
+    "width": 996,
+    "height": 1040,
+    "widths": [
+      480,
+      960,
+      996
+    ]
+  },
+  "intervention-micro-bleu": {
+    "width": 853,
+    "height": 1280,
+    "widths": [
+      480,
+      853
+    ]
+  },
+  "livre-chroniques": {
+    "width": 2576,
+    "height": 1717,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "masterclass-attestation-pamella": {
+    "width": 2576,
+    "height": 1710,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "masterclass-attestation-rebecca": {
+    "width": 2576,
+    "height": 1738,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "masterclass-mazidath-ecoute": {
+    "width": 2576,
+    "height": 1717,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "masterclass-mazidath": {
+    "width": 2576,
+    "height": 1681,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "masterclass-participante-1": {
+    "width": 2576,
+    "height": 1821,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "masterclass-participante-2": {
+    "width": 2576,
+    "height": 1650,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "portrait-bleu-accoudee": {
+    "width": 1086,
+    "height": 1448,
+    "widths": [
+      480,
+      960,
+      1086
+    ]
+  },
+  "portrait-bleu-buste": {
+    "width": 832,
+    "height": 1248,
+    "widths": [
+      480,
+      832
+    ]
+  },
+  "portrait-vert-buste": {
+    "width": 1024,
+    "height": 1536,
+    "widths": [
+      480,
+      960,
+      1024
+    ]
+  },
+  "portrait-vert-fond-peche": {
+    "width": 600,
+    "height": 900,
+    "widths": [
+      480,
+      600
+    ]
+  },
+  "scene-micro": {
+    "width": 1366,
+    "height": 2048,
+    "widths": [
+      480,
+      960,
+      1366
+    ]
+  },
+  "scene-promotrice": {
+    "width": 2576,
+    "height": 1717,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "scene-pupitre": {
+    "width": 2576,
+    "height": 2061,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "scene-tailleur-peche": {
+    "width": 1717,
+    "height": 2576,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "temoin-huguette-bokpe-gnacadja": {
+    "width": 2576,
+    "height": 1717,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "temoin-jose-pascael-agbo": {
+    "width": 1080,
+    "height": 720,
+    "widths": [
+      480,
+      960,
+      1080
+    ]
+  },
+  "temoin-mylene-grimaud": {
+    "width": 1366,
+    "height": 1853,
+    "widths": [
+      480,
+      960,
+      1366
+    ]
+  }
+}

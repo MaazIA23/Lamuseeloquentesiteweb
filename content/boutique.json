@@ -1,0 +1,43 @@
+{
+  "_aide": "Produits de la boutique. Ajoutez un produit en copiant un bloc. `photo` = nom d'une image optimisée (voir photos/ + npm run images).",
+  "produits": [
+    {
+      "slug": "chroniques-d-une-voix-qui-s-est-revelee",
+      "type": "Livre",
+      "titre": "Chroniques d'une voix qui s'est révélée",
+      "sousTitre": "Tome 1 · De l'Ombre à la Scène",
+      "photo": "livre-chroniques",
+      "resume": "Un récit autobiographique et une méthode pour révéler sa voix, porté par une conviction : la prise de parole n'est pas un don réservé à quelques-uns, c'est une compétence.",
+      "formats": ["Papier (France et Cotonou)", "E-book"],
+      "prix": "",
+      "prixBarre": "",
+      "achat": { "label": "Commander", "url": "", "whatsapp": "Bonjour, je souhaite commander le livre « Chroniques d'une voix qui s'est révélée »." },
+      "TODO": "Prix et liens d'achat (papier France, papier Cotonou, e-book)."
+    },
+    {
+      "slug": "le-secret-d-une-belle-diction",
+      "type": "Ebook",
+      "titre": "Le secret d'une belle diction",
+      "sousTitre": "Techniques & exercices pour transformer votre élocution",
+      "photo": "ebook-diction",
+      "resume": "Des techniques et des exercices concrets pour une expression claire, audible et maîtrisée.",
+      "formats": ["E-book"],
+      "prix": "5,43 €",
+      "prixBarre": "10,86 €",
+      "avis": "100 % d'avis positifs (5 avis)",
+      "achat": { "label": "Acheter", "url": "https://sxmcjdek.mychariow.shop" }
+    },
+    {
+      "slug": "decrochez-votre-alternance",
+      "type": "Ebook",
+      "titre": "Décrochez votre alternance dès le premier entretien",
+      "sousTitre": "Le guide complet de La Muse Éloquente",
+      "photo": "ebook-alternance",
+      "resume": "Le guide pour préparer et réussir votre entretien d'alternance.",
+      "formats": ["E-book"],
+      "prix": "11,76 €",
+      "prixBarre": "22,61 €",
+      "achat": { "label": "Acheter", "url": "https://sxmcjdek.mychariow.shop" }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+/* =========================================================================
+   DESIGN SYSTEM — La Muse Éloquente
+   Source : Charte graphique LME (oct. 2025). Couleurs strictement issues
+   de la charte ; les nuances « profond » / « voile » sont des déclinaisons
+   de ces couleurs pour les fonds et les états, jamais de nouvelles teintes.
+   ========================================================================= */
+:root {
+  /* Couleurs principales */
+  --bleu: #272a5d;
+  --bleu-profond: #1d1f47;     /* déclinaison sombre du bleu (fonds immersifs) */
+  --bleu-voile: #e9e9f1;       /* déclinaison claire du bleu (fonds doux) */
+  --or: #b48028;
+  --or-clair: #e7c26d;
+  --or-moyen: #b8822b;
+  --or-profond: #7f5a24;
+  --degrade-or: linear-gradient(100deg, var(--or-clair) 0%, var(--or-moyen) 52%, var(--or-profond) 100%);
+
+  /* Couleurs secondaires (usage ponctuel) */
+  --jaune: #f5c036;
+  --lavande: #5363ab;
+  --turquoise: #1a9399;
+
+  /* Neutres : le papier texturé de la charte */
+  --papier: #f7f6f3;
+  --creme: #efece5;
+  --blanc: #ffffff;
+  --encre: #1b1c2e;
+  --encre-douce: #4d4f66;
+  --filet: #dcd8cf;
+  --filet-clair: rgba(255, 255, 255, 0.16);
+
+  /* Typographie : Anton (titres) + Montserrat (substitut libre de Gotham) */
+  --f-titre: "Anton", "Haettenschweiler", Impact, "Arial Narrow", sans-serif;
+  --f-texte: "Montserrat", "Gotham", "Helvetica Neue", Arial, sans-serif;
+
+  --t-hero: clamp(3.4rem, 10.5vw, 8.4rem);
+  --t-h1: clamp(3rem, 8vw, 6.4rem);
+  --t-h2: clamp(2.3rem, 5.4vw, 4.2rem);
+  --t-h3: 1.2rem;
+  --t-chapo: clamp(1.12rem, 1.6vw, 1.32rem);
+  --t-texte: 1rem;
+  --t-petit: 0.875rem;
+  --t-label: 0.75rem;
+
+  /* Espacements (échelle de 4) */
+  --e-1: 0.25rem;
+  --e-2: 0.5rem;
+  --e-3: 0.75rem;
+  --e-4: 1rem;
+  --e-5: 1.5rem;
+  --e-6: 2rem;
+  --e-7: 3rem;
+  --e-8: 4rem;
+  --section: clamp(4.5rem, 10vw, 8.5rem);
+  --gouttiere: clamp(1rem, 4.5vw, 3rem);
+  --largeur: 1240px;
+
+  /* Formes : carré arrondi du pictogramme, pilule pour les boutons */
+  --r-s: 10px;
+  --r-m: 18px;
+  --r-l: 28px;
+  --r-pilule: 999px;
+
+  --ombre: 0 24px 60px -32px rgba(29, 31, 71, 0.45);
+  --ombre-douce: 0 12px 30px -20px rgba(29, 31, 71, 0.35);
+
+  /* Mouvement */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --duree: 0.7s;
+
+  color-scheme: light;
+}

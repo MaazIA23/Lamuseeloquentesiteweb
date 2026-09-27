@@ -1,0 +1,98 @@
+{
+  "_aide": "Informations globales du site. Modifiez ici les coordonnées, les réseaux et les liens d'achat : tout le site se met à jour au prochain build.",
+  "nom": "La Muse Éloquente",
+  "fondatrice": "Mazidath Bello",
+  "devise": "Éloquence & Impact",
+  "url": "https://lamuseeloquente.com",
+  "langue": "fr",
+  "description": "La Muse Éloquente, par Mazidath Bello : coaching et formation en prise de parole, conférences, maîtrise de cérémonie et événements autour de l'éloquence, entre Cotonou et la France.",
+  "imagePartage": "portrait-bleu-accoudee",
+  "contact": {
+    "whatsapp": "2290143393333",
+    "whatsappAffiche": "+229 01 43 39 33 33",
+    "email": "lamuseeloquente@gmail.com",
+    "TODO": "Confirmer que ce numéro WhatsApp (celui de 2MPC) est aussi celui de La Muse Éloquente."
+  },
+  "boutique": {
+    "nom": "Boutique La Muse Éloquente",
+    "url": "https://sxmcjdek.mychariow.shop",
+    "TODO": "Remplacer par l'URL exacte de chaque produit dans content/programmes et content/boutique."
+  },
+  "navigation": [
+    {
+      "label": "À propos",
+      "url": "/a-propos/"
+    },
+    {
+      "label": "Programmes",
+      "url": "/programmes/speak-and-conquer/"
+    },
+    {
+      "label": "Travailler avec moi",
+      "url": "/travailler-avec-moi/"
+    },
+    {
+      "label": "Événements",
+      "url": "/evenements/"
+    },
+    {
+      "label": "Boutique",
+      "url": "/boutique/"
+    }
+  ],
+  "ctaNavigation": {
+    "label": "Réserver",
+    "url": "/programmes/speak-and-conquer/#formules"
+  },
+  "reseaux": [
+    {
+      "nom": "Instagram",
+      "compte": "@la_muse_eloquente",
+      "url": "https://www.instagram.com/la_muse_eloquente/",
+      "contenu": "Coulisses, scène et conseils de prise de parole"
+    },
+    {
+      "nom": "TikTok",
+      "compte": "@la.muse.eloquente",
+      "url": "https://www.tiktok.com/@la.muse.eloquente",
+      "contenu": "Exercices, éloquence et lives Deux Minutes Pour Convaincre"
+    },
+    {
+      "nom": "LinkedIn",
+      "compte": "Mazidath Bello",
+      "url": "https://www.linkedin.com/in/mazidath-bello/",
+      "contenu": "Prise de parole professionnelle et leadership"
+    },
+    {
+      "nom": "Facebook",
+      "compte": "La Muse Éloquente",
+      "url": "https://www.facebook.com/p/La-muse-%C3%A9loquente-100063060920079/",
+      "contenu": "Actualités, événements et communauté"
+    }
+  ],
+  "chiffres": [
+    {
+      "valeur": "+70K",
+      "libelle": "abonnés sur les réseaux sociaux"
+    },
+    {
+      "valeur": "+10M",
+      "libelle": "vues cumulées"
+    },
+    {
+      "valeur": "2024",
+      "libelle": "lauréate du concours d'éloquence du Groupe Gema"
+    },
+    {
+      "valeur": "2",
+      "libelle": "éditions de Deux Minutes Pour Convaincre"
+    }
+  ],
+  "presse": [
+    "Matin Libre",
+    "Radio Bénin",
+    "Bip Radio",
+    "Le Leader",
+    "Groupe Gema"
+  ]
+}

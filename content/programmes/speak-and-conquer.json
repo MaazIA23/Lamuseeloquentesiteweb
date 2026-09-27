@@ -1,0 +1,214 @@
+{
+  "_aide": "Programme Speak & Conquer. Les textes des formules reprennent mot pour mot la boutique Chariow (voir docs/audit). Pour changer un prix ou un lien d'achat, modifiez uniquement ce fichier.",
+  "slug": "speak-and-conquer",
+  "nom": "Speak & Conquer",
+  "accroche": "Affirmer son éloquence en 30 jours !",
+  "promesse": "Transformer votre prise de parole en public et développer votre éloquence.",
+  "description": "Un programme d'accompagnement privé et personnalisé pour perfectionner votre communication, renforcer votre impact et affirmer pleinement votre leadership.",
+  "seo": {
+    "titre": "Speak & Conquer · Programme de prise de parole en public",
+    "description": "Speak & Conquer, le programme d'accompagnement en prise de parole de La Muse Éloquente : 3 formules (Étudiant, Standard, Prestige), coaching individuel de 60 minutes, diction, gestion du stress, persuasion."
+  },
+  "photo": "portrait-bleu-buste",
+  "pourQui": [
+    {
+      "titre": "Étudiants",
+      "texte": "Présentations orales, soutenances de mémoire, entretiens d'admission, ou simplement une communication orale plus assurée."
+    },
+    {
+      "titre": "Toute personne qui veut progresser",
+      "texte": "Transformer sa prise de parole en public et développer son éloquence, quel que soit son niveau de départ."
+    },
+    {
+      "titre": "Cadres, dirigeants, entrepreneurs",
+      "texte": "Faire de la prise de parole un levier stratégique et développer une éloquence de haut niveau."
+    }
+  ],
+  "competences": [
+    "La gestion du stress et les techniques de respiration pour rester serein face à votre audience",
+    "La structuration efficace de vos discours pour captiver et convaincre",
+    "Le renforcement de votre confiance personnelle et de votre présence scénique",
+    "L'amélioration de votre diction, articulation et projection vocale",
+    "Les techniques avancées de persuasion et d'improvisation",
+    "Le langage corporel et le développement de votre charisme naturel"
+  ],
+  "etapes": [
+    {
+      "titre": "Diagnostic",
+      "texte": "Une fiche diagnostic personnalisée cible vos axes d'amélioration (formules Standard et Prestige)."
+    },
+    {
+      "titre": "Coaching individuel",
+      "texte": "Des séances de 60 minutes adaptées à vos objectifs : 3, 5 ou 8 selon la formule."
+    },
+    {
+      "titre": "Entraînement",
+      "texte": "L'ebook « Le secret d'une belle diction » pour prolonger le travail entre les séances."
+    },
+    {
+      "titre": "Communauté & suivi",
+      "texte": "L'accès à la communauté privée de La Muse Éloquente, et pour la formule Prestige, un support WhatsApp et une attestation officielle."
+    }
+  ],
+  "formules": [
+    {
+      "id": "etudiant",
+      "nom": "Étudiant",
+      "duree": "3 semaines",
+      "seances": 3,
+      "prixEur": "82,29 €",
+      "prixFcfa": "",
+      "resume": "Un programme d'accompagnement personnalisé de 3 semaines, spécialement conçu pour les étudiants souhaitant développer leurs compétences oratoires et gagner en assurance lors de leurs présentations académiques.",
+      "maitrise": [
+        "L'initiation à l'improvisation pour réagir avec aisance face aux questions inattendues",
+        "Les bases solides de la confiance en soi pour surmonter le trac et l'anxiété de performance",
+        "Les techniques fondamentales de diction et d'articulation pour une expression claire et audible",
+        "Les méthodes de respiration et de gestion du stress adaptées aux situations d'examen et de soutenance"
+      ],
+      "inclus": [
+        "3 séances individuelles de coaching de 60 minutes, adaptées à vos besoins académiques",
+        "L'ebook exclusif « Le secret d'une belle diction »",
+        "L'accès privilégié à la communauté privée de La Muse Éloquente"
+      ],
+      "public": "Étudiants : présentations orales, soutenances, entretiens d'admission.",
+      "paiement": {
+        "fournisseur": "chariow",
+        "url": "https://sxmcjdek.mychariow.shop"
+      }
+    },
+    {
+      "id": "standard",
+      "nom": "Standard",
+      "duree": "5 semaines",
+      "seances": 5,
+      "prixEur": "161,86 €",
+      "prixFcfa": "",
+      "miseEnAvant": true,
+      "resume": "Un programme d'accompagnement privé et personnalisé de 5 semaines, spécialement conçu pour transformer votre prise de parole en public et développer votre éloquence.",
+      "maitrise": [
+        "La gestion du stress et les techniques de respiration",
+        "La structuration efficace de vos discours",
+        "La confiance personnelle et la présence scénique",
+        "La diction, l'articulation et la projection vocale",
+        "Les techniques avancées de persuasion et d'improvisation",
+        "Le langage corporel et le charisme naturel"
+      ],
+      "inclus": [
+        "5 séances individuelles de coaching de 60 minutes, entièrement personnalisées selon vos objectifs",
+        "L'ebook exclusif « Le secret d'une belle diction »",
+        "Une fiche diagnostic personnalisée",
+        "L'accès privilégié à la communauté privée de La Muse Éloquente"
+      ],
+      "public": "Toute personne souhaitant transformer sa prise de parole.",
+      "TODO": "Compléter la phrase « Ce programme s'adresse à toute personne souhaitant… » (coupée sur la capture).",
+      "paiement": {
+        "fournisseur": "chariow",
+        "url": "https://sxmcjdek.mychariow.shop"
+      }
+    },
+    {
+      "id": "prestige",
+      "nom": "Prestige",
+      "duree": "8 semaines",
+      "seances": 8,
+      "prixEur": "266,75 €",
+      "prixFcfa": "",
+      "resume": "Un programme d'accompagnement personnalisé premium de 8 semaines, conçu pour les professionnels et dirigeants souhaitant atteindre l'excellence oratoire et développer un impact de leader.",
+      "maitrise": [
+        "Tout le contenu du Pack Standard",
+        "La communication non-verbale approfondie pour une présence magnétique et professionnelle",
+        "La gestion des objections et débats contradictoires pour garder l'ascendant en toute situation",
+        "Le storytelling professionnel et les techniques de narration captivante",
+        "Les techniques de présentation orientées impact et influence pour convaincre les décideurs",
+        "La maîtrise avancée de la persuasion et de la rhétorique classique des grands orateurs"
+      ],
+      "inclus": [
+        "8 séances individuelles de coaching de 60 minutes, entièrement sur-mesure selon vos enjeux professionnels",
+        "L'ebook exclusif « Le secret d'une belle diction »",
+        "Une fiche diagnostic approfondie et personnalisée",
+        "L'accès privilégié à la communauté privée de La Muse Éloquente",
+        "Un support WhatsApp dédié, réponses sous 24 h",
+        "L'attestation officielle du Programme Speak & Conquer"
+      ],
+      "public": "Cadres, dirigeants, entrepreneurs et professionnels.",
+      "paiement": {
+        "fournisseur": "chariow",
+        "url": "https://sxmcjdek.mychariow.shop"
+      }
+    }
+  ],
+  "comparatif": [
+    {
+      "ligne": "Durée",
+      "etudiant": "3 semaines",
+      "standard": "5 semaines",
+      "prestige": "8 semaines"
+    },
+    {
+      "ligne": "Séances individuelles de 60 min",
+      "etudiant": "3",
+      "standard": "5",
+      "prestige": "8"
+    },
+    {
+      "ligne": "Ebook « Le secret d'une belle diction »",
+      "etudiant": true,
+      "standard": true,
+      "prestige": true
+    },
+    {
+      "ligne": "Communauté privée",
+      "etudiant": true,
+      "standard": true,
+      "prestige": true
+    },
+    {
+      "ligne": "Fiche diagnostic",
+      "etudiant": false,
+      "standard": "Personnalisée",
+      "prestige": "Approfondie"
+    },
+    {
+      "ligne": "Support WhatsApp sous 24 h",
+      "etudiant": false,
+      "standard": false,
+      "prestige": true
+    },
+    {
+      "ligne": "Attestation officielle",
+      "etudiant": false,
+      "standard": false,
+      "prestige": true
+    }
+  ],
+  "faq": [
+    {
+      "q": "Quelle formule choisir ?",
+      "r": "La formule Étudiant est pensée pour les présentations académiques, soutenances et entretiens d'admission. La formule Standard convient à toute personne qui veut transformer sa prise de parole. La formule Prestige s'adresse aux cadres, dirigeants et entrepreneurs qui visent une éloquence de haut niveau. En cas de doute, écrivez-moi sur WhatsApp."
+    },
+    {
+      "q": "Combien de séances comprend chaque formule ?",
+      "r": "3 séances individuelles de 60 minutes pour la formule Étudiant, 5 pour la formule Standard et 8 pour la formule Prestige."
+    },
+    {
+      "q": "Qu'est-ce que l'ebook « Le secret d'une belle diction » ?",
+      "r": "Un ebook de techniques et d'exercices pour transformer votre élocution. Il est inclus dans les trois formules et disponible séparément dans la boutique."
+    },
+    {
+      "q": "Comment se passe le paiement ?",
+      "r": "Le paiement se fait en ligne sur la boutique sécurisée de La Muse Éloquente. Après votre achat, je vous contacte pour planifier vos séances."
+    },
+    {
+      "q": "Reçoit-on une attestation ?",
+      "r": "Oui, avec la formule Prestige : une attestation officielle du Programme Speak & Conquer, à valoriser sur votre profil professionnel."
+    }
+  ],
+  "TODO": [
+    "Prix officiels en FCFA et en euros (les prix actuels viennent de Chariow).",
+    "URL Chariow exacte de chaque formule.",
+    "Format des séances : visio, présentiel ou les deux.",
+    "Témoignages d'anciens participants (prénom, fonction, photo, texte, accord)."
+  ],
+  "sousAccroche": "Devenez un orateur confiant et impactant.",
+  "_sourceAccroche": "Roll-up Speak & Conquer de 2025 (« Affirmer son éloquence en 30 jours ! »). Non affiché : les formules actuelles durent 3, 5 ou 8 semaines. À confirmer."
+}
