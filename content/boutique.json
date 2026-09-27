@@ -42,8 +42,8 @@
       "formats": [
         "E-book"
       ],
-      "prix": "",
-      "prixBarre": "",
+      "prix": "3 600 FCFA",
+      "prixBarre": "7 100 FCFA",
       "avis": "100 % d'avis positifs (5 avis vérifiés) · plus de 121 achats",
       "achat": {
         "label": "Acheter",
@@ -51,7 +51,7 @@
       },
       "categorie": "outils",
       "pourQui": "Pour travailler son articulation et sa clarté à l'oral, à son rythme.",
-      "TODO": "Prix officiel en FCFA à confirmer (Chariow affiche une conversion en euros : 5,43 € au lieu de 10,86 €)."
+      "prixLibelle": "E-book"
     },
     {
       "slug": "decrochez-votre-alternance",
@@ -63,15 +63,15 @@
       "formats": [
         "E-book"
       ],
-      "prix": "",
-      "prixBarre": "",
+      "prix": "7 700 FCFA",
+      "prixBarre": "14 800 FCFA",
       "achat": {
         "label": "Acheter",
         "url": "https://sxmcjdek.mychariow.shop/alternanceenfrance"
       },
       "categorie": "carriere",
       "pourQui": "Pour les étudiants qui préparent leurs entretiens d'alternance.",
-      "TODO": "Prix officiel en FCFA à confirmer (Chariow affiche une conversion en euros : 11,76 € au lieu de 22,61 €)."
+      "prixLibelle": "E-book"
     }
   ],
   "categories": [
