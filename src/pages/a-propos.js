@@ -23,6 +23,7 @@ module.exports = function aPropos({ site, apropos: p, boutique }) {
       <p class="surtitre surtitre--nu"><span class="index">${String(i + 1).padStart(2, "0")}</span>${esc(c.surtitre)}</p>
       <h2 data-reveal>${riche(c.titre)}</h2>
       ${c.paragraphes.map((t, j) => `<p${j === 0 ? ' class="chapo"' : ""} data-reveal>${esc(t)}</p>`)}
+      ${c.lien && c.lien.url ? `<a class="lien" href="${c.lien.url}" target="_blank" rel="noopener">${esc(c.lien.label)} ${icon.externe}</a>` : ""}
       ${c.citation ? html`<blockquote class="chapitre__citation" data-reveal><p>${esc(c.citation.texte)}</p><footer>${esc(c.citation.auteur)}</footer></blockquote>` : ""}
     </div>
   </div>

@@ -76,7 +76,7 @@ function footer(site) {
     <div class="pied__grille">
       <div class="pied__marque">
         <img src="/assets/brand/pictogramme-180.png" width="64" height="64" alt="" loading="lazy">
-        <p><b>La Muse Éloquente</b>${esc(site.fondatrice)} · ${esc(site.devise)}</p>
+        <p><b>La Muse Éloquente</b>${esc(site.signature)}</p>
       </div>
       <nav class="pied__col" aria-label="Plan du site">
         <h2>Navigation</h2>

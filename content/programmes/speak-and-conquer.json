@@ -4,7 +4,7 @@
   "nom": "Speak & Conquer",
   "accroche": "Affirmer son éloquence en 30 jours !",
   "promesse": "Transformer votre prise de parole en public et développer votre éloquence.",
-  "description": "Un accompagnement privé et personnalisé pour structurer vos idées, maîtriser votre voix et prendre la parole avec assurance, que ce soit pour une soutenance, un pitch, une réunion ou une scène.",
+  "description": "Un accompagnement privé et personnalisé pour révéler votre signature oratoire, structurer vos idées et prendre la parole avec assurance, que ce soit pour une soutenance, un pitch, une réunion ou une scène.",
   "seo": {
     "titre": "Speak & Conquer · Accompagnement en prise de parole et éloquence",
     "description": "Speak & Conquer, l'accompagnement individuel en prise de parole en public de La Muse Éloquente : trois formules de 3 à 8 semaines (Étudiant, Standard, Prestige), dès 50 000 FCFA."
@@ -234,11 +234,15 @@
   ],
   "methode": {
     "titre": "La méthode La Muse Éloquente",
-    "texte": "Cinq temps, adaptés à votre formule et à votre échéance.",
+    "texte": "Six temps, adaptés à votre formule et à votre échéance. Au cœur de la méthode : votre signature oratoire.",
     "etapes": [
       {
         "nom": "Diagnostiquer",
         "texte": "Faire le point sur votre manière de parler, vos forces et vos blocages."
+      },
+      {
+        "nom": "Révéler",
+        "texte": "Identifier dans votre vécu ce qui rend votre parole unique : votre signature oratoire."
       },
       {
         "nom": "Structurer",

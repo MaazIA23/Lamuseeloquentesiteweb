@@ -5,7 +5,7 @@
   "devise": "Éloquence & Impact",
   "url": "https://lamuseeloquente.com",
   "langue": "fr",
-  "description": "La Muse Éloquente, l'univers de Mazidath Bello : prise de parole en public, éloquence, conférences, maîtrise de cérémonie et événements, entre l'Afrique, la France et l'international.",
+  "description": "Mazidath Bello, fondatrice de La Muse Éloquente : oratrice internationale, maîtresse de cérémonie et formatrice en prise de parole. Accompagnements, conférences, formations, événements et image de marque, du Bénin à la France.",
   "imagePartage": "portrait-bleu-accoudee",
   "contact": {
     "whatsapp": "33664696102",
@@ -72,19 +72,23 @@
   "chiffres": [
     {
       "valeur": "15+",
-      "libelle": "ans de prise de parole, sur scène, dans les médias et en événementiel"
+      "libelle": "ans de prise de parole en public"
+    },
+    {
+      "valeur": "20",
+      "libelle": "conférences internationales, de Genève à Dakar"
+    },
+    {
+      "valeur": "+100",
+      "libelle": "personnes accompagnées vers une prise de parole réussie"
     },
     {
       "valeur": "+70K",
       "libelle": "abonnés sur Instagram, TikTok, Facebook et LinkedIn"
     },
     {
-      "valeur": "+10M",
-      "libelle": "vues cumulées sur les réseaux"
-    },
-    {
       "valeur": "2024",
-      "libelle": "lauréate du concours national d'éloquence du Groupe Gema"
+      "libelle": "premier prix d'un concours national d'éloquence à Paris"
     },
     {
       "valeur": "2",
@@ -98,7 +102,7 @@
     "Le Leader",
     "Groupe Gema"
   ],
-  "_sourceChiffres": "15+ ans : information fournie par Mazidath (27/09/2026). +70K, +10M : rapport 2MPC. Aucun chiffre « clients » n'existe dans les contenus : ne pas en afficher.",
+  "_sourceChiffres": "Informations fournies par Mazidath le 27/09/2026 : 15 ans de prise de parole, une vingtaine de conférences internationales (Suisse, France, Ghana, Soudan, Afrique du Sud, Éthiopie, Togo…), plus de 100 personnes accompagnées, 3 formations en entreprise, 2 masterclass (+1 en préparation), présentatrice télé.",
   "paiement": {
     "_aide": "FedaPay (Mobile Money MTN / Moov / Celtiis, cartes) pour Speak & Conquer, en FCFA. Même compte que le site Deux Minutes Pour Convaincre. La clé SECRÈTE se met uniquement dans Netlify : Site configuration > Environment variables > FEDAPAY_SECRET_KEY. `actif: false` renvoie tous les boutons vers Chariow.",
     "fedapay": {
@@ -108,5 +112,17 @@
       "libelle": "Payer depuis l'international (carte, euros)",
       "fournisseur": "chariow"
     }
-  }
+  },
+  "signature": "Mazidath Bello, fondatrice de La Muse Éloquente",
+  "pays": [
+    "Suisse",
+    "France",
+    "Sénégal",
+    "Ghana",
+    "Soudan",
+    "Afrique du Sud",
+    "Éthiopie",
+    "Togo",
+    "Bénin"
+  ]
 }

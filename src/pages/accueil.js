@@ -53,6 +53,7 @@ module.exports = function accueil({ site, accueil: a, sac, temoignages }) {
     <ul class="reperes-chiffres">
       ${site.chiffres.map((c) => html`<li data-reveal><strong data-compteur>${esc(c.valeur)}</strong><span>${esc(c.libelle)}</span></li>`)}
     </ul>
+    <div class="presse"><p>Sur scène en</p><ul>${site.pays.map((p) => `<li>${esc(p)}</li>`)}</ul></div>
     <div class="presse"><p>Ils en ont parlé</p><ul>${site.presse.map((p) => `<li>${esc(p)}</li>`)}</ul></div>
   </div>
 </section>`;
@@ -88,7 +89,7 @@ module.exports = function accueil({ site, accueil: a, sac, temoignages }) {
     <div class="mazidath__texte">
       <p class="surtitre">${esc(m.surtitre)}</p>
       <h2 data-reveal>${riche(m.titre)}</h2>
-      <p class="chapo" data-reveal>${esc(m.texte)}</p>
+      ${m.paragraphes.map((t, i) => `<p${i === 0 ? ' class="chapo"' : ' class="texte-doux"'} data-reveal>${esc(t)}</p>`)}
       <a class="lien" href="${m.cta.url}">${esc(m.cta.label)} ${icon.fleche}</a>
     </div>
   </div>

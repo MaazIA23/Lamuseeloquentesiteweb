@@ -1,13 +1,13 @@
 {
   "_aide": "Textes de la page d'accueil. Les photos se réfèrent aux noms des images optimisées (dossier photos/). Dans les titres, <em>…</em> met un mot en italique.",
   "seo": {
-    "titre": "La Muse Éloquente · Mazidath Bello, prise de parole et éloquence",
-    "description": "La Muse Éloquente, l'univers de Mazidath Bello : accompagnement en prise de parole en public, conférences, formations, maîtrise de cérémonie et événements autour de l'éloquence, du Bénin à la France."
+    "titre": "Mazidath Bello · La Muse Éloquente, prise de parole et éloquence",
+    "description": "Mazidath Bello, fondatrice de La Muse Éloquente : quinze ans de prise de parole, une vingtaine de conférences internationales, maîtrise de cérémonie, formations et accompagnement en prise de parole en public."
   },
   "hero": {
-    "surtitre": "La Muse Éloquente · Mazidath Bello",
+    "surtitre": "Mazidath Bello, fondatrice de La Muse Éloquente",
     "titre": "Donner une <em>voix</em> aux idées qui méritent d'être entendues.",
-    "texte": "La Muse Éloquente est l'univers de Mazidath Bello, oratrice, maîtresse de cérémonie et autrice. Accompagnements, interventions et événements autour de la parole, entre l'Afrique, la France et l'international.",
+    "texte": "Quinze ans de micro, une vingtaine de scènes internationales, de Genève à Dakar. Mazidath Bello met aujourd'hui cette expérience au service de celles et ceux qui veulent que leur parole compte.",
     "ctaPrincipal": {
       "label": "Travailler avec Mazidath",
       "url": "/travailler-avec-moi/"
@@ -20,34 +20,34 @@
     "photoAlt": "Portrait de Mazidath Bello, en tailleur bleu, le menton posé sur la main",
     "photoScene": "scene-promotrice",
     "photoSceneAlt": "Mazidath Bello au pupitre, micro en main, à Cotonou",
-    "legende": "Sur scène depuis plus de quinze ans"
+    "legende": "Quinze ans de scène"
   },
   "identite": {
     "surtitre": "L'univers",
-    "titre": "Un lieu pour la parole qui <em>compte</em>.",
-    "texte": "La Muse Éloquente n'est pas une agence comme les autres. C'est un univers consacré à la parole : celle qui s'apprend, celle qui se travaille, celle qui fait avancer les idées, les carrières et les projets.",
+    "titre": "Chaque voix a sa <em>signature</em>.",
+    "texte": "La Muse Éloquente part d'une conviction simple : on ne devient pas orateur en imitant les autres. Les expériences les plus ordinaires d'une vie peuvent devenir une signature oratoire, ce qui rend une parole reconnaissable entre toutes. Tout le travail consiste à la révéler, puis à la maîtriser.",
     "piliers": [
       {
         "nom": "Parole",
-        "texte": "Savoir ce que l'on veut dire, et pourquoi. Structurer une pensée avant de la partager."
+        "texte": "Savoir ce que l'on veut dire, et pourquoi. Donner une forme à sa pensée avant de la partager."
       },
       {
         "nom": "Éloquence",
-        "texte": "Choisir les mots justes, le bon rythme, le silence au bon moment."
+        "texte": "Choisir le mot juste, trouver le rythme, oser le silence qui fait porter une phrase."
       },
       {
         "nom": "Présence",
         "texte": "Habiter l'espace, tenir un regard, porter une salle du premier au dernier mot."
       },
       {
-        "nom": "Impact",
-        "texte": "Faire en sorte qu'une idée soit comprise, retenue, et suivie d'effets."
+        "nom": "Signature",
+        "texte": "Faire de son vécu une force. Parler comme personne d'autre ne peut le faire."
       }
     ]
   },
   "preuves": {
     "surtitre": "Repères",
-    "titre": "Une parole éprouvée, sur scène comme à l'écran."
+    "titre": "Une parole éprouvée sur <em>toutes les scènes</em>."
   },
   "univers": {
     "surtitre": "L'écosystème",
@@ -55,24 +55,31 @@
     "liste": [
       {
         "nom": "Speak & Conquer",
-        "texte": "L'accompagnement individuel en prise de parole et en éloquence, en trois formules.",
+        "texte": "L'accompagnement individuel pour révéler sa signature oratoire et prendre la parole avec assurance.",
         "cta": "Choisir mon accompagnement",
         "url": "/programmes/speak-and-conquer/",
         "photo": "attestation-tristan-kounde"
       },
       {
         "nom": "Conférences & formations",
-        "texte": "Pour les entreprises, les institutions, les écoles et les organisations.",
+        "texte": "Keynotes, formations d'équipes et masterclass pour les entreprises, les écoles et les institutions.",
         "cta": "Parler de mon projet",
         "url": "/travailler-avec-moi/#entreprises",
         "photo": "masterclass-mazidath-ecoute"
       },
       {
-        "nom": "MC & événements",
-        "texte": "Présentation, animation et modération d'événements.",
+        "nom": "Maîtrise de cérémonie",
+        "texte": "L'aisance d'une ancienne présentatrice télé pour porter vos cérémonies, galas et conférences.",
         "cta": "Demander une prestation",
         "url": "/travailler-avec-moi/#evenements",
         "photo": "intervention-micro-bleu"
+      },
+      {
+        "nom": "Image & marques",
+        "texte": "Ambassadrice de marque, voix et visage de vos campagnes, création d'identités visuelles.",
+        "cta": "Parler de ma marque",
+        "url": "/travailler-avec-moi/#marques",
+        "photo": "portrait-vert-buste"
       },
       {
         "nom": "Deux Minutes Pour Convaincre",
@@ -90,7 +97,7 @@
       },
       {
         "nom": "Le livre",
-        "texte": "Chroniques d'une voix qui s'est révélée, Tome 1 : De l'ombre à la scène.",
+        "texte": "Chroniques d'une voix qui s'est révélée : un récit de vie, et une méthode pour trouver sa propre voix.",
         "cta": "Commander le livre",
         "url": "/boutique/#chroniques-d-une-voix-qui-s-est-revelee",
         "photo": "couverture-chroniques"
@@ -100,18 +107,21 @@
   "mazidath": {
     "surtitre": "Mazidath Bello",
     "titre": "De l'ombre <em>à la scène</em>.",
-    "texte": "Elle prend le micro très jeune. Plus de quinze ans plus tard, elle est présentatrice, maîtresse de cérémonie, voix off, lauréate du concours national d'éloquence du Groupe Gema, autrice, et fondatrice d'un concours qui révèle chaque année de nouvelles voix.",
     "cta": {
       "label": "Lire son histoire",
       "url": "/a-propos/"
     },
     "photo": "scene-tailleur-peche",
-    "photoAlt": "Mazidath Bello au pupitre lors du mot de bienvenue de Deux Minutes Pour Convaincre"
+    "photoAlt": "Mazidath Bello au pupitre lors du mot de bienvenue de Deux Minutes Pour Convaincre",
+    "paragraphes": [
+      "Tout commence par un micro tendu à une jeune fille qui n'osait pas encore le prendre. Quinze ans plus tard, elle a porté la voix de la jeunesse béninoise au Palais des Nations, à Genève, et pris la parole à Dakar devant un parterre de chefs d'État.",
+      "Entre les deux, il y a eu les plateaux de télévision, les cérémonies, une vingtaine de conférences internationales, un premier prix d'éloquence à Paris, et la conviction qu'une voix se travaille avant de se révéler."
+    ]
   },
   "livre": {
     "surtitre": "Le livre",
-    "titre": "Une histoire personnelle devenue une invitation à révéler <em>sa propre voix</em>.",
-    "texte": "Dans « Chroniques d'une voix qui s'est révélée, Tome 1 : De l'ombre à la scène », Mazidath Bello raconte son chemin et partage une méthode, portée par une conviction : la prise de parole n'est pas un don réservé à quelques-uns, c'est une compétence.",
+    "titre": "Pas un guide de plus. <em>Une histoire vraie.</em>",
+    "texte": "« Chroniques d'une voix qui s'est révélée » part d'un vécu pour démontrer une idée : chacun peut devenir un orateur confiant. Les expériences les plus banales d'une vie deviennent, une fois comprises, une signature oratoire. Un récit autobiographique, doublé d'une méthode.",
     "cta": {
       "label": "Commander le livre",
       "url": "/boutique/#chroniques-d-une-voix-qui-s-est-revelee"
@@ -128,7 +138,7 @@
   },
   "final": {
     "titre": "Parlons de votre <em>projet</em>.",
-    "texte": "Conférence, formation, maîtrise de cérémonie, accompagnement individuel : dites-moi ce que vous préparez.",
+    "texte": "Une cérémonie à porter, une équipe à former, une marque à incarner, une voix à révéler : dites-moi ce que vous préparez.",
     "ctaPrincipal": {
       "label": "Parler de mon projet",
       "url": "/travailler-avec-moi/#devis"

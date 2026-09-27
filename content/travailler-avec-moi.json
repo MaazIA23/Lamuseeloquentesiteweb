@@ -5,9 +5,9 @@
     "description": "Conférences, formations et masterclass en prise de parole professionnelle, maîtrise de cérémonie et modération d'événements, accompagnement des dirigeants : faites intervenir Mazidath Bello, La Muse Éloquente, au Bénin, en France et à l'international."
   },
   "hero": {
-    "surtitre": "Entreprises, institutions, événements",
-    "titre": "Faire intervenir <em>Mazidath Bello</em>",
-    "texte": "Conférences, formations, maîtrise de cérémonie, conseil : La Muse Éloquente met l'art de la parole au service de vos équipes, de vos publics et de vos projets.",
+    "surtitre": "Entreprises, institutions, événements, marques",
+    "titre": "Faire appel à <em>Mazidath Bello</em>",
+    "texte": "Quinze ans de scène, une vingtaine de conférences internationales, des plateaux de télévision : une expérience rare, mise au service de vos équipes, de vos événements et de votre marque.",
     "photo": "scene-tailleur-peche",
     "photoAlt": "Mazidath Bello au pupitre, micro en main, lors d'un discours"
   },
@@ -24,7 +24,10 @@
           "valeur": "Un accompagnement privé de 3 à 8 semaines, construit autour de votre objectif.",
           "format": "Séances individuelles de 60 minutes, trois formules.",
           "public": "Étudiants, professionnels, cadres, dirigeants, entrepreneurs.",
-          "lien": { "label": "Choisir mon accompagnement", "url": "/programmes/speak-and-conquer/" },
+          "lien": {
+            "label": "Choisir mon accompagnement",
+            "url": "/programmes/speak-and-conquer/"
+          },
           "photo": "portrait-bleu-accoudee"
         }
       ]
@@ -38,20 +41,30 @@
           "id": "conferences",
           "nom": "Conférences",
           "probleme": "Vos publics ont besoin d'être inspirés, pas seulement informés.",
-          "valeur": "Une intervention incarnée sur la prise de parole, la présence et le leadership, portée par une oratrice lauréate d'un concours national d'éloquence.",
+          "valeur": "Une oratrice qui a pris la parole au Palais des Nations, à Genève, et devant des chefs d'État à Dakar. Des interventions incarnées sur la prise de parole, la présence et le leadership.",
           "format": "Keynote, discours d'ouverture, table ronde.",
           "public": "Écoles, universités, entreprises, institutions, associations.",
-          "exemples": ["Discours d'ouverture de Deux Minutes Pour Convaincre, Azalaï Hôtel, Cotonou (2026)"],
+          "exemples": [
+            "Palais des Nations, Genève (2015)",
+            "Conférence de financement du Partenariat mondial pour l'éducation, Dakar (2018)",
+            "Conférence internationale des jeunes francophones, Suisse (2018)",
+            "Discours d'ouverture de Deux Minutes Pour Convaincre, Cotonou (2025, 2026)"
+          ],
           "photo": "scene-micro"
         },
         {
           "id": "formations",
           "nom": "Formations",
           "probleme": "Une équipe qui communique mal perd des clients, du temps et de l'énergie.",
-          "valeur": "Des programmes sur mesure pour renforcer la communication, le leadership et la relation client.",
+          "valeur": "Des programmes construits sur mesure pour renforcer la communication, le leadership et la relation client. Trois formations en entreprise et en établissement scolaire ont déjà été menées, notamment auprès d'enseignants.",
           "format": "Programme construit à partir de vos enjeux.",
-          "public": "Entreprises, administrations, ONG.",
-          "themes": ["Communication interne et externe", "Leadership et management collaboratif", "Accueil et service client", "Compétences interpersonnelles"],
+          "public": "Entreprises, établissements scolaires, administrations, ONG.",
+          "themes": [
+            "Communication interne et externe",
+            "Leadership et management collaboratif",
+            "Accueil et service client",
+            "Compétences interpersonnelles"
+          ],
           "photo": "masterclass-participante-1"
         },
         {
@@ -61,7 +74,10 @@
           "valeur": "Une méthode claire et des mises en situation, en petit groupe, avec une attestation de participation.",
           "format": "Session en groupe : principes, exercices, restitution.",
           "public": "Étudiants, jeunes professionnels, équipes commerciales, managers.",
-          "exemples": ["« Les cinq clés pour convaincre en deux minutes », Cotonou, 20 septembre 2025"],
+          "exemples": [
+            "« Les cinq clés pour convaincre en deux minutes », Cotonou, 20 septembre 2025",
+            "Deux masterclass réalisées, une troisième en préparation"
+          ],
           "photo": "masterclass-mazidath-ecoute"
         }
       ]
@@ -75,7 +91,7 @@
           "id": "animation",
           "nom": "MC, présentation & modération",
           "probleme": "Un événement réussi tient souvent à la personne qui le porte au micro.",
-          "valeur": "Du rythme, de l'élégance, et une salle qui reste attentive du premier au dernier mot.",
+          "valeur": "L'expérience d'une ancienne présentatrice de télévision : du rythme, de l'élégance, et une salle qui reste attentive du premier au dernier mot.",
           "format": "Cérémonies, galas, conférences, lancements, remises de prix, tables rondes.",
           "public": "Entreprises, institutions, organisateurs d'événements.",
           "exemples": [],
@@ -85,33 +101,74 @@
       ]
     },
     {
-      "id": "organisations",
-      "nom": "Pour les organisations",
-      "intro": "Le savoir-faire de l'équipe qui a créé et organisé deux éditions de Deux Minutes Pour Convaincre.",
+      "id": "marques",
+      "nom": "Pour les marques",
+      "intro": "Une voix, un visage et un regard de communicante au service de votre image.",
       "offres": [
         {
-          "id": "agence",
-          "nom": "Communication, influence & prise de parole",
-          "probleme": "Vous voulez donner de la voix à votre marque, à vos porte-parole ou à votre événement.",
-          "valeur": "Un regard d'oratrice et d'organisatrice sur votre communication.",
-          "format": "Accompagnement sur mesure.",
+          "id": "ambassadrice",
+          "nom": "Ambassadrice de marque & publicité",
+          "probleme": "Une marque a besoin d'un visage et d'une voix en qui son public a confiance.",
+          "valeur": "Une communauté de plus de 70 000 abonnés et une parole reconnue, pour porter vos campagnes avec élégance et crédibilité.",
+          "format": "Égérie, campagnes publicitaires, contenus pour les réseaux sociaux, voix off.",
           "public": "Marques, entreprises, institutions.",
-          "themes": ["Stratégie d'influence", "Conseil en communication", "Préparation des porte-parole", "Organisation d'événements d'entreprise", "Représentation et égérie de marque"],
+          "photo": "portrait-bleu-accoudee"
+        },
+        {
+          "id": "identite-visuelle",
+          "nom": "Identité visuelle & communication",
+          "probleme": "Une entreprise qui ne soigne pas son image perd la confiance avant même d'avoir parlé.",
+          "valeur": "La conception de votre identité de A à Z : logo, charte graphique, site internet, stratégie de communication et d'influence.",
+          "format": "Accompagnement sur mesure, de la réflexion stratégique à la livraison.",
+          "public": "Entreprises, entrepreneurs, associations, événements.",
+          "themes": [
+            "Logo et charte graphique",
+            "Site internet",
+            "Stratégie de communication et d'influence",
+            "Organisation d'événements d'entreprise"
+          ],
           "photo": "2mpc-public"
         }
       ]
     }
   ],
   "processus": [
-    { "titre": "Votre demande", "texte": "Vous décrivez votre projet dans le formulaire ci-dessous." },
-    { "titre": "Un échange", "texte": "Nous précisons vos objectifs, votre public et vos contraintes." },
-    { "titre": "Une proposition", "texte": "Vous recevez une proposition sur mesure et un devis." },
-    { "titre": "Le jour J", "texte": "J'interviens, puis nous faisons le point ensemble." }
+    {
+      "titre": "Votre demande",
+      "texte": "Vous décrivez votre projet dans le formulaire ci-dessous."
+    },
+    {
+      "titre": "Un échange",
+      "texte": "Nous précisons vos objectifs, votre public et vos contraintes."
+    },
+    {
+      "titre": "Une proposition",
+      "texte": "Vous recevez une proposition sur mesure et un devis."
+    },
+    {
+      "titre": "Le jour J",
+      "texte": "J'interviens, puis nous faisons le point ensemble."
+    }
   ],
   "formulaire": {
     "titre": "Parlons de votre <em>projet</em>.",
     "texte": "Décrivez votre besoin en quelques lignes : je vous réponds personnellement.",
-    "types": ["Conférence", "Formation", "Masterclass", "MC, présentation ou modération", "Accompagnement individuel", "Communication et influence", "Autre"],
-    "budgets": ["Moins de 500 €", "500 – 1 500 €", "1 500 – 3 000 €", "3 000 € et plus", "À définir"]
+    "types": [
+      "Conférence",
+      "Formation",
+      "Masterclass",
+      "Maîtrise de cérémonie ou présentation",
+      "Accompagnement individuel",
+      "Ambassadrice de marque ou publicité",
+      "Identité visuelle et communication",
+      "Autre"
+    ],
+    "budgets": [
+      "Moins de 500 €",
+      "500 – 1 500 €",
+      "1 500 – 3 000 €",
+      "3 000 € et plus",
+      "À définir"
+    ]
   }
 }

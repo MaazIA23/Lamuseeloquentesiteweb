@@ -2,7 +2,7 @@
 const { esc, html, img, wa, ext, icon } = require("../lib");
 const { riche, pageHero, enteteSection } = require("../components");
 
-const ctaParUnivers = { individus: null, entreprises: "Parler de mon projet", evenements: "Demander une prestation", organisations: "Parler de mon projet" };
+const ctaParUnivers = { individus: null, entreprises: "Parler de mon projet", evenements: "Demander une prestation", organisations: "Parler de mon projet", marques: "Parler de ma marque" };
 
 module.exports = function travaillerAvecMoi({ site, pro: p }) {
   const hero = pageHero({
