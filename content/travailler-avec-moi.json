@@ -83,7 +83,13 @@
             "« Les cinq clés pour convaincre en deux minutes », Cotonou, 20 septembre 2025",
             "Deux masterclass réalisées, une troisième en préparation"
           ],
-          "photo": "masterclass-participante-3"
+          "photo": "masterclass-participante-3",
+          "video": {
+            "youtubeId": "ZhdQFli5jEc",
+            "titre": "Extrait de la masterclass de Cotonou",
+            "couverture": "masterclass-participante-3",
+            "format": "vertical"
+          }
         }
       ]
     },

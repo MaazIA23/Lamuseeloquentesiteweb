@@ -229,9 +229,10 @@
       ],
       "TODO": "Lieu exact, nombre de participants, programme de la masterclass.",
       "video": {
-        "youtubeId": "",
-        "titre": "Masterclass « Les cinq clés pour convaincre en deux minutes »",
-        "couverture": "masterclass-participante-3"
+        "youtubeId": "ZhdQFli5jEc",
+        "titre": "Extrait de la masterclass « Les cinq clés pour convaincre en deux minutes »",
+        "couverture": "masterclass-participante-3",
+        "format": "vertical"
       }
     }
   ]

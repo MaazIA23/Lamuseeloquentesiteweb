@@ -540,3 +540,7 @@
 .rdv__video { grid-column: 1 / -1; }
 .video__lancer::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(29,31,71,0) 40%, rgba(29,31,71,0.45)); pointer-events: none; }
 .video__bouton { z-index: 1; }
+.video--vertical { max-width: 340px; justify-self: center; }
+.video--vertical .video__lancer, .video--vertical iframe { aspect-ratio: 9 / 16; }
+.rdv__video.video--vertical { grid-column: auto; }
+@media (min-width: 900px) { .rdv:has(.video--vertical) { grid-template-columns: 1.1fr 0.9fr 0.7fr; align-items: center; } }

@@ -54,9 +54,9 @@ const temoin = (x, categories) => html`
 /** Vidéo YouTube en « façade » : miniature + bouton lecture, le lecteur ne se charge qu'au clic. */
 const video = (v, cls = "") =>
   v && v.youtubeId
-    ? html`<figure class="video ${cls}" data-reveal>
+    ? html`<figure class="video ${v.format === "vertical" ? "video--vertical " : ""}${cls}" data-reveal>
   <button class="video__lancer" type="button" data-youtube="${esc(v.youtubeId)}" aria-label="Lire la vidéo : ${esc(v.titre)}">
-    ${v.couverture ? img(v.couverture, { alt: "", sizes: "(min-width: 900px) 46vw, 92vw" }) : `<img src="https://i.ytimg.com/vi/${esc(v.youtubeId)}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">`}
+    ${v.couverture ? img(v.couverture, { alt: "", sizes: v.format === "vertical" ? "360px" : "(min-width: 900px) 46vw, 92vw" }) : `<img src="https://i.ytimg.com/vi/${esc(v.youtubeId)}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">`}
     <span class="video__bouton" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
   </button>
   <figcaption>${esc(v.titre)}</figcaption>
