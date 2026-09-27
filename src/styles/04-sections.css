@@ -128,7 +128,7 @@
 .livre__texte h2 { font-size: clamp(2rem, 3.6vw, 3.2rem); }
 .livre__texte .chapo { color: var(--encre-douce); max-width: 54ch; }
 .livre__couverture { overflow: hidden; border-radius: var(--r-m); }
-.livre__couverture img { width: 100%; aspect-ratio: 5 / 4; object-fit: cover; }
+.livre__couverture img { width: 100%; aspect-ratio: 1; object-fit: cover; }
 @media (min-width: 900px) { .livre__grille { grid-template-columns: 1.05fr 0.95fr; gap: clamp(3rem, 7vw, 7rem); } }
 
 /* ---------- Programmes signatures ---------- */
@@ -160,7 +160,8 @@
 .temoin blockquote p { font-size: 0.98rem; line-height: 1.7; color: var(--encre); }
 .temoin__auteur { display: flex; align-items: center; gap: var(--e-3); font-size: var(--t-petit); color: var(--encre-douce); }
 .temoin__auteur img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; object-position: 50% 20%; }
-.temoin__auteur span { display: grid; }
+.temoin__auteur > span:not(.temoin__initiale) { display: grid; }
+.temoin__initiale { display: grid; place-items: center; width: 48px; height: 48px; flex: none; border-radius: 50%; background: var(--bleu-voile); color: var(--bleu); font: 500 1.4rem/1 var(--f-serif); }
 .temoin__auteur b { color: var(--bleu); font-weight: 600; font-size: 0.92rem; }
 .temoin:nth-child(2) { --delai: 0.1s; } .temoin:nth-child(3) { --delai: 0.2s; }
 @media (min-width: 900px) { .temoins { grid-template-columns: repeat(3, 1fr); gap: var(--e-7); } }

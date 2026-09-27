@@ -1,12 +1,12 @@
 /* Page Accompagnements : Speak & Conquer. Contenu : content/programmes/speak-and-conquer.json */
 const { esc, html, img, wa, ext, icon } = require("../lib");
-const { pageHero, enteteSection, appelFinal } = require("../components");
+const { pageHero, enteteSection, appelFinal, temoin } = require("../components");
 
 const cellule = (v) =>
   v === true ? `<span class="oui">${icon.check}<span class="sr">Inclus</span></span>` :
   v === false ? `<span class="non">${icon.tiret}<span class="sr">Non inclus</span></span>` : esc(v);
 
-module.exports = function speakAndConquer({ site, sac: p }) {
+module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
   const hero = pageHero({
     ariane: "Accompagnements",
     surtitre: "Accompagnement individuel",
@@ -122,6 +122,17 @@ module.exports = function speakAndConquer({ site, sac: p }) {
   </div>
 </section>`;
 
+  const avis = temoignages.liste.filter((t) => t.categorie === "accompagnement");
+  const temoins = avis.length
+    ? html`
+<section class="section">
+  <div class="conteneur">
+    ${enteteSection({ surtitre: "Ils ont suivi Speak & Conquer", titre: "Leur parole, <em>aujourd'hui</em>." })}
+    <ul class="temoins" data-defile>${avis.map((x) => temoin(x))}</ul>
+  </div>
+</section>`
+    : "";
+
   const reservation = html`
 <section class="section">
   <div class="conteneur">
@@ -154,5 +165,5 @@ module.exports = function speakAndConquer({ site, sac: p }) {
     whatsapp: "Bonjour Mazidath, j'hésite entre les formules Speak & Conquer."
   });
 
-  return [hero, faits, transformation, pourQui, methode, competences, formules, reservation, faq, final].join("\n");
+  return [hero, faits, transformation, pourQui, methode, competences, formules, temoins, reservation, faq, final].join("\n");
 };

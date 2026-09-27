@@ -62,6 +62,33 @@
       1600
     ]
   },
+  "couverture-alternance": {
+    "width": 2560,
+    "height": 2560,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "couverture-chroniques": {
+    "width": 2560,
+    "height": 2560,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
+  "couverture-diction": {
+    "width": 2560,
+    "height": 2560,
+    "widths": [
+      480,
+      960,
+      1600
+    ]
+  },
   "dedicace-livre": {
     "width": 2576,
     "height": 1717,
@@ -69,24 +96,6 @@
       480,
       960,
       1600
-    ]
-  },
-  "ebook-alternance": {
-    "width": 996,
-    "height": 1040,
-    "widths": [
-      480,
-      960,
-      996
-    ]
-  },
-  "ebook-diction": {
-    "width": 996,
-    "height": 1040,
-    "widths": [
-      480,
-      960,
-      996
     ]
   },
   "intervention-micro-bleu": {

@@ -8,9 +8,9 @@ module.exports = function boutique({ site, boutique: b }) {
     surtitre: "Lire, s'entraîner, progresser",
     titre: "La <em>boutique</em>",
     texte: "Un livre pour comprendre comment une voix se révèle, des outils pour s'entraîner à son rythme.",
-    photo: "livre-chroniques",
+    photo: "couverture-chroniques",
     photoAlt: "Le livre Chroniques d'une voix qui s'est révélée",
-    pos: "40% 50%"
+    pos: "50% 45%"
   });
 
   const bouton = (p) =>

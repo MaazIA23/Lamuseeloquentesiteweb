@@ -1,5 +1,5 @@
 {
-  "_aide": "Témoignages. `categorie` : participants, partenaires, evenements, entreprises. `vedette: true` = mis en avant. Ne publier qu'avec accord.",
+  "_aide": "Témoignages. `categorie` : participants, partenaires, evenements, entreprises, accompagnement (s'affiche aussi sur la page Speak & Conquer). `vedette: true` = mis en avant sur l'accueil. `photo` facultative. Ne publier qu'avec l'accord de la personne.",
   "liste": [
     {
       "nom": "José Pascaël Agbo",
@@ -50,6 +50,7 @@
     "participants": "Participants",
     "partenaires": "Marraine & partenaires",
     "evenements": "Jury",
-    "entreprises": "Entreprises & institutions"
+    "entreprises": "Entreprises & institutions",
+    "accompagnement": "Accompagnement Speak & Conquer"
   }
 }

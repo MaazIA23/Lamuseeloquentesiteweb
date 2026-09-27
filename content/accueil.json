@@ -8,8 +8,14 @@
     "surtitre": "La Muse Éloquente · Mazidath Bello",
     "titre": "Donner une <em>voix</em> aux idées qui méritent d'être entendues.",
     "texte": "La Muse Éloquente est l'univers de Mazidath Bello, oratrice, maîtresse de cérémonie et autrice. Accompagnements, interventions et événements autour de la parole, entre l'Afrique, la France et l'international.",
-    "ctaPrincipal": { "label": "Travailler avec Mazidath", "url": "/travailler-avec-moi/" },
-    "ctaSecondaire": { "label": "Découvrir La Muse Éloquente", "url": "/a-propos/" },
+    "ctaPrincipal": {
+      "label": "Travailler avec Mazidath",
+      "url": "/travailler-avec-moi/"
+    },
+    "ctaSecondaire": {
+      "label": "Découvrir La Muse Éloquente",
+      "url": "/a-propos/"
+    },
     "photo": "portrait-bleu-accoudee",
     "photoAlt": "Portrait de Mazidath Bello, en tailleur bleu, le menton posé sur la main",
     "photoScene": "scene-promotrice",
@@ -21,10 +27,22 @@
     "titre": "Un lieu pour la parole qui <em>compte</em>.",
     "texte": "La Muse Éloquente n'est pas une agence comme les autres. C'est un univers consacré à la parole : celle qui s'apprend, celle qui se travaille, celle qui fait avancer les idées, les carrières et les projets.",
     "piliers": [
-      { "nom": "Parole", "texte": "Savoir ce que l'on veut dire, et pourquoi. Structurer une pensée avant de la partager." },
-      { "nom": "Éloquence", "texte": "Choisir les mots justes, le bon rythme, le silence au bon moment." },
-      { "nom": "Présence", "texte": "Habiter l'espace, tenir un regard, porter une salle du premier au dernier mot." },
-      { "nom": "Impact", "texte": "Faire en sorte qu'une idée soit comprise, retenue, et suivie d'effets." }
+      {
+        "nom": "Parole",
+        "texte": "Savoir ce que l'on veut dire, et pourquoi. Structurer une pensée avant de la partager."
+      },
+      {
+        "nom": "Éloquence",
+        "texte": "Choisir les mots justes, le bon rythme, le silence au bon moment."
+      },
+      {
+        "nom": "Présence",
+        "texte": "Habiter l'espace, tenir un regard, porter une salle du premier au dernier mot."
+      },
+      {
+        "nom": "Impact",
+        "texte": "Faire en sorte qu'une idée soit comprise, retenue, et suivie d'effets."
+      }
     ]
   },
   "preuves": {
@@ -35,19 +53,58 @@
     "surtitre": "L'écosystème",
     "titre": "Une même conviction. <em>Plusieurs façons</em> de la faire vivre.",
     "liste": [
-      { "nom": "Speak & Conquer", "texte": "L'accompagnement individuel en prise de parole et en éloquence, en trois formules.", "cta": "Choisir mon accompagnement", "url": "/programmes/speak-and-conquer/", "photo": "attestation-tristan-kounde" },
-      { "nom": "Conférences & formations", "texte": "Pour les entreprises, les institutions, les écoles et les organisations.", "cta": "Parler de mon projet", "url": "/travailler-avec-moi/#entreprises", "photo": "masterclass-mazidath-ecoute" },
-      { "nom": "MC & événements", "texte": "Présentation, animation et modération d'événements.", "cta": "Demander une prestation", "url": "/travailler-avec-moi/#evenements", "photo": "intervention-micro-bleu" },
-      { "nom": "Deux Minutes Pour Convaincre", "texte": "Le concours d'improvisation oratoire créé à Cotonou, programme signature de La Muse Éloquente.", "cta": "Découvrir l'édition", "url": "/evenements/#deux-minutes-pour-convaincre", "photo": "2mpc-scene" },
-      { "nom": "300 Voix", "texte": "Une initiative d'impact : transmettre les outils de la prise de parole à 300 élèves et étudiants.", "cta": "Découvrir 300 Voix", "url": "/evenements/#300-voix", "photo": "masterclass-participante-1" },
-      { "nom": "Le livre", "texte": "Chroniques d'une voix qui s'est révélée, Tome 1 : De l'ombre à la scène.", "cta": "Commander le livre", "url": "/boutique/#chroniques-d-une-voix-qui-s-est-revelee", "photo": "livre-chroniques" }
+      {
+        "nom": "Speak & Conquer",
+        "texte": "L'accompagnement individuel en prise de parole et en éloquence, en trois formules.",
+        "cta": "Choisir mon accompagnement",
+        "url": "/programmes/speak-and-conquer/",
+        "photo": "attestation-tristan-kounde"
+      },
+      {
+        "nom": "Conférences & formations",
+        "texte": "Pour les entreprises, les institutions, les écoles et les organisations.",
+        "cta": "Parler de mon projet",
+        "url": "/travailler-avec-moi/#entreprises",
+        "photo": "masterclass-mazidath-ecoute"
+      },
+      {
+        "nom": "MC & événements",
+        "texte": "Présentation, animation et modération d'événements.",
+        "cta": "Demander une prestation",
+        "url": "/travailler-avec-moi/#evenements",
+        "photo": "intervention-micro-bleu"
+      },
+      {
+        "nom": "Deux Minutes Pour Convaincre",
+        "texte": "Le concours d'improvisation oratoire créé à Cotonou, programme signature de La Muse Éloquente.",
+        "cta": "Découvrir l'édition",
+        "url": "/evenements/#deux-minutes-pour-convaincre",
+        "photo": "2mpc-scene"
+      },
+      {
+        "nom": "300 Voix",
+        "texte": "Une initiative d'impact : transmettre les outils de la prise de parole à 300 élèves et étudiants.",
+        "cta": "Découvrir 300 Voix",
+        "url": "/evenements/#300-voix",
+        "photo": "masterclass-participante-1"
+      },
+      {
+        "nom": "Le livre",
+        "texte": "Chroniques d'une voix qui s'est révélée, Tome 1 : De l'ombre à la scène.",
+        "cta": "Commander le livre",
+        "url": "/boutique/#chroniques-d-une-voix-qui-s-est-revelee",
+        "photo": "couverture-chroniques"
+      }
     ]
   },
   "mazidath": {
     "surtitre": "Mazidath Bello",
     "titre": "De l'ombre <em>à la scène</em>.",
     "texte": "Elle prend le micro très jeune. Plus de quinze ans plus tard, elle est présentatrice, maîtresse de cérémonie, voix off, lauréate du concours national d'éloquence du Groupe Gema, autrice, et fondatrice d'un concours qui révèle chaque année de nouvelles voix.",
-    "cta": { "label": "Lire son histoire", "url": "/a-propos/" },
+    "cta": {
+      "label": "Lire son histoire",
+      "url": "/a-propos/"
+    },
     "photo": "scene-tailleur-peche",
     "photoAlt": "Mazidath Bello au pupitre lors du mot de bienvenue de Deux Minutes Pour Convaincre"
   },
@@ -55,15 +112,30 @@
     "surtitre": "Le livre",
     "titre": "Une histoire personnelle devenue une invitation à révéler <em>sa propre voix</em>.",
     "texte": "Dans « Chroniques d'une voix qui s'est révélée, Tome 1 : De l'ombre à la scène », Mazidath Bello raconte son chemin et partage une méthode, portée par une conviction : la prise de parole n'est pas un don réservé à quelques-uns, c'est une compétence.",
-    "cta": { "label": "Commander le livre", "url": "/boutique/#chroniques-d-une-voix-qui-s-est-revelee" },
-    "photo": "livre-chroniques"
+    "cta": {
+      "label": "Commander le livre",
+      "url": "/boutique/#chroniques-d-une-voix-qui-s-est-revelee"
+    },
+    "photo": "couverture-chroniques"
   },
-  "temoignages": { "surtitre": "Ils en parlent", "titre": "Ce qu'ils retiennent." },
-  "reseaux": { "surtitre": "Au quotidien", "titre": "Suivre La Muse Éloquente" },
+  "temoignages": {
+    "surtitre": "Ils en parlent",
+    "titre": "Ce qu'ils retiennent."
+  },
+  "reseaux": {
+    "surtitre": "Au quotidien",
+    "titre": "Suivre La Muse Éloquente"
+  },
   "final": {
     "titre": "Parlons de votre <em>projet</em>.",
     "texte": "Conférence, formation, maîtrise de cérémonie, accompagnement individuel : dites-moi ce que vous préparez.",
-    "ctaPrincipal": { "label": "Parler de mon projet", "url": "/travailler-avec-moi/#devis" },
-    "ctaSecondaire": { "label": "Écrire sur WhatsApp", "whatsapp": "Bonjour Mazidath, je vous contacte depuis votre site." }
+    "ctaPrincipal": {
+      "label": "Parler de mon projet",
+      "url": "/travailler-avec-moi/#devis"
+    },
+    "ctaSecondaire": {
+      "label": "Écrire sur WhatsApp",
+      "whatsapp": "Bonjour Mazidath, je vous contacte depuis votre site."
+    }
   }
 }

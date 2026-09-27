@@ -6,7 +6,7 @@
       "type": "Livre",
       "titre": "Chroniques d'une voix qui s'est révélée",
       "sousTitre": "Tome 1 · De l'ombre à la scène",
-      "photo": "livre-chroniques",
+      "photo": "couverture-chroniques",
       "resume": "Un récit autobiographique et une méthode pour révéler sa voix, porté par une conviction : la prise de parole n'est pas un don réservé à quelques-uns, c'est une compétence.",
       "formats": [
         "Papier (France et Cotonou)",
@@ -34,7 +34,7 @@
       "type": "Ebook",
       "titre": "Le secret d'une belle diction",
       "sousTitre": "Techniques & exercices pour transformer votre élocution",
-      "photo": "ebook-diction",
+      "photo": "couverture-diction",
       "resume": "Des techniques et des exercices concrets pour une expression claire, audible et maîtrisée.",
       "formats": [
         "E-book"
@@ -55,7 +55,7 @@
       "type": "Ebook",
       "titre": "Décrochez votre alternance dès le premier entretien",
       "sousTitre": "Le guide complet de La Muse Éloquente",
-      "photo": "ebook-alternance",
+      "photo": "couverture-alternance",
       "resume": "Le guide pour préparer et réussir votre entretien d'alternance.",
       "formats": [
         "E-book"

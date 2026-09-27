@@ -135,7 +135,7 @@ module.exports = function accueil({ site, accueil: a, sac, temoignages }) {
       <p class="chapo" data-reveal>${esc(l.texte)}</p>
       <a class="btn" href="${l.cta.url}">${esc(l.cta.label)} ${icon.fleche}</a>
     </div>
-    <figure class="livre__couverture photo" data-reveal>${img(l.photo, { alt: "Le livre Chroniques d'une voix qui s'est révélée, Tome 1", sizes: "(min-width: 900px) 40vw, 92vw", pos: "35% 50%" })}</figure>
+    <figure class="livre__couverture photo" data-reveal>${img(l.photo, { alt: "Le livre Chroniques d'une voix qui s'est révélée, Tome 1", sizes: "(min-width: 900px) 40vw, 92vw" })}</figure>
   </div>
 </section>`;
 
