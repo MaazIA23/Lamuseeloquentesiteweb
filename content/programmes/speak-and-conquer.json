@@ -202,11 +202,15 @@
     },
     {
       "q": "Comment se passe le paiement ?",
-      "r": "Le paiement se fait en ligne sur la boutique sécurisée de La Muse Éloquente. Après votre achat, je vous contacte pour planifier vos séances."
+      "r": "Le paiement se fait en ligne, en FCFA par Mobile Money ou carte via FedaPay, ou depuis l'international par carte. Juste après, vous accédez à mon agenda pour réserver votre première séance."
     },
     {
       "q": "Reçoit-on une attestation ?",
       "r": "Oui, avec la formule Prestige : une attestation officielle du Programme Speak & Conquer, à valoriser sur votre profil professionnel."
+    },
+    {
+      "q": "Puis-je reporter une séance ?",
+      "r": "Oui, gratuitement jusqu'à 24 heures avant, via le lien reçu lors de la réservation. Vos séances sont à utiliser dans un délai de 2, 3 ou 4 mois selon la formule. Tous les détails figurent dans les conditions générales de vente."
     }
   ],
   "TODO": [

@@ -16,6 +16,7 @@ module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
           <button class="btn btn--plein" type="button" data-fedapay="${f.id}">Payer ${esc(f.prixFcfa)} ${icon.fleche}</button>
           <p class="formule__moyens" data-fedapay-note>Mobile Money (MTN, Moov, Celtiis) ou carte bancaire</p>
           <a class="lien" href="${f.paiement.url}"${ext(f.paiement.url)}>${esc(site.paiement.international.libelle)}</a>
+          <p class="formule__cgv">En payant, vous acceptez les <a href="/cgv/">conditions générales de vente</a>.</p>
         </div>`
       : `<a class="btn btn--plein" href="${f.paiement.url}"${ext(f.paiement.url)} data-offre="${f.id}">Choisir la formule ${esc(f.nom)} ${icon.fleche}</a>`;
   const scriptFedapay = "";
@@ -100,7 +101,7 @@ module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
   const formules = html`
 <section class="section section--bleu formules" id="formules">
   <div class="conteneur">
-    ${enteteSection({ surtitre: "Formules et tarifs", titre: "Choisir mon <em>accompagnement</em>.", texte: "Paiement en ligne sécurisé. Après votre achat, je vous contacte pour planifier vos séances.", centre: true, or: true })}
+    ${enteteSection({ surtitre: "Formules et tarifs", titre: "Choisir mon <em>accompagnement</em>.", texte: "Paiement en ligne sécurisé, puis réservation immédiate de vos séances dans mon agenda.", centre: true, or: true })}
     <ul class="formules-detail" data-defile>
       ${p.formules.map(
         (f) => html`<li class="formule${f.miseEnAvant ? " formule--avant" : ""}" id="formule-${f.id}" data-reveal>
@@ -161,7 +162,7 @@ module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
     <ol class="etapes">
       <li data-reveal><span class="index">01</span><h3>Choisissez votre formule</h3><p>Étudiant, Standard ou Prestige, selon votre objectif et votre échéance.</p></li>
       <li data-reveal><span class="index">02</span><h3>Réglez en ligne</h3><p>${texteReglement}</p></li>
-      <li data-reveal><span class="index">03</span><h3>Planifions vos séances</h3><p>Je vous contacte après votre achat pour fixer vos rendez-vous.</p></li>
+      <li data-reveal><span class="index">03</span><h3>Réservez vos séances</h3><p>Juste après le paiement, vous accédez à mon agenda en ligne pour choisir vos créneaux.</p></li>
     </ol>
   </div>
 </section>`;

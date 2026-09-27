@@ -1,13 +1,13 @@
 {
-  "_aide": "Pages légales. Les champs vides doivent être complétés avant la mise en ligne publique (identifiants légaux). Tant que `valide` est false, les pages portent la balise noindex.",
-  "valide": false,
+  "_aide": "Pages légales, alignées sur le site Deux Minutes Pour Convaincre (même entreprise). Les règles des CGV (report, validité, remboursement) sont une proposition à confirmer par Mazidath.",
+  "valide": true,
   "editeur": {
     "nom": "La Muse Éloquente",
-    "responsable": "Mazidath Bello",
-    "formeJuridique": "",
-    "rccm": "",
-    "ifu": "",
-    "adresse": "",
+    "formeJuridique": "Entreprise individuelle",
+    "siege": "Cinéma Concorde, Cotonou, Bénin",
+    "rccm": "COTONOU N° RB/COT/25 A 111296",
+    "responsable": "Mazidath Bello, Directrice générale",
+    "directricePublication": "Mazidath Bello, fondatrice de La Muse Éloquente",
     "email": "lamuseeloquente@gmail.com"
   },
   "hebergeur": {
@@ -15,9 +15,18 @@
     "adresse": "44 Montgomery Street, Suite 300, San Francisco, CA 94104, États-Unis",
     "site": "https://www.netlify.com"
   },
+  "cgv": {
+    "validite": [
+      { "formule": "Étudiant", "seances": 3, "delai": "2 mois" },
+      { "formule": "Standard", "seances": 5, "delai": "3 mois" },
+      { "formule": "Prestige", "seances": 8, "delai": "4 mois" }
+    ],
+    "delaiReport": "24 heures",
+    "delaiRetractation": "14 jours",
+    "aConfirmer": true
+  },
   "TODO": [
-    "Forme juridique, RCCM, IFU et adresse de La Muse Éloquente.",
-    "Faire valider les CGV (délais, annulation, remboursement) par Mazidath, idéalement par un juriste.",
+    "Faire confirmer par Mazidath les règles des CGV (validité, report, remboursement).",
     "Vérifier l'adresse actuelle de l'hébergeur Netlify sur netlify.com."
   ]
 }

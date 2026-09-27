@@ -130,5 +130,9 @@
     "Éthiopie",
     "Togo",
     "Bénin"
-  ]
+  ],
+  "reservation": {
+    "_aide": "Lien Cal.com du rendez-vous masqué « Séance Speak & Conquer » (60 min), affiché uniquement après paiement.",
+    "seances": "https://cal.com/lamuseeloquente/seance-speak-conquer-60-min"
+  }
 }

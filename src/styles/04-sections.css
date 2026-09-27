@@ -544,3 +544,9 @@
 .video--vertical .video__lancer, .video--vertical iframe { aspect-ratio: 9 / 16; }
 .rdv__video.video--vertical { grid-column: auto; }
 @media (min-width: 900px) { .rdv:has(.video--vertical) { grid-template-columns: 1.1fr 0.9fr 0.7fr; align-items: center; } }
+.prose__liste { display: grid; gap: var(--e-2); padding-left: 1.2em; list-style: disc; color: var(--encre-douce); }
+.prose__liste li { display: list-item; }
+.prose__liste b { color: var(--bleu); font-weight: 600; }
+.formule__cgv { font-size: 0.78rem; color: var(--encre-douce); }
+.formule__cgv a { color: inherit; }
+.page-message__note { font-size: var(--t-petit); opacity: 0.8; margin-top: var(--e-3); overflow-wrap: anywhere; }
