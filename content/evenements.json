@@ -227,13 +227,7 @@
         "masterclass-participante-3",
         "masterclass-attestation-rebecca"
       ],
-      "TODO": "Lieu exact, nombre de participants, programme de la masterclass.",
-      "video": {
-        "youtubeId": "ZhdQFli5jEc",
-        "titre": "Extrait de la masterclass « Les cinq clés pour convaincre en deux minutes »",
-        "couverture": "masterclass-participante-3",
-        "format": "vertical"
-      }
+      "TODO": "Lieu exact, nombre de participants, programme de la masterclass."
     }
   ]
 }
