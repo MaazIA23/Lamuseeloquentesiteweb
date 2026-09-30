@@ -58,28 +58,32 @@
         "texte": "L'accompagnement individuel pour révéler sa signature oratoire et prendre la parole avec assurance.",
         "cta": "Choisir mon accompagnement",
         "url": "/programmes/speak-and-conquer/",
-        "photo": "attestation-tristan-kounde"
+        "photo": "attestation-tristan-kounde",
+        "pos": "50% 18%"
       },
       {
         "nom": "Conférences & formations",
         "texte": "Keynotes, formations d'équipes et masterclass pour les entreprises, les écoles et les institutions.",
         "cta": "Parler de mon projet",
         "url": "/travailler-avec-moi/#entreprises",
-        "photo": "formation-kirikou"
+        "photo": "formation-kirikou",
+        "pos": "50% 35%"
       },
       {
         "nom": "Maîtrise de cérémonie",
         "texte": "L'aisance d'une présentatrice de la télévision nationale béninoise pour porter vos cérémonies, galas et conférences.",
         "cta": "Demander une prestation",
         "url": "/travailler-avec-moi/#evenements",
-        "photo": "intervention-micro-bleu"
+        "photo": "intervention-micro-bleu",
+        "pos": "50% 12%"
       },
       {
         "nom": "Image & marques",
         "texte": "Ambassadrice de marque, voix et visage de vos campagnes, création d'identités visuelles.",
         "cta": "Parler de ma marque",
         "url": "/travailler-avec-moi/#marques",
-        "photo": "portrait-vert-buste"
+        "photo": "portrait-vert-buste",
+        "pos": "50% 18%"
       },
       {
         "nom": "Deux Minutes Pour Convaincre",
@@ -93,7 +97,8 @@
         "texte": "Une initiative d'impact : transmettre les outils de la prise de parole à 300 élèves et étudiants.",
         "cta": "Découvrir 300 Voix",
         "url": "/evenements/#300-voix",
-        "photo": "masterclass-participante-1"
+        "photo": "masterclass-participante-1",
+        "pos": "50% 25%"
       },
       {
         "nom": "Le livre",

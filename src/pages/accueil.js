@@ -73,7 +73,7 @@ module.exports = function accueil({ site, accueil: a, sac, temoignages, evenemen
             <span class="univers__nom">${esc(x.nom)}</span>
             <span class="univers__desc">${esc(x.texte)}</span>
             <span class="univers__cta">${esc(x.cta)} ${icon.fleche}</span>
-            <span class="univers__vignette photo" aria-hidden="true">${img(x.photo, { alt: "", sizes: "(min-width: 900px) 220px, 96px" })}</span>
+            <span class="univers__vignette photo" aria-hidden="true">${img(x.photo, { alt: "", sizes: "(min-width: 900px) 220px, 96px", pos: x.pos })}</span>
           </a>
         </li>`
       )}
