@@ -66,3 +66,17 @@ table { border-collapse: collapse; width: 100%; }
 .index { font: 500 0.95rem/1 var(--f-texte); letter-spacing: 0.08em; color: var(--or-profond); font-variant-numeric: tabular-nums; }
 
 .ico { width: 1.1em; height: 1.1em; flex: none; }
+
+/* Textes courants justifiés, avec césure française pour éviter les grands blancs. */
+main p, main li, main blockquote {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 7 3 3;
+}
+/* Les blocs centrés restent centrés. */
+.entete-section--centre p, .final__in p, .ecosysteme p, .formule__payer p, .video__accord p, .menu-mobile p,
+.formulaire__note, .comparatif td { text-align: center; hyphens: manual; }
+/* Grandes phrases en serif : alignées à gauche, jamais justifiées (sinon trous visibles). */
+.pied__signature, .avant-apres__avant, .avant-apres__apres, .temoin-vedette p, .chapitre__citation p,
+.surtitre, .temoin__categorie, .frise__label, .fiche__label, .formule__label, .laureats__edition, .etiquette { text-align: left; hyphens: manual; }
