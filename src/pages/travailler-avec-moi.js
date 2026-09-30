@@ -19,7 +19,7 @@ module.exports = function travaillerAvecMoi({ site, pro: p }) {
 
   const offre = (o, u) => html`
     <article class="offre-pro" id="${o.id}">
-      ${o.video ? `<div class="offre-pro__photo">${video(o.video)}</div>` : `<figure class="offre-pro__photo photo" data-reveal>${img(o.photo, { alt: "", sizes: "(min-width: 900px) 34vw, 92vw", pos: "50% 30%" })}</figure>`}
+      ${o.video ? `<div class="offre-pro__photo">${video(o.video)}</div>` : `<figure class="offre-pro__photo photo" data-reveal>${img(o.photo, { alt: "", sizes: "(min-width: 900px) 34vw, 92vw", pos: o.photoPos || "50% 30%" })}</figure>`}
       <div class="offre-pro__texte">
         <h3 class="offre-pro__nom" data-reveal>${esc(o.nom)}</h3>
         <p class="offre-pro__probleme" data-reveal>${esc(o.probleme)}</p>

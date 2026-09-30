@@ -18,7 +18,7 @@ module.exports = function aPropos({ site, apropos: p, boutique }) {
       (c, i) => html`
 <section class="section chapitre${i % 2 ? " chapitre--inverse" : ""}" id="${c.id}">
   <div class="conteneur chapitre__grille">
-    <figure class="chapitre__photo photo" data-reveal>${img(c.photo, { alt: c.photoAlt, sizes: "(min-width: 900px) 40vw, 92vw", pos: "50% 25%" })}</figure>
+    <figure class="chapitre__photo photo" data-reveal>${img(c.photo, { alt: c.photoAlt, sizes: "(min-width: 900px) 40vw, 92vw", pos: c.photoPos || "50% 25%" })}</figure>
     <div class="chapitre__texte">
       <p class="surtitre surtitre--nu"><span class="index">${String(i + 1).padStart(2, "0")}</span>${esc(c.surtitre)}</p>
       <h2 data-reveal>${riche(c.titre)}</h2>

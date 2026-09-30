@@ -9,7 +9,7 @@
     "titre": "Speak & Conquer · Accompagnement en prise de parole et éloquence",
     "description": "Speak & Conquer, l'accompagnement individuel en prise de parole en public de La Muse Éloquente : trois formules de 3 à 8 semaines (Étudiant, Standard, Prestige), dès 50 000 FCFA."
   },
-  "photo": "portrait-bleu-buste",
+  "photo": "scene-promotrice",
   "pourQui": [
     {
       "titre": "Étudiants",
@@ -265,5 +265,6 @@
         "texte": "Pratiquer entre les séances et avancer avec la communauté La Muse Éloquente."
       }
     ]
-  }
+  },
+  "photoPos": "78% 25%"
 }

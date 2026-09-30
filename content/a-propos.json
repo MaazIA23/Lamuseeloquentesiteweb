@@ -8,8 +8,8 @@
     "surtitre": "Mazidath Bello, fondatrice de La Muse Éloquente",
     "titre": "De l'ombre <em>à la scène</em>",
     "texte": "L'histoire d'une voix qui a appris à se faire entendre, de Cotonou à Genève, de Dakar à Paris, et qui aide aujourd'hui les autres à trouver la leur.",
-    "photo": "portrait-vert-fond-peche",
-    "photoAlt": "Portrait de Mazidath Bello en robe verte sur fond pêche"
+    "photo": "scene-pupitre",
+    "photoAlt": "Mazidath Bello au micro, sur scène"
   },
   "chapitres": [
     {
@@ -49,7 +49,8 @@
       "lien": {
         "label": "Voir un extrait de l'émission",
         "url": "https://www.facebook.com/share/v/1GiqLTvWX2/?mibextid=wwXIfr"
-      }
+      },
+      "photoPos": "50% 100%"
     },
     {
       "id": "eloquence",
@@ -62,8 +63,9 @@
         "label": "Lire l'article du Groupe Gema",
         "url": "https://www.groupe-gema.com/la-grande-finale-du-concours-deloquence-du-groupe-gema-un-tourbillon-demotions-et-de-talents/"
       },
-      "photo": "portrait-bleu-buste",
-      "photoAlt": "Portrait de Mazidath Bello en col roulé bleu"
+      "photo": "scene-micro",
+      "photoAlt": "Mazidath Bello au micro, sur scène",
+      "photoPos": "50% 15%"
     },
     {
       "id": "la-muse-eloquente",

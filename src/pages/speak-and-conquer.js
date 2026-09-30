@@ -30,7 +30,7 @@ module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
     texte: `${p.sousAccroche} ${p.description}`,
     photo: p.photo,
     photoAlt: "Portrait de Mazidath Bello, fondatrice de La Muse Éloquente",
-    pos: "50% 12%",
+    pos: p.photoPos || "50% 12%",
     actions: `<a class="btn" href="#formules">Choisir mon accompagnement ${icon.fleche}</a><a class="lien" href="${wa(site, "Bonjour Mazidath, j'ai une question sur Speak & Conquer.")}"${ext("https:")}>Poser une question</a>`
   });
 
