@@ -21,7 +21,6 @@ module.exports = function accueil({ site, accueil: a, sac, temoignages, evenemen
     </div>
     <div class="hero__visuel">
       <figure class="hero__portrait photo">
-        <span class="hero__cercle" aria-hidden="true"></span>
         ${img(h.photo, { alt: h.photoAlt, sizes: "(min-width: 900px) 40vw, 80vw", eager: true })}
       </figure>
       <p class="hero__legende">${esc(h.legende)}</p>

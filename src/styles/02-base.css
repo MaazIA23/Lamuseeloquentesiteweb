@@ -6,8 +6,6 @@ body {
   font: 400 var(--t-texte)/1.75 var(--f-texte);
   color: var(--encre);
   background-color: var(--papier);
-  /* Texture papier gaufré de la charte, très discrète */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='520' viewBox='0 0 520 520'%3E%3Cg fill='none' stroke='%23272a5d' stroke-opacity='.028' stroke-width='1'%3E%3Cpath d='M-10 40c80-30 160 30 260 0s180-30 280 0'/%3E%3Cpath d='M-10 110c90-35 170 35 270 0s170-30 270 5'/%3E%3Cpath d='M-10 180c80-30 170 30 260 0s190-30 280 0'/%3E%3Cpath d='M-10 250c90-35 170 35 270 0s170-30 270 5'/%3E%3Cpath d='M-10 320c80-30 160 30 260 0s180-30 280 0'/%3E%3Cpath d='M-10 390c90-35 170 35 270 0s170-30 270 5'/%3E%3Cpath d='M-10 460c80-30 170 30 260 0s190-30 280 0'/%3E%3C/g%3E%3C/svg%3E");
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern", "liga";

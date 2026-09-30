@@ -13,15 +13,13 @@
 
 .hero__visuel { position: relative; justify-self: center; width: min(100%, 480px); }
 .hero__portrait { position: relative; }
-.hero__portrait img { position: relative; z-index: 1; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 10%; mix-blend-mode: multiply; }
-.hero__cercle { position: absolute; z-index: 0; inset: 4% 4% auto 4%; aspect-ratio: 1; border-radius: 50%; border: 1px solid var(--or-moyen); }
-.hero__cercle::after { content: ""; position: absolute; inset: 7%; border-radius: 50%; background: var(--bleu-voile); opacity: 0.55; }
+.hero__portrait img { position: relative; z-index: 1; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 10%; border-radius: var(--r-l); box-shadow: var(--ombre); }
 .hero__scene { position: absolute; z-index: 2; left: 0; bottom: 0; width: 42%; border: 6px solid var(--papier); box-shadow: var(--ombre); }
 .hero__scene img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
 .js .hero__scene { animation: scene-in 1.4s var(--ease) both 0.5s; }
 @keyframes scene-in { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
 .hero__legende {
-  position: absolute; z-index: 3; right: -4px; top: 18%; writing-mode: vertical-rl; transform: rotate(180deg);
+  position: absolute; z-index: 3; right: -2.4rem; top: 18%; writing-mode: vertical-rl; transform: rotate(180deg);
   font-size: var(--t-label); letter-spacing: 0.24em; text-transform: uppercase; color: var(--or-profond);
 }
 .hero__fil { bottom: 2%; z-index: 0; }
@@ -196,8 +194,7 @@
 .js .page-hero__titre { animation: titre-in 1.3s var(--ease) both 0.05s; }
 .page-hero__intro { max-width: 54ch; font-size: var(--t-chapo); line-height: 1.65; color: var(--encre-douce); }
 .page-hero__photo { position: relative; justify-self: center; width: min(86%, 440px); }
-.page-hero__photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 999px 999px 0 0; }
-.page-hero__photo::before { content: ""; position: absolute; inset: -14px 14px 14px -14px; border: 1px solid var(--or-moyen); border-radius: 999px 999px 0 0; }
+.page-hero__photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--r-l); box-shadow: var(--ombre); }
 .fil-ariane { display: flex; gap: var(--e-2); font-size: var(--t-petit); color: var(--encre-douce); }
 .fil-ariane a { color: inherit; }
 @media (max-width: 899px) { .page-hero .actions .btn { flex: 1 1 100%; } .page-hero .actions { width: 100%; justify-content: center; } }
