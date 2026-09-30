@@ -80,3 +80,5 @@ main p, main li, main blockquote {
 /* Grandes phrases en serif : alignées à gauche, jamais justifiées (sinon trous visibles). */
 .pied__signature, .avant-apres__avant, .avant-apres__apres, .temoin-vedette p, .chapitre__citation p,
 .surtitre, .temoin__categorie, .frise__label, .fiche__label, .formule__label, .laureats__edition, .etiquette { text-align: left; hyphens: manual; }
+/* Cartes étroites : la justification y crée des trous, on garde l'alignement à gauche. */
+.formule :is(p, li), .offre :is(p, li), .temoin :is(p, li, blockquote), .univers__desc, .laureats :is(p, li), .valeurs li { text-align: left; }
