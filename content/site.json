@@ -121,15 +121,42 @@
   },
   "signature": "Mazidath Bello, fondatrice de La Muse Éloquente",
   "pays": [
-    "Suisse",
-    "France",
-    "Sénégal",
-    "Ghana",
-    "Soudan",
-    "Afrique du Sud",
-    "Éthiopie",
-    "Togo",
-    "Bénin"
+    {
+      "nom": "Suisse",
+      "code": "ch"
+    },
+    {
+      "nom": "France",
+      "code": "fr"
+    },
+    {
+      "nom": "Sénégal",
+      "code": "sn"
+    },
+    {
+      "nom": "Ghana",
+      "code": "gh"
+    },
+    {
+      "nom": "Soudan",
+      "code": "sd"
+    },
+    {
+      "nom": "Afrique du Sud",
+      "code": "za"
+    },
+    {
+      "nom": "Éthiopie",
+      "code": "et"
+    },
+    {
+      "nom": "Togo",
+      "code": "tg"
+    },
+    {
+      "nom": "Bénin",
+      "code": "bj"
+    }
   ],
   "reservation": {
     "_aide": "Lien Cal.com du rendez-vous masqué « Séance Speak & Conquer » (60 min), affiché uniquement après paiement.",

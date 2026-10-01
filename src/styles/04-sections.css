@@ -547,3 +547,8 @@
 .formule__cgv { font-size: 0.78rem; color: var(--encre-douce); }
 .formule__cgv a { color: inherit; }
 .page-message__note { font-size: var(--t-petit); opacity: 0.8; margin-top: var(--e-3); overflow-wrap: anywhere; }
+
+/* Pays : drapeaux avec nom discret */
+.presse--drapeaux ul { gap: var(--e-4) var(--e-5); }
+.presse--drapeaux li { display: flex; flex-direction: column; align-items: center; gap: 6px; opacity: 1; font: 500 0.72rem/1.2 var(--f-texte); letter-spacing: 0.04em; color: var(--encre-douce); }
+.presse--drapeaux img { width: 40px; height: 30px; object-fit: cover; border-radius: 4px; box-shadow: 0 0 0 1px rgba(39, 42, 93, 0.12), 0 6px 14px -8px rgba(39, 42, 93, 0.45); }

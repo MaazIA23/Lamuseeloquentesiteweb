@@ -53,7 +53,7 @@ module.exports = function accueil({ site, accueil: a, sac, temoignages, evenemen
     <ul class="reperes-chiffres">
       ${site.chiffres.map((c) => html`<li data-reveal><strong data-compteur>${esc(c.valeur)}</strong><span>${esc(c.libelle)}</span></li>`)}
     </ul>
-    <div class="presse"><p>Sur scène en</p><ul>${site.pays.map((p) => `<li>${esc(p)}</li>`)}</ul></div>
+    <div class="presse presse--drapeaux"><p>Sur scène en</p><ul>${site.pays.map((p) => `<li title="${esc(p.nom)}"><img src="/assets/drapeaux/${p.code}.svg" alt="" width="40" height="30" loading="lazy" decoding="async"><span>${esc(p.nom)}</span></li>`)}</ul></div>
     <div class="presse"><p>Ils en ont parlé</p><ul>${site.presse.map((p) => `<li>${esc(p)}</li>`)}</ul></div>
   </div>
 </section>`;
