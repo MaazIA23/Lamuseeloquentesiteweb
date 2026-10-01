@@ -154,6 +154,14 @@ const pages = [
       offers: { "@type": "Offer", price: /FCFA/.test(p.prix) ? Number(p.prix.replace(/\D/g, "")) : prixNum(p.prix), priceCurrency: /FCFA/.test(p.prix) ? "XOF" : "EUR", url: p.achat.url, availability: "https://schema.org/InStock" }
     }))
   },
+  {
+    chemin: "/presentatrice/",
+    gabarit: require("../src/pages/presentatrice"),
+    titre: "Mazidath Bello · Présentatrice, animatrice, maîtresse de cérémonie",
+    description: "Parcours télé, extraits et contact de Mazidath Bello, présentatrice et animatrice.",
+    image: "portrait-gris",
+    noindex: true
+  },
   { chemin: "/mentions-legales/", gabarit: legal.mentions, titre: "Mentions légales · La Muse Éloquente", noindex: noindexLegal },
   { chemin: "/confidentialite/", gabarit: legal.confidentialite, titre: "Confidentialité · La Muse Éloquente", noindex: noindexLegal },
   { chemin: "/cgv/", gabarit: legal.cgv, titre: "Conditions générales de vente · La Muse Éloquente", noindex: noindexLegal },
