@@ -10,7 +10,7 @@ module.exports = function presentatrice({ site, evenements }) {
     ariane: "Présentatrice",
     surtitre: "Présentatrice · Animatrice · Maîtresse de cérémonie",
     titre: "Mazidath <em>Bello</em>",
-    texte: "Devant la caméra depuis 2017, au micro depuis quinze ans, chanteuse à ses heures : une voix qui sait écouter, relancer, et faire vivre le débat.",
+    texte: "Devant la caméra depuis 2017, au micro depuis quinze ans, chanteuse à ses heures : une voix qui sait écouter, relancer, et faire vivre le débat. Basée à Lyon, mobile en Île-de-France.",
     photo: "portrait-gris",
     photoAlt: "Portrait de Mazidath Bello en tailleur gris",
     pos: "50% 30%",
@@ -35,6 +35,7 @@ module.exports = function presentatrice({ site, evenements }) {
     ["2018", "Ma première émission", "Animatrice sur une web TV."],
     ["Télévision nationale du Bénin", "« On utilise le mot »", "Une chronique hebdomadaire de deux minutes sur les expressions françaises nées au Bénin, et ce qu'elles disent de nous."],
     ["Web TV", "« Mon style vous parle »", "Animatrice d'une émission consacrée aux mots et à ce qu'ils révèlent."],
+    ["Réseaux sociaux", "Créatrice de contenu", "Plus de 70 000 abonnés, des vidéos virales et des lives où je présente et anime en direct."],
     ["Depuis 2025", "Deux Minutes Pour Convaincre", "Créatrice d'un concours de débat oratoire à Cotonou : deux orateurs, deux thèses opposées, cent vingt secondes pour emporter la salle."]
   ];
   const parcours = html`
@@ -51,7 +52,7 @@ module.exports = function presentatrice({ site, evenements }) {
     ["Faire vivre le débat", "J'ai créé un concours entièrement construit sur la confrontation de deux points de vue. Distribuer la parole, tenir le temps, relancer : c'est mon terrain."],
     ["Écouter et relancer", "Quinze ans de scène, des cérémonies, des tables rondes : je sais laisser la place aux autres et faire émerger ce qu'ils ont de plus intéressant à dire."],
     ["Curieuse du monde", "Du Palais des Nations à Genève aux expressions du français du Bénin, en passant par une conférence internationale à Dakar devant des chefs d'État."],
-    ["La musique dans la voix", "Je chante : j'ai participé à The Voice Afrique (2019-2020), sorti un single et un duo avec Khaled Kelani. La culture urbaine et la pop culture font partie de mon quotidien."]
+    ["La musique dans la voix", "Je chante : j'ai participé à The Voice Afrique (2019-2020), sorti un single et un duo avec Khaled Kelani, dont le clip est à voir plus bas. La culture urbaine et la pop culture font partie de mon quotidien."]
   ];
   const pourquoi = html`
 <section class="section section--creme">
@@ -65,6 +66,11 @@ module.exports = function presentatrice({ site, evenements }) {
 
   const liens = [
     ["« On utilise le mot »", "Extrait de la chronique · télévision nationale du Bénin", "https://www.facebook.com/share/v/1GiqLTvWX2/"],
+    ["« Mon style vous parle »", "Extrait de l'émission · web TV", "https://www.facebook.com/share/v/1CEXudawh2/"],
+    ["Présentation en live", "Animation en direct · TikTok", "https://vm.tiktok.com/ZN8hS3fBE/"],
+    ["Vidéo virale n°1", "TikTok", "https://vm.tiktok.com/ZN8hAMFDT/"],
+    ["Vidéo virale n°2", "TikTok", "https://vm.tiktok.com/ZN8hAdeLp/"],
+    ["Vidéo virale n°3", "TikTok", "https://vm.tiktok.com/ZN8hAFLf2/"],
     ["La Dictée Solidaire", "Coordination et prise de parole · 1ère édition, 2023", "https://www.facebook.com/share/v/1Cw1BCMmXr/"]
   ];
   const extraits = html`
@@ -72,7 +78,10 @@ module.exports = function presentatrice({ site, evenements }) {
   <div class="conteneur">
     ${enteteSection({ surtitre: "Extraits", titre: "À l'<em>écran</em>.", or: true })}
     <div class="pres-extraits">
-      ${deuxMin && deuxMin.video ? video({ ...deuxMin.video, titre: "Deux Minutes Pour Convaincre · Cotonou" }) : ""}
+      <div class="pres-videos">
+        ${video({ youtubeId: "0cqRRXrHSR4", titre: "Clip en duo avec Khaled Kelani", couverture: "portrait-gris" })}
+        ${deuxMin && deuxMin.video ? video({ ...deuxMin.video, titre: "Deux Minutes Pour Convaincre · Cotonou" }) : ""}
+      </div>
       <ul class="pres-liens">
         ${liens.map(([t, s, u]) => `<li><a href="${u}" target="_blank" rel="noopener"><strong>${esc(t)}</strong><span>${esc(s)}</span>${icon.externe}</a></li>`)}
       </ul>
@@ -91,6 +100,7 @@ module.exports = function presentatrice({ site, evenements }) {
       <ul class="pres-coord">
         <li><span>Email</span><a href="mailto:${mail}">${esc(mail)}</a></li>
         <li><span>Téléphone</span><a href="tel:+${site.contact.whatsapp}">${esc(site.contact.whatsappAffiche)}</a></li>
+        <li><span>Localisation</span><p>Basée à Lyon · mobile en Île-de-France</p></li>
         <li><span>Site</span><a href="/">lamuseeloquente.fr</a></li>
       </ul>
     </div>

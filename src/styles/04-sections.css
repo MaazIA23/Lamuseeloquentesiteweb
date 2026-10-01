@@ -582,3 +582,5 @@
   .pres-contact { grid-template-columns: 0.8fr 1fr; }
 }
 .pres-frise li, .pres-atouts li, .pres-liens li, .pres-coord li, .pres-contact .chapo { text-align: left; hyphens: manual; }
+.pres-videos { display: grid; gap: var(--e-5); }
+.pres-coord p { font-weight: 600; }
