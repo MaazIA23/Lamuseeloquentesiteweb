@@ -1,0 +1,48 @@
+/* =========================================================================
+   Thème « casting » (page /presentatrice/) : univers plateau TV,
+   noir profond + jaune or, titres condensés. Aucune marque tierce.
+   ========================================================================= */
+body.theme-casting {
+  --papier: #0b0b0b;
+  --creme: #111111;
+  --ivoire: #171717;
+  --bleu: #f6f3ec;
+  --bleu-profond: #000000;
+  --bleu-voile: #222222;
+  --or: #f5b82e;
+  --or-clair: #f5b82e;
+  --or-moyen: #f5b82e;
+  --or-profond: #f5b82e;
+  --encre: #f6f3ec;
+  --encre-douce: #b8b4ab;
+  --filet: #2b2b2b;
+  --ombre: 0 30px 60px -36px rgba(0, 0, 0, 0.9);
+  background-color: var(--papier);
+  color: var(--encre);
+}
+.theme-casting h1, .theme-casting h2 {
+  font-family: var(--f-signature); font-weight: 400; text-transform: uppercase; letter-spacing: 0.01em; line-height: 1;
+}
+.theme-casting h1 em, .theme-casting h2 em { font-style: normal; color: var(--or); }
+.theme-casting .page-hero__titre { font-size: clamp(3.4rem, 9vw, 7rem); }
+.theme-casting h3, .theme-casting .pres-frise h3, .theme-casting .pres-atouts h3 {
+  font-family: var(--f-texte); font-weight: 700; font-size: 1.15rem; letter-spacing: 0.02em; text-transform: uppercase; color: var(--bleu);
+}
+.theme-casting .section--bleu { background: #000; }
+.theme-casting .btn { background: var(--or); border-color: var(--or); color: #0b0b0b; }
+.theme-casting .btn:hover { background: #ffd060; border-color: #ffd060; }
+.theme-casting .btn--clair { background: var(--or); color: #0b0b0b; border-color: var(--or); }
+.theme-casting .pres-atouts li { border: 1px solid #262626; }
+.theme-casting .pres-liens a { border-color: rgba(245, 184, 46, 0.4); }
+.theme-casting .pres-liens strong { font-family: var(--f-texte); font-weight: 700; font-size: 1.05rem; text-transform: uppercase; }
+.theme-casting .pres-coord a { font-family: var(--f-texte); font-weight: 600; font-size: 1.05rem; }
+.theme-casting .reperes-chiffres strong { font-family: var(--f-signature); color: var(--or); }
+.theme-casting .entete { background: rgba(11, 11, 11, 0.88); }
+.theme-casting .marque__nom, .theme-casting .entete a { color: var(--bleu); }
+.theme-casting .pied { background: #000; }
+.theme-casting .page-hero__photo img { filter: saturate(1.05); }
+.theme-casting .pres-liens a { color: #f6f3ec; }
+.theme-casting .pres-liens span { color: #b8b4ab; opacity: 1; }
+.theme-casting .pied, .theme-casting .pied p, .theme-casting .pied__signature, .theme-casting .pied strong, .theme-casting .pied b { color: #f6f3ec; }
+.theme-casting .pied__signature em, .theme-casting .pied em { color: var(--or); }
+.theme-casting .pied__marque, .theme-casting .pied__marque * { color: #f6f3ec; }

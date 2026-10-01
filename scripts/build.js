@@ -160,7 +160,8 @@ const pages = [
     titre: "Mazidath Bello · Présentatrice, animatrice, maîtresse de cérémonie",
     description: "Parcours télé, extraits et contact de Mazidath Bello, présentatrice et animatrice.",
     image: "portrait-gris",
-    noindex: true
+    noindex: true,
+    classe: "theme-casting"
   },
   { chemin: "/mentions-legales/", gabarit: legal.mentions, titre: "Mentions légales · La Muse Éloquente", noindex: noindexLegal },
   { chemin: "/confidentialite/", gabarit: legal.confidentialite, titre: "Confidentialité · La Muse Éloquente", noindex: noindexLegal },
