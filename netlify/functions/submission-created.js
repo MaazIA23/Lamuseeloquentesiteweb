@@ -1,6 +1,6 @@
 // Déclenchée par Netlify à chaque envoi de formulaire (Netlify Forms).
 // Formulaire « devis » : notification détaillée à La Muse Éloquente + accusé de réception à la personne.
-const { echappe, emailValide, destinataireAdmin, gabarit, tableau, envoyer } = require("../lib/emails");
+const { SITE_URL, echappe, emailValide, destinataireAdmin, gabarit, tableau, envoyer } = require("../lib/emails");
 
 exports.handler = async (event) => {
   try {
@@ -36,7 +36,7 @@ exports.handler = async (event) => {
         ...gabarit(prenom ? `Merci ${echappe(prenom)}, votre demande est bien arrivée.` : "Votre demande est bien arrivée.", [
           `J'ai bien reçu votre demande${d.type ? ` pour une prestation « ${echappe(d.type)} »` : ""}. Je l'étudie avec attention et je reviens vers vous personnellement dans les meilleurs délais.`,
           "Si votre projet est urgent, vous pouvez aussi me répondre directement à cet e-mail.",
-        ], { bouton: { texte: "Découvrir mes interventions", lien: "https://lamuseeloquente.fr/travailler-avec-moi/" } }),
+        ], { bouton: { texte: "Découvrir mes interventions", lien: `${SITE_URL}/travailler-avec-moi/` } }),
       });
     }
     const { envoyes } = await envoyer(messages);

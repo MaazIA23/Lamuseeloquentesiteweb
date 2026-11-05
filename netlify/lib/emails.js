@@ -5,7 +5,8 @@
 //   NOTIFICATION_TO_EMAIL    adresse qui reçoit les notifications (par défaut : l'e-mail de contact du site)
 const site = require("../../content/site.json");
 
-const SITE_URL = site.url;
+// Adresse réelle du site fournie par Netlify (le domaine de content/site.json peut ne pas être encore branché).
+const SITE_URL = process.env.URL || site.url;
 const echappe = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const emailValide = (e) => /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(String(e || "").trim());
 
