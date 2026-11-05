@@ -71,7 +71,7 @@ const confidentialite = ({ legal: l }) =>
 <h2>Base légale</h2>
 <p>Les traitements reposent sur l'exécution d'un contrat ou de mesures précontractuelles (devis, commande, accompagnement), sur votre consentement pour les champs facultatifs, et sur le respect d'obligations légales (facturation, comptabilité).</p>
 <h2>Destinataires</h2>
-<p>Les données sont destinées à La Muse Éloquente et à ses prestataires techniques, uniquement pour les besoins des services : hébergement (Netlify), paiement (FedaPay, Chariow), réservation (Cal.com). Elles ne sont ni vendues ni cédées à des tiers.</p>
+<p>Les données sont destinées à La Muse Éloquente et à ses prestataires techniques, uniquement pour les besoins des services : hébergement (Netlify), envoi des e-mails de confirmation (Resend), paiement (FedaPay, Chariow), réservation (Cal.com). Elles ne sont ni vendues ni cédées à des tiers.</p>
 <h2>Durée de conservation</h2>
 <p>Les données sont conservées pendant la durée nécessaire aux finalités poursuivies : durée de la relation commerciale pour les accompagnements, durée légale de conservation comptable pour les commandes, et au plus trois ans après le dernier contact pour les demandes de devis sans suite.</p>
 <h2 id="cookies">Cookies</h2>
@@ -151,19 +151,54 @@ const merci = ({ site }) => html`
   </div>
 </section>`;
 
-const merciPaiement = ({ site }) => html`
-<section class="section section--bleu page-message">
+const merciPaiement = ({ site }) => {
+  const waLien = (t) => `https://wa.me/${site.contact.whatsapp}?text=${encodeURIComponent(t)}`;
+  return html`
+<section class="section section--bleu page-message" data-retour-paiement>
   <div class="conteneur final__in">
-    <p class="surtitre surtitre--or">Paiement confirmé</p>
-    <h1>Bienvenue dans Speak &amp; Conquer</h1>
-    <p>Merci pour votre confiance. Votre paiement est bien enregistré : réservez dès maintenant votre première séance dans mon agenda. Vous pourrez y revenir pour réserver les suivantes.</p>
-    <div class="actions actions--centre">
-      <a class="btn btn--clair" href="${site.reservation.seances}" target="_blank" rel="noopener">Réserver ma première séance ${icon.fleche}</a>
-      <a class="btn btn--ligne-claire" href="https://wa.me/${site.contact.whatsapp}?text=${encodeURIComponent("Bonjour Mazidath, je viens de m'inscrire à Speak & Conquer.")}" target="_blank" rel="noopener">${icon.whatsapp} Écrire sur WhatsApp</a>
+    <div data-etat="verif">
+      <p class="surtitre surtitre--or">Paiement</p>
+      <h1>Vérification de votre paiement…</h1>
+      <p>Quelques secondes : nous confirmons votre paiement auprès de FedaPay.</p>
     </div>
-    <p class="page-message__note">Gardez précieusement ce lien : ${esc(site.reservation.seances.replace("https://", ""))}</p>
+    <div data-etat="payee" hidden>
+      <p class="surtitre surtitre--or">Paiement confirmé</p>
+      <h1>Bienvenue dans Speak &amp; Conquer<span data-prenom></span></h1>
+      <p>Votre formule <strong data-formule></strong> est bien enregistrée. Réservez dès maintenant votre première séance dans mon agenda. Le lien vous a aussi été envoyé par e-mail à <strong data-email></strong> pour réserver les séances suivantes.</p>
+      <div class="actions actions--centre">
+        <a class="btn btn--clair" data-agenda href="#" target="_blank" rel="noopener">Réserver ma première séance ${icon.fleche}</a>
+        <a class="btn btn--ligne-claire" href="${waLien("Bonjour Mazidath, je viens de m'inscrire à Speak & Conquer.")}" target="_blank" rel="noopener">${icon.whatsapp} Écrire sur WhatsApp</a>
+      </div>
+    </div>
+    <div data-etat="attente" hidden>
+      <p class="surtitre surtitre--or">Paiement en cours</p>
+      <h1>Votre paiement n'est pas encore confirmé</h1>
+      <p>Certains paiements Mobile Money prennent quelques minutes. Rechargez cette page dans un instant. Si vous avez été débité et que rien ne change, écrivez-moi : je règle cela avec vous.</p>
+      <div class="actions actions--centre">
+        <a class="btn btn--clair" href="" onclick="location.reload();return false">Vérifier à nouveau</a>
+        <a class="btn btn--ligne-claire" href="${waLien("Bonjour Mazidath, j'ai payé Speak & Conquer mais mon paiement n'est pas encore confirmé.")}" target="_blank" rel="noopener">${icon.whatsapp} Écrire sur WhatsApp</a>
+      </div>
+    </div>
+    <div data-etat="echec" hidden>
+      <p class="surtitre surtitre--or">Paiement non abouti</p>
+      <h1>Le paiement n'a pas abouti</h1>
+      <p>Aucun montant n'a été prélevé. Vous pouvez réessayer, ou m'écrire si vous rencontrez une difficulté.</p>
+      <div class="actions actions--centre">
+        <a class="btn btn--clair" href="/programmes/speak-and-conquer/#formules">Réessayer ${icon.fleche}</a>
+        <a class="btn btn--ligne-claire" href="${waLien("Bonjour Mazidath, mon paiement Speak & Conquer n'a pas abouti.")}" target="_blank" rel="noopener">${icon.whatsapp} Écrire sur WhatsApp</a>
+      </div>
+    </div>
+    <div data-etat="inconnu" hidden>
+      <p class="surtitre surtitre--or">Speak &amp; Conquer</p>
+      <h1>Inscription introuvable</h1>
+      <p>Ce lien ne correspond à aucune inscription. Si vous venez de payer, écrivez-moi : je vous envoie votre lien de réservation.</p>
+      <div class="actions actions--centre">
+        <a class="btn btn--ligne-claire" href="${waLien("Bonjour Mazidath, je viens de payer Speak & Conquer.")}" target="_blank" rel="noopener">${icon.whatsapp} Écrire sur WhatsApp</a>
+      </div>
+    </div>
   </div>
 </section>`;
+};
 
 const introuvable = () => html`
 <section class="section section--bleu page-message">

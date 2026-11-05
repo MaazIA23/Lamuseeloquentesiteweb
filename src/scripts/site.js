@@ -123,30 +123,76 @@
     });
   });
 
-  /* ---------- Paiement FedaPay (Speak & Conquer) ---------- */
-  document.querySelectorAll("[data-fedapay]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const note = btn.parentElement.querySelector("[data-fedapay-note]");
-      const texte = note ? note.textContent : "";
-      btn.disabled = true;
-      if (note) note.textContent = "Redirection vers le paiement sécurisé…";
+  /* ---------- Inscription et paiement FedaPay (Speak & Conquer) ---------- */
+  const fenetre = document.getElementById("inscription");
+  if (fenetre) {
+    const form = fenetre.querySelector("form");
+    const msg = fenetre.querySelector("[data-inscription-message]");
+    const envoi = form.querySelector('[type="submit"]');
+    const aide = msg.textContent;
+    let formule = null;
+    const fermer = () => (fenetre.close ? fenetre.close() : fenetre.removeAttribute("open"));
+    document.querySelectorAll("[data-fedapay]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        formule = btn.dataset.fedapay;
+        fenetre.querySelector("[data-inscription-formule]").textContent = btn.dataset.nom || "";
+        fenetre.querySelector("[data-inscription-prix]").textContent = btn.dataset.prix || "";
+        msg.textContent = aide;
+        envoi.disabled = false;
+        if (fenetre.showModal) fenetre.showModal(); else fenetre.setAttribute("open", "");
+        try { if (window.gtag && window.mesureAudienceChargee) window.gtag("event", "begin_checkout", { item_id: formule }); } catch (e) {}
+      });
+    });
+    fenetre.querySelector("[data-fermer]").addEventListener("click", fermer);
+    fenetre.addEventListener("click", (e) => { if (e.target === fenetre) fermer(); });
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) { msg.textContent = "Merci d'indiquer votre prénom, votre nom, une adresse e-mail valide et votre numéro WhatsApp."; return; }
+      const d = Object.fromEntries(new FormData(form));
+      envoi.disabled = true;
+      msg.textContent = "Redirection vers le paiement sécurisé…";
       fetch("/.netlify/functions/create-transaction", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ formule: btn.dataset.fedapay })
+        body: JSON.stringify({ ...d, formule })
       })
-        .then((r) => r.json().then((data) => ({ ok: r.ok, data })))
+        .then((r) => r.json().catch(() => ({})).then((data) => ({ ok: r.ok, data })))
         .then(({ ok, data }) => {
           if (ok && data.url) { location.href = data.url; return; }
           throw new Error(data && data.error);
         })
         .catch((err) => {
-          btn.disabled = false;
-          if (note) note.textContent = (err && err.message) || "Impossible de contacter le service de paiement. Merci de réessayer.";
-          setTimeout(() => { if (note) note.textContent = texte; }, 8000);
+          envoi.disabled = false;
+          msg.textContent = (err && err.message) || "Impossible de contacter le service de paiement. Merci de réessayer.";
         });
     });
-  });
+  }
+
+  /* ---------- Retour de paiement : vérification et lien de l'agenda ---------- */
+  const retour = document.querySelector("[data-retour-paiement]");
+  if (retour) {
+    const id = new URLSearchParams(location.search).get("inscription");
+    const etat = (nom) => retour.querySelectorAll("[data-etat]").forEach((el) => { el.hidden = el.dataset.etat !== nom; });
+    let essais = 0;
+    const verifier = () => {
+      if (!id) { etat("inconnu"); return; }
+      fetch(`/.netlify/functions/statut-paiement?inscription=${encodeURIComponent(id)}`)
+        .then((r) => r.json())
+        .then((d) => {
+          if (d.statut === "payee") {
+            retour.querySelector("[data-prenom]").textContent = d.prenom ? `, ${d.prenom}` : "";
+            retour.querySelector("[data-formule]").textContent = d.formule || "";
+            retour.querySelector("[data-email]").textContent = d.email || "";
+            if (d.agenda) retour.querySelector("[data-agenda]").href = d.agenda;
+            etat("payee");
+          } else if (d.statut === "echec") etat("echec");
+          else if (++essais < 10) setTimeout(verifier, 3000);
+          else etat("attente");
+        })
+        .catch(() => { if (++essais < 10) setTimeout(verifier, 3000); else etat("attente"); });
+    };
+    verifier();
+  }
 
   /* ---------- Barre d'action mobile ---------- */
   const barre = document.querySelector("[data-barre]");

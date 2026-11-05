@@ -13,13 +13,35 @@ module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
   const bouton = (f) =>
     cle
       ? html`<div class="formule__payer">
-          <button class="btn btn--plein" type="button" data-fedapay="${f.id}">Payer ${esc(f.prixFcfa)} ${icon.fleche}</button>
+          <button class="btn btn--plein" type="button" data-fedapay="${f.id}" data-nom="${esc(f.nom)}" data-prix="${esc(f.prixFcfa)}">Payer ${esc(f.prixFcfa)} ${icon.fleche}</button>
           <p class="formule__moyens" data-fedapay-note>Mobile Money (MTN, Moov, Celtiis) ou carte bancaire</p>
           <a class="lien" href="${f.paiement.url}"${ext(f.paiement.url)}>${esc(site.paiement.international.libelle)}</a>
           <p class="formule__cgv">En payant, vous acceptez les <a href="/cgv/">conditions générales de vente</a>.</p>
         </div>`
       : `<a class="btn btn--plein" href="${f.paiement.url}"${ext(f.paiement.url)} data-offre="${f.id}">Choisir la formule ${esc(f.nom)} ${icon.fleche}</a>`;
-  const scriptFedapay = "";
+  // Fenêtre d'inscription : coordonnées de l'élève avant le paiement (e-mail de bienvenue et lien de l'agenda).
+  const scriptFedapay = cle ? html`
+<dialog class="inscription" id="inscription" aria-labelledby="inscription-titre">
+  <button class="inscription__fermer" type="button" data-fermer aria-label="Fermer">×</button>
+  <p class="surtitre surtitre--or">Speak &amp; Conquer</p>
+  <h2 id="inscription-titre">Formule <span data-inscription-formule></span></h2>
+  <p class="inscription__prix" data-inscription-prix></p>
+  <form class="formulaire inscription__form" novalidate>
+    <p class="sr"><label>Ne pas remplir <input name="siteWeb" tabindex="-1" autocomplete="off"></label></p>
+    <div class="champ-duo">
+      <div class="champ"><label for="i-prenom">Prénom *</label><input id="i-prenom" name="prenom" autocomplete="given-name" maxlength="60" required></div>
+      <div class="champ"><label for="i-nom">Nom *</label><input id="i-nom" name="nom" autocomplete="family-name" maxlength="60" required></div>
+    </div>
+    <div class="champ"><label for="i-email">E-mail *</label><input id="i-email" name="email" type="email" autocomplete="email" maxlength="120" required></div>
+    <div class="champ-duo">
+      <div class="champ"><label for="i-whatsapp">WhatsApp *</label><input id="i-whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="+229 01 00 00 00 00" maxlength="30" required></div>
+      <div class="champ"><label for="i-pays">Pays</label><input id="i-pays" name="pays" autocomplete="country-name" maxlength="60"></div>
+    </div>
+    <button class="btn btn--plein" type="submit">Continuer vers le paiement ${icon.fleche}</button>
+    <p class="formulaire__note" data-inscription-message role="status" aria-live="polite">Vous recevrez par e-mail le lien pour réserver vos séances dans mon agenda.</p>
+    <p class="formule__cgv">En payant, vous acceptez les <a href="/cgv/">conditions générales de vente</a>.</p>
+  </form>
+</dialog>` : "";
   const texteReglement = cle
     ? "En FCFA par Mobile Money ou carte via FedaPay, ou depuis l'international par carte."
     : "Le paiement se fait sur la boutique sécurisée de La Muse Éloquente.";

@@ -10,5 +10,10 @@
   "devDependencies": {
     "sharp": "^0.34.0"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^10.7.13"
+  }
 }
