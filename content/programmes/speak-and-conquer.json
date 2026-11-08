@@ -266,5 +266,40 @@
       }
     ]
   },
-  "photoPos": "78% 25%"
+  "photoPos": "78% 25%",
+  "_versements": "Paiement en deux fois (sur demande, Standard et Prestige) : moitié avant le démarrage, moitié à mi-parcours. Page privée /programmes/speak-and-conquer/paiement-en-deux-fois/.",
+  "versements": [
+    {
+      "id": "standard-1",
+      "formule": "standard",
+      "etape": 1,
+      "libelle": "1er versement",
+      "prixNum": 50000,
+      "prixFcfa": "50 000 FCFA"
+    },
+    {
+      "id": "standard-2",
+      "formule": "standard",
+      "etape": 2,
+      "libelle": "2nd versement",
+      "prixNum": 50000,
+      "prixFcfa": "50 000 FCFA"
+    },
+    {
+      "id": "prestige-1",
+      "formule": "prestige",
+      "etape": 1,
+      "libelle": "1er versement",
+      "prixNum": 85000,
+      "prixFcfa": "85 000 FCFA"
+    },
+    {
+      "id": "prestige-2",
+      "formule": "prestige",
+      "etape": 2,
+      "libelle": "2nd versement",
+      "prixNum": 85000,
+      "prixFcfa": "85 000 FCFA"
+    }
+  ]
 }

@@ -6,21 +6,8 @@ const cellule = (v) =>
   v === true ? `<span class="oui">${icon.check}<span class="sr">Inclus</span></span>` :
   v === false ? `<span class="non">${icon.tiret}<span class="sr">Non inclus</span></span>` : esc(v);
 
-module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
-  // FedaPay (FCFA, Mobile Money et cartes) via la fonction Netlify create-transaction ;
-  // Chariow reste l'option internationale, et la seule si FedaPay est désactivé dans content/site.json.
-  const cle = site.paiement && site.paiement.fedapay.actif;
-  const bouton = (f) =>
-    cle
-      ? html`<div class="formule__payer">
-          <button class="btn btn--plein" type="button" data-fedapay="${f.id}" data-nom="${esc(f.nom)}" data-prix="${esc(f.prixFcfa)}">Payer ${esc(f.prixFcfa)} ${icon.fleche}</button>
-          <p class="formule__moyens" data-fedapay-note>Mobile Money (MTN, Moov, Celtiis) ou carte bancaire</p>
-          <a class="lien" href="${f.paiement.url}"${ext(f.paiement.url)}>${esc(site.paiement.international.libelle)}</a>
-          <p class="formule__cgv">En payant, vous acceptez les <a href="/cgv/">conditions générales de vente</a>.</p>
-        </div>`
-      : `<a class="btn btn--plein" href="${f.paiement.url}"${ext(f.paiement.url)} data-offre="${f.id}">Choisir la formule ${esc(f.nom)} ${icon.fleche}</a>`;
-  // Fenêtre d'inscription : coordonnées de l'élève avant le paiement (e-mail de bienvenue et lien de l'agenda).
-  const scriptFedapay = cle ? html`
+// Fenêtre d'inscription : coordonnées de l'élève avant le paiement (e-mail de bienvenue et lien de l'agenda).
+const fenetreInscription = () => html`
 <dialog class="inscription" id="inscription" aria-labelledby="inscription-titre">
   <button class="inscription__fermer" type="button" data-fermer aria-label="Fermer">×</button>
   <p class="surtitre surtitre--or">Speak &amp; Conquer</p>
@@ -41,7 +28,22 @@ module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
     <p class="formulaire__note" data-inscription-message role="status" aria-live="polite">Vous recevrez par e-mail le lien pour réserver vos séances dans mon agenda.</p>
     <p class="formule__cgv">En payant, vous acceptez les <a href="/cgv/">conditions générales de vente</a>.</p>
   </form>
-</dialog>` : "";
+</dialog>`;
+
+module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
+  // FedaPay (FCFA, Mobile Money et cartes) via la fonction Netlify create-transaction ;
+  // Chariow reste l'option internationale, et la seule si FedaPay est désactivé dans content/site.json.
+  const cle = site.paiement && site.paiement.fedapay.actif;
+  const bouton = (f) =>
+    cle
+      ? html`<div class="formule__payer">
+          <button class="btn btn--plein" type="button" data-fedapay="${f.id}" data-nom="${esc(f.nom)}" data-prix="${esc(f.prixFcfa)}">Payer ${esc(f.prixFcfa)} ${icon.fleche}</button>
+          <p class="formule__moyens" data-fedapay-note>Mobile Money (MTN, Moov, Celtiis) ou carte bancaire</p>
+          <a class="lien" href="${f.paiement.url}"${ext(f.paiement.url)}>${esc(site.paiement.international.libelle)}</a>
+          <p class="formule__cgv">En payant, vous acceptez les <a href="/cgv/">conditions générales de vente</a>.</p>
+        </div>`
+      : `<a class="btn btn--plein" href="${f.paiement.url}"${ext(f.paiement.url)} data-offre="${f.id}">Choisir la formule ${esc(f.nom)} ${icon.fleche}</a>`;
+  const scriptFedapay = cle ? fenetreInscription() : "";
   const texteReglement = cle
     ? "En FCFA par Mobile Money ou carte via FedaPay, ou depuis l'international par carte."
     : "Le paiement se fait sur la boutique sécurisée de La Muse Éloquente.";
@@ -211,3 +213,5 @@ module.exports = function speakAndConquer({ site, sac: p, temoignages }) {
 
   return [hero, faits, transformation, pourQui, methode, competences, formules, temoins, reservation, faq, final, scriptFedapay].join("\n");
 };
+
+module.exports.fenetreInscription = fenetreInscription;

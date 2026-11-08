@@ -41,7 +41,7 @@ function gabarit(titre, paragraphes, options = {}) {
     ${mention || "Vous recevez cet e-mail suite à votre demande sur"} <a href="${SITE_URL}" style="color:#272A5D">${SITE_URL.replace("https://", "")}</a>.
   </td></tr>
 </table></td></tr></table></body></html>`;
-  const text = [titre, "", ...paragraphes.map((p) => p.replace(/<br>/g, "\n").replace(/<[^>]+>/g, "")), texteBlocs, bouton ? `\n${bouton.texte} : ${bouton.lien}` : "", signature ? "\nMazidath Bello\nFondatrice de La Muse Éloquente" : "", "", ...RESEAUX.map((r) => `${r.nom} : ${r.url}`), SITE_URL].join("\n");
+  const text = [titre, "", ...paragraphes.map((p) => p.replace(/<br>/g, "\n").replace(/<[^>]+>/g, "").replace(/&amp;/g, "&")), texteBlocs, bouton ? `\n${bouton.texte} : ${bouton.lien}` : "", signature ? "\nMazidath Bello\nFondatrice de La Muse Éloquente" : "", "", ...RESEAUX.map((r) => `${r.nom} : ${r.url}`), SITE_URL].join("\n");
   return { html, text };
 }
 

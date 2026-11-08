@@ -163,6 +163,15 @@ const pages = [
     noindex: true,
     classe: "theme-casting"
   },
+  {
+    chemin: "/programmes/speak-and-conquer/paiement-en-deux-fois/",
+    gabarit: require("../src/pages/paiement-deux-fois"),
+    titre: "Paiement en deux fois · Speak & Conquer · La Muse Éloquente",
+    description: "Paiement en deux fois de l'accompagnement Speak & Conquer, sur accord préalable.",
+    image: data.sac.photo,
+    classe: "page-programme",
+    noindex: true
+  },
   { chemin: "/mentions-legales/", gabarit: legal.mentions, titre: "Mentions légales · La Muse Éloquente", noindex: noindexLegal },
   { chemin: "/confidentialite/", gabarit: legal.confidentialite, titre: "Confidentialité · La Muse Éloquente", noindex: noindexLegal },
   { chemin: "/cgv/", gabarit: legal.cgv, titre: "Conditions générales de vente · La Muse Éloquente", noindex: noindexLegal },

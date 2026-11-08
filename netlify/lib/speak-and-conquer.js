@@ -25,6 +25,18 @@ async function fedapay(chemin, method, body) {
   return data;
 }
 
+// Formule complète, ou versement d'un paiement en deux fois (Standard et Prestige, sur demande).
+const PAGE_DEUX_FOIS = "/programmes/speak-and-conquer/paiement-en-deux-fois/";
+function offre(id) {
+  const f = programme.formules.find((x) => x.id === id);
+  if (f) return { ...f, etape: 0 };
+  const v = (programme.versements || []).find((x) => x.id === id);
+  const base = v && programme.formules.find((x) => x.id === v.formule);
+  if (!v || !base) return null;
+  return { ...base, id: v.id, nom: `${base.nom} (${v.libelle})`, formuleNom: base.nom, libelle: v.libelle, prixNum: v.prixNum, prixFcfa: v.prixFcfa, etape: v.etape };
+}
+const fcfa = (n) => `${Number(n).toLocaleString("fr-FR").replace(/\u202f|\u00a0/g, " ")} FCFA`;
+
 const nettoyer = (s, max = 80) => String(s || "").replace(/\s+/g, " ").trim().slice(0, max);
 
 async function inscrire(event) {
@@ -32,7 +44,7 @@ async function inscrire(event) {
   let p;
   try { p = JSON.parse(event.body || "{}"); } catch { return reponse(400, { error: "Requête invalide." }); }
   if (p.siteWeb) return reponse(400, { error: "Requête invalide." });
-  const formule = programme.formules.find((f) => f.id === p.formule);
+  const formule = offre(p.formule);
   if (!formule || !Number.isFinite(formule.prixNum)) return reponse(400, { error: "Formule inconnue." });
   const eleve = { prenom: nettoyer(p.prenom, 60), nom: nettoyer(p.nom, 60), email: nettoyer(p.email, 120).toLowerCase(), whatsapp: nettoyer(p.whatsapp, 30), pays: nettoyer(p.pays, 60) };
   if (!eleve.prenom || !eleve.nom) return reponse(400, { error: "Merci d'indiquer votre prénom et votre nom." });
@@ -69,30 +81,45 @@ async function inscrire(event) {
 }
 
 function emails(ins) {
-  const f = programme.formules.find((x) => x.id === ins.formule) || { nom: ins.formule, seances: "", duree: "" };
+  const f = offre(ins.formule) || { nom: ins.formule, seances: "", duree: "", etape: 0 };
   const e = ins.eleve;
   const agenda = lienAgenda();
-  return [
-    {
-      to: [e.email],
-      reply_to: destinataireAdmin(),
-      subject: `Bienvenue dans Speak & Conquer · Formule ${f.nom}`,
+  const site = process.env.URL || SITE_URL;
+  const montant = fcfa(ins.montant);
+  let client, admin;
+  if (f.etape === 2) {
+    client = {
+      subject: `Second versement reçu · Speak & Conquer · Formule ${f.formuleNom}`,
+      ...gabarit(`Merci ${echappe(e.prenom)}, votre parcours est entièrement réglé.`, [
+        `Votre second versement de <strong>${montant}</strong> pour la formule <strong>${echappe(f.formuleNom)}</strong> de Speak &amp; Conquer est bien enregistré.`,
+        "Vous pouvez continuer à réserver vos prochaines séances dans mon agenda, avec le même lien que d'habitude.",
+      ], { bouton: agenda ? { texte: "Réserver ma prochaine séance", lien: agenda } : null, mention: "Vous recevez cet e-mail suite à votre paiement sur" }),
+    };
+    admin = { titre: "Second versement reçu", intro: `<strong>${echappe(e.prenom)} ${echappe(e.nom)}</strong> vient de régler le second versement de la formule <strong>${echappe(f.formuleNom)}</strong>. Son parcours est entièrement payé.` };
+  } else {
+    const deuxFois = f.etape === 1;
+    client = {
+      subject: `Bienvenue dans Speak & Conquer · Formule ${deuxFois ? f.formuleNom : f.nom}`,
       ...gabarit(`Bienvenue ${echappe(e.prenom)}, l'aventure commence.`, [
-        `Votre paiement pour la formule <strong>${echappe(f.nom)}</strong> de Speak &amp; Conquer est bien enregistré${f.seances ? ` : ${f.seances} séances individuelles de 60 minutes, sur ${echappe(f.duree)}` : ""}.`,
+        `Votre ${deuxFois ? "premier versement" : "paiement"} pour la formule <strong>${echappe(deuxFois ? f.formuleNom : f.nom)}</strong> de Speak &amp; Conquer est bien enregistré${f.seances ? ` : ${f.seances} séances individuelles de 60 minutes, sur ${echappe(f.duree)}` : ""}.`,
+        ...(deuxFois ? [`Vous avez choisi le paiement en deux fois : le second versement de <strong>${montant}</strong> sera à régler à mi-parcours. Je vous enverrai le lien le moment venu.`] : []),
         "Réservez dès maintenant votre première séance dans mon agenda. Gardez précieusement cet e-mail : le même lien vous servira pour réserver les séances suivantes.",
         "Une question avant notre première rencontre ? Répondez simplement à cet e-mail.",
       ], { bouton: agenda ? { texte: "Réserver ma première séance", lien: agenda } : null, mention: "Vous recevez cet e-mail suite à votre inscription sur" }),
-    },
+    };
+    admin = deuxFois
+      ? { titre: "Nouvelle inscription (paiement en deux fois)", intro: `<strong>${echappe(e.prenom)} ${echappe(e.nom)}</strong> vient de régler le premier versement de la formule <strong>${echappe(f.formuleNom)}</strong>. Le lien de votre agenda lui a été envoyé par e-mail.`, suite: `À mi-parcours, envoyez-lui le lien du second versement : ${site}${PAGE_DEUX_FOIS}` }
+      : { titre: "Nouvelle inscription Speak &amp; Conquer", intro: `<strong>${echappe(e.prenom)} ${echappe(e.nom)}</strong> vient de payer la formule <strong>${echappe(f.nom)}</strong>. Le lien de votre agenda lui a été envoyé par e-mail.` };
+  }
+  return [
+    { to: [e.email], reply_to: destinataireAdmin(), ...client },
     {
       to: [destinataireAdmin()],
       reply_to: e.email,
-      subject: `Nouvelle inscription Speak & Conquer · ${f.nom} · ${e.prenom} ${e.nom}`,
-      ...gabarit("Nouvelle inscription Speak &amp; Conquer", [
-        `<strong>${echappe(e.prenom)} ${echappe(e.nom)}</strong> vient de payer la formule <strong>${echappe(f.nom)}</strong>. Le lien de votre agenda lui a été envoyé par e-mail.`,
-        "Répondez à cet e-mail pour lui écrire directement.",
-      ], {
+      subject: `${admin.titre.replace("&amp;", "&")} · ${f.nom} · ${e.prenom} ${e.nom}`,
+      ...gabarit(admin.titre, [admin.intro, ...(admin.suite ? [admin.suite] : []), "Répondez à cet e-mail pour lui écrire directement."], {
         ...tableau([
-          ["Formule", `${f.nom} (${f.seances} séances)`], ["Montant", `${Number(ins.montant).toLocaleString("fr-FR").replace(/ | /g, " ")} FCFA`],
+          ["Formule", `${f.nom} (${f.seances} séances)`], ["Montant", montant],
           ["Prénom et nom", `${e.prenom} ${e.nom}`], ["E-mail", e.email], ["WhatsApp", e.whatsapp], ["Pays", e.pays],
           ["Référence FedaPay", ins.transactionId], ["Payé le", new Date(ins.payeLe || Date.now()).toLocaleString("fr-FR", { timeZone: "Africa/Porto-Novo" })],
         ]),
@@ -134,7 +161,7 @@ async function statut(event) {
     const echec = ["declined", "canceled", "cancelled", "refunded", "expired"].includes(statutFedapay);
     return reponse(200, { statut: echec ? "echec" : "attente" });
   }
-  const f = programme.formules.find((x) => x.id === ins.formule) || {};
+  const f = offre(ins.formule) || {};
   return reponse(200, { statut: "payee", prenom: ins.eleve.prenom, email: ins.eleve.email, formule: f.nom, seances: f.seances, agenda: lienAgenda() });
 }
 
